@@ -7,7 +7,6 @@ body{
     background-color: rgb(49, 49, 49);
 }
 
-
 @font-face {
     font-family:'f-01';
     src: url(/fonts/natural-technologies.ttf);
@@ -16,8 +15,10 @@ body{
     font-family:'f-02';
     src: url(/fonts/minotaur.ttf);
 }
-
-
+@font-face {
+    font-family:'f-03';
+    src: url(/fonts/BungeeHairline-Regular.ttf);
+}
 h1{
     font-family: 'f-01';
     font-size: 4rem;
@@ -26,32 +27,39 @@ h1{
     padding: 10px;
 }
 h2{
+    font-family: 'f-03';
     font-size: 4rem;
     color: rgb(221, 218, 44);
     margin: 10px;
-}
-h3{
-    position: absolute;
-    color: rgb(0, 0, 0);
-    margin: 10px;
     text-align: center;
-    top: 280px;
-    left: 220px;
-    font-size: 2rem;
 }
+h4{
+    font-size: 2rem;
+    color: rgb(221, 218, 44);
+    font-family: 'f-03';
+    margin-left: 20px;
+}
+  
 p{
     color: white;
     font-family:'lato';
     font-size: 0.8rem;
 }
-header{
-    z-index: -4;
+header img{
+    z-index: 1;
+}
+header h1{
+    z-index: 1;
+}
+.header{
+    position: absolute;
+    margin: 0;
+    top: 0;
     width: 100%;
-height: 100px;
+    height: 100px;
     background-color: rgb(221, 218, 44);
     filter: blur(1.5rem);
 }
-
 .max{
 text-align: center;
 margin: 3px;
@@ -62,13 +70,40 @@ font-family: 'f-02';
 letter-spacing: 4px;
 font-size: 3rem;
 }
+.boxes{
+    display: flex;
+}
 .box-01{
-    background-color:  rgba(241,241,242,255);
+    background-color:  rgb(49, 49, 49);
     margin: 50px;
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
     border-radius: 4px;
-    box-shadow: 2px 2px 4PX rgba(221, 218, 44, 0.733);
+    box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
+}
+.box-02{
+    background-color:  rgb(49, 49, 49);
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
+}
+.box-03{
+    background-color:  rgb(49, 49, 49);
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
+}
+.box-04{
+    background-color:  rgb(49, 49, 49);
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
 }
 
 .logo-01{
@@ -77,5 +112,23 @@ font-size: 3rem;
 }
 .logo-name{
 z-index: 1;
+margin: 0;
+}
 
+.img-01{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.img-01 img{
+    width: 350px;
+    height: auto;
+    left: auto;
+    right: auto;
+    filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.733));
+    margin-top: 80px;
+}
+.img-01 p{
+    margin: 30px;
+    filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.247));
 }

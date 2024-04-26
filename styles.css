@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: "f-01";
-  src: url(/fonts/natural-technologies.ttf);
+  src: url(/fonts/FujitaRay.ttf);
 }
 @font-face {
   font-family: "f-02";
@@ -19,12 +19,29 @@ body {
   font-family: "f-03";
   src: url(/fonts/BungeeHairline-Regular.ttf);
 }
+@font-face {
+  font-family: "f-04";
+  src: url(/fonts/Melete-UltraLight.otf);
+}
+
 h1 {
-  font-family: "f-01";
-  font-size: 10rem;
-  color: rgb(105, 105, 105);
+  font-family: "f-04";
+  font-size: 4rem;
+  color: rgb(226, 226, 226);
   text-align: end;
   padding: 10px;
+  letter-spacing: 8px;
+  filter: drop-shadow(0 0 0.2rem rgb(43, 43, 43));
+}
+h1 span {
+  font-family: "f-01";
+  font-size: 14rem;
+  color: rgb(221, 218, 44);
+  filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.452));
+}
+.word-02{
+  font-size: 12rem;
+  color: rgb(221, 218, 44);
 }
 h2 {
   font-family: "f-03";
@@ -36,7 +53,7 @@ h2 {
 h4 {
   font-size: 2rem;
   color: rgb(221, 218, 44);
-  font-family: "f-03";
+  font-family: "f-04";
   margin-left: 20px;
 }
 
@@ -89,8 +106,15 @@ header h1 {
   display: flex;
   justify-content: center;
 }
-.boxes a{
-    text-decoration: none;
+.boxes a {
+  text-decoration: none;
+}
+.boxes h4{
+font-family: 'f-04';
+font-size: 1rem;
+right: auto;
+left: auto;
+padding: 15px;
 }
 .box-01 {
   background-color: rgb(49, 49, 49);
@@ -101,6 +125,11 @@ header h1 {
   box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
   text-align: center;
   transition: transform 0.3s ease-in;
+  filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
+}
+.box-01:hover {
+  filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
+  cursor: pointer;
 }
 .box-02 {
   background-color: rgb(49, 49, 49);
@@ -111,6 +140,11 @@ header h1 {
   box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
   text-align: center;
   transition: transform 0.3s ease-in;
+  filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
+}
+.box-02:hover {
+  filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
+  cursor: pointer;
 }
 .box-03 {
   background-color: rgb(49, 49, 49);
@@ -121,6 +155,11 @@ header h1 {
   box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
   text-align: center;
   transition: transform 0.3s ease-in;
+  filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
+}
+.box-03:hover {
+  filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
+  cursor: pointer;
 }
 .box-04 {
   background-color: rgb(49, 49, 49);
@@ -131,8 +170,12 @@ header h1 {
   box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
   text-align: center;
   transition: transform 0.3s ease-in;
+  filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
 }
-
+.box-04:hover {
+  filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
+  cursor: pointer;
+}
 .logo {
   z-index: 1;
   margin: 10px;
@@ -184,12 +227,13 @@ header h1 {
   background-color: transparent;
   position: absolute;
   top: 200px;
-  font-family: "f-01";
-  letter-spacing: 4px;
+  font-size: 1.5rem;
+  font-family: "f-04";
+  letter-spacing: 2px;
   padding: 4rem;
   border: none;
   right: 0;
-  font-size: 4rem;
+
   transition: transform 2s ease-in-out;
 }
 .button-01 a {
@@ -216,11 +260,11 @@ header h1 {
   margin: 10px;
   gap: 50px;
 }
-.members{
-    z-index: 1;
-    font-size: 4rem;
-    text-align: center;
-    margin: 10px;
+.members {
+  z-index: 1;
+  font-size: 4rem;
+  text-align: center;
+  margin: 10px;
 }
 .p-01 {
   width: 0px;
@@ -274,9 +318,17 @@ header h1 {
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.911));
   cursor: pointer;
 }
-.name{
-position: absolute;
-text-align: center;
-margin: 30px;
+.name {
+  position: absolute;
+  text-align: center;
+  margin: 30px;
 }
 
+
+.status-bar{
+  position: fixed;
+  top: 15px;
+  width: 100%;
+  height: 5px;
+  background-color: #cccccc38;
+}

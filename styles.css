@@ -43,7 +43,7 @@ h1 span {
   color: rgb(221, 218, 44);
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.452));
 }
-.word-02{
+.word-02 {
   font-size: 12rem;
   color: rgb(221, 218, 44);
 }
@@ -67,7 +67,7 @@ p {
   font-size: 0.8rem;
 }
 header img {
-  z-index: 1;
+  z-index: 3;
 }
 header h1 {
   z-index: 1;
@@ -106,19 +106,27 @@ header h1 {
   }
 }
 
+.intro-text{
+  font-size: 1.2rem;
+  margin: 10px;
+  font-family: 'f-03';
+  padding-top: 120px;
+}
 .boxes {
+  position: relative;
   display: flex;
   justify-content: center;
+  top: 200px;
 }
 .boxes a {
   text-decoration: none;
 }
-.boxes h4{
-font-family: 'f-04';
-font-size: 1rem;
-right: auto;
-left: auto;
-padding: 15px;
+.boxes h4 {
+  font-family: "f-04";
+  font-size: 1rem;
+  right: auto;
+  left: auto;
+  padding: 15px;
 }
 .box-01 {
   background-color: rgb(49, 49, 49);
@@ -152,27 +160,25 @@ padding: 15px;
 }
 
 .description {
-font-size: 11rem;
-
+  font-size: 11rem;
 }
-.description span{
-  font-family: 'f-05';
+.description span {
+  font-family: "f-05";
   font-size: 1.1rem;
   display: block;
-  }
-  
+}
+
 .description2 {
   font-size: 11rem;
-
-  }
-  .description2 span{
-    font-family: 'f-04';
-    font-size: 1.1rem;
-    display: block;
-    }
-    .letter{
-      font-family: 'f-02';
-    }
+}
+.description2 span {
+  font-family: "f-04";
+  font-size: 1.1rem;
+  display: block;
+}
+.letter {
+  font-family: "f-02";
+}
 
 .box-03 {
   background-color: rgb(49, 49, 49);
@@ -204,15 +210,25 @@ font-size: 11rem;
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
   cursor: pointer;
 }
-.logo {
-  z-index: 1;
-  margin: 10px;
+.logo01 {
+  margin: 30px;
   position: absolute;
   top: 0;
+  z-index: 3;
 }
 .l-01 img {
   max-width: 70px;
   height: auto;
+  z-index: 3;
+}
+#logo {
+  transition: filter 0.3s ease;
+  position: fixed;
+  z-index: 3;
+}
+#logo-02 {
+  visibility: hidden;
+  z-index: 3;
 }
 
 .img-01 {
@@ -279,7 +295,6 @@ font-size: 11rem;
   height: 480px;
 }
 #s-04-sobreNosotros {
-  height: 480px;
 }
 
 .photos {
@@ -289,10 +304,15 @@ font-size: 11rem;
   gap: 50px;
 }
 .members {
-  z-index: 1;
   font-size: 4rem;
   text-align: center;
   margin: 10px;
+}
+.t-01{
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px;
+  margin-top: 200px;
 }
 .p-01 {
   width: 0px;
@@ -352,11 +372,48 @@ font-size: 11rem;
   margin: 30px;
 }
 
-
-.status-bar{
+.status-bar {
   position: fixed;
   top: 15px;
   width: 100%;
   height: 5px;
   background-color: #cccccc38;
+  z-index: 2;
+}
+.borrador {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+footer{
+  z-index: 2;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(221, 218, 44, 0.089);
+  bottom: 0;
+  backdrop-filter: blur(10px); 
+}
+.TX {
+  z-index: 3;
+  font-size: 1.175rem;
+  color: black;
+justify-content: end;
+align-items: end;
+display: flex;
+}
+.TX-text p{
+  top: auto;
+padding: 50px;
+color: black;
+}
+.content-footer p{
+  z-index: 3;
+  margin: 0;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
 }

@@ -111,6 +111,7 @@ header h1 {
   margin: 10px;
   font-family: 'f-03';
   padding-top: 120px;
+  font-weight: bolder;
 }
 .boxes {
   position: relative;

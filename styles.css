@@ -23,6 +23,10 @@ body {
   font-family: "f-04";
   src: url(/fonts/Melete-UltraLight.otf);
 }
+@font-face {
+  font-family: "f-05";
+  src: url(/fonts/as.ttf);
+}
 
 h1 {
   font-family: "f-04";
@@ -146,6 +150,30 @@ padding: 15px;
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
   cursor: pointer;
 }
+
+.description {
+font-size: 11rem;
+
+}
+.description span{
+  font-family: 'f-05';
+  font-size: 1.1rem;
+  display: block;
+  }
+  
+.description2 {
+  font-size: 11rem;
+
+  }
+  .description2 span{
+    font-family: 'f-04';
+    font-size: 1.1rem;
+    display: block;
+    }
+    .letter{
+      font-family: 'f-02';
+    }
+
 .box-03 {
   background-color: rgb(49, 49, 49);
   margin: 50px;

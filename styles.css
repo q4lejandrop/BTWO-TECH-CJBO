@@ -91,7 +91,7 @@ header h1 {
   letter-spacing: 4px;
   font-size: 3rem;
   animation-duration: 3.5s;
-  animation-name: slidein;
+  animation: slidetop 3s ease;
   margin-top: 110px;
 }
 
@@ -105,12 +105,32 @@ header h1 {
     width: 100%;
   }
 }
+@keyframes slide-left{
+  from{
+    margin-right: 100%;
+    width: 300%;
+  }
+  to{
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidetop {
+  from {
+    margin-top: 0%;
+    height: 10%;
+  }
+  to{
+    margin-top: 5.8%;
+    height: 30%;
+  }
+}
 
-.intro-text{
+.intro-text {
   font-size: 1.2rem;
-  margin: 10px;
-  font-family: 'f-03';
-  padding-top: 120px;
+  margin-left: 125px;
+  font-family: "f-03";
+  padding-top: 160px;
   font-weight: bolder;
 }
 .boxes {
@@ -212,7 +232,7 @@ header h1 {
   cursor: pointer;
 }
 .logo01 {
-  margin: 30px;
+  margin: 20px;
   position: absolute;
   top: 0;
   z-index: 3;
@@ -277,9 +297,13 @@ header h1 {
   letter-spacing: 2px;
   padding: 4rem;
   border: none;
-  right: 0;
-
+  right: 120px;
   transition: transform 2s ease-in-out;
+}
+.bt {
+  position: absolute;
+  font-family: "f-04";
+  bottom: 30px;
 }
 .button-01 a {
   text-decoration: none;
@@ -291,11 +315,18 @@ header h1 {
 
 #s-02-productos {
   height: 480px;
+  /*
+  background-color: crimson;
+  justify-content: center;
+  align-items:center ;
+  display: flex
+  */
 }
 #s-03-servicios {
   height: 480px;
 }
 #s-04-sobreNosotros {
+  height: 480px;
 }
 
 .photos {
@@ -309,18 +340,13 @@ header h1 {
   text-align: center;
   margin: 10px;
 }
-.t-01{
+.t-01 {
   font-size: 4rem;
   text-align: center;
   margin: 20px;
   margin-top: 200px;
 }
 .p-01 {
-  width: 0px;
-  height: 0px;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
-  border-top: 150px solid #9984d4;
   margin: 5px;
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.733));
 }
@@ -328,6 +354,16 @@ header h1 {
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.911));
   cursor: pointer;
 }
+.p-01 img {
+  width: 120px;
+}
+.p-img-01 {
+  width: 80px;
+  height: auto;
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 150%);
+  clip-path: polygon(0 0, 100%, 50% 150%);
+}
+
 .p-02 {
   width: 0px;
   height: 0px;
@@ -375,7 +411,7 @@ header h1 {
 
 .status-bar {
   position: fixed;
-  top: 15px;
+  top: 10px;
   width: 100%;
   height: 5px;
   background-color: #cccccc38;
@@ -385,36 +421,106 @@ header h1 {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 110px;
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   z-index: 2;
 }
-footer{
+
+footer {
   z-index: 2;
   width: 100%;
   height: 200px;
   background-color: rgba(221, 218, 44, 0.089);
   bottom: 0;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
 }
 .TX {
   z-index: 3;
   font-size: 1.175rem;
   color: black;
-justify-content: end;
-align-items: end;
-display: flex;
+  justify-content: end;
+  align-items: end;
+  display: flex;
 }
-.TX-text p{
+.TX-text p {
   top: auto;
-padding: 50px;
-color: black;
+  padding: 50px;
+  color: black;
 }
-.content-footer p{
+.content-footer p {
   z-index: 3;
   margin: 0;
   color: black;
   font-size: 2rem;
   text-align: center;
+}
+
+.title-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  z-index: 3;
+}
+.title-bar h1 {
+  font-size: 2rem;
+  text-align: end;
+  color: black;
+}
+
+/* Sides */
+.right-side {
+  position: absolute;
+  right: 0;
+}
+.rightS img {
+  width: 140px;
+  height: 550px;
+  filter: opacity(0.3);
+  animation: escalar 4s ease;
+}
+
+.rightS img:hover {
+  filter: drop-shadow(0 0 7rem rgb(221, 218, 44));
+  opacity: 0.9;
+  cursor: pointer;
+}
+.text-sideR {
+  position: absolute;
+  font-size: 3rem;
+  transform: rotate(270deg);
+  bottom: 190px;
+  right: -130px;
+  font-family: "f-05";
+  letter-spacing: 15px;
+}
+
+.left-side {
+  position: absolute;
+  left: 0;
+}
+.leftS img {
+  width: 140px;
+  height: 550px;
+  transform: rotate(180deg);
+  animation: escalar 4s ease;
+  filter: opacity(0.3);
+}
+.leftS img:hover {
+  filter: drop-shadow(0 0 7rem rgb(221, 218, 44));
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@keyframes escalar {
+  0% {
+    transform: scale(1);
+  }
+50% {
+  transform: scale(1.5);
+}
+  100% {
+    transform: scale(1);
+  }
 }

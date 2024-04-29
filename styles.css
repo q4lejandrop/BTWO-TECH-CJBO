@@ -27,6 +27,10 @@ body {
   font-family: "f-05";
   src: url(/fonts/as.ttf);
 }
+@font-face {
+  font-family: "f-06";
+  src: url(/fonts/RootUI-P.ttf);
+}
 .title-b{
   color: rgb(221, 218, 44);
   font-size: 3rem;
@@ -68,7 +72,7 @@ h4 {
 
 p {
   color: white;
-  font-family: "lato";
+  font-family: 'f-06';
   font-size: 0.8rem;
 }
 header img {
@@ -263,7 +267,7 @@ header h1 {
   align-items: center;
 }
 .img-01 img {
-  width: 350px;
+  width: 250px;
   height: auto;
   left: auto;
   right: auto;
@@ -272,6 +276,7 @@ header h1 {
   transition: transform 2s ease-out;
 }
 .img-01 p {
+  font-family: 'f-06';
   margin: 30px;
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.247));
 }
@@ -484,21 +489,38 @@ footer {
   height: 550px;
   filter: opacity(0.3);
   animation: escalar 4s ease;
+  transition: transform 1s ease-in-out;
 }
 
 .rightS img:hover {
-  filter: drop-shadow(0 0 7rem rgb(221, 218, 44));
   opacity: 0.9;
   cursor: pointer;
-}
+  transform: scale(1.15);
+    filter: drop-shadow(0 0 7rem rgb(221, 218, 44));
+  }
+
 .text-sideR {
   position: absolute;
-  font-size: 3rem;
+  background-color: transparent;
+  border: none;
+  right: 100px;
+  bottom: 50px;
+  transition: transform 3s ease;
+}
+.text-sideR:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.text-button{
+  transform-origin: left center;
+  position: absolute;
   transform: rotate(270deg);
-  bottom: 190px;
-  right: -130px;
-  font-family: "f-05";
-  letter-spacing: 15px;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "f-04";
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .left-side {
@@ -508,14 +530,16 @@ footer {
 .leftS img {
   width: 140px;
   height: 550px;
-  transform: rotate(180deg);
   animation: escalar 4s ease;
   filter: opacity(0.3);
+  transition: transform 1s ease-in-out;
 }
 .leftS img:hover {
   filter: drop-shadow(0 0 7rem rgb(221, 218, 44));
   opacity: 0.9;
   cursor: pointer;
+    transform: scale(1.15);
+      color: white;
 }
 
 @keyframes escalar {

@@ -332,7 +332,7 @@ header h1 {
   top: 250px;
 }
 .img-h01:hover{
-  transform: translate(-10%, 10%);
+  transform: translate(10%, 10%);
 }
 .img-h02{
   position: absolute;
@@ -362,7 +362,7 @@ header h1 {
   top: 250px;
 }
 .img-h04:hover{
-  transform: translate(10%, 10%);
+  transform: translate(-10%, 10%);
 }
 
 /*

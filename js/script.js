@@ -56,7 +56,7 @@ else {
 // Show div
 window.addEventListener('scroll', () => {
     const borra = document.getElementById('borra');
-    const scrollThreashold = 100;
+    const scrollThreashold = 75;
     
     if (window.scrollY > scrollThreashold){
 

@@ -44,20 +44,34 @@ h1 {
   text-align: end;
   padding: 10px;
   letter-spacing: 8px;
-  filter: drop-shadow(0 0 0.2rem rgb(43, 43, 43));
+
 }
-h1 span {
-  font-family: "f-01";
-  font-size: 14rem;
-  color: rgb(221, 218, 44);
+.bt-word {
+  position: absolute;
+text-align: end;
+bottom: 0;
+right: 0;
+  }
+
+.bt-word p{
+  font-family: "f-04";
+  font-size: 1.2rem;
+  color: rgba(226, 226, 226, 0.315);
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.452));
-}
-.word-02 {
-  font-size: 12rem;
-  color: rgb(221, 218, 44);
-}
+
+  letter-spacing: 8px;
+  filter: drop-shadow(0 0 0.2rem rgb(43, 43, 43));
+  }
+.bt-word span{
+  font-family: "f-01";
+  font-size: 5rem;
+  color: rgba(221, 218, 44, 0.507);
+
+  }
+
+
 h2 {
-  font-family: "f-03";
+  font-family: "f-02";
   font-size: 4rem;
   color: rgb(221, 218, 44);
   margin: 10px;
@@ -137,7 +151,7 @@ header h1 {
 }
 
 .intro-text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-left: 125px;
   font-family: "f-03";
   padding-top: 160px;
@@ -147,7 +161,7 @@ header h1 {
   position: relative;
   display: flex;
   justify-content: center;
-  top: 200px;
+  margin-top: 80px;
 }
 .boxes a {
   text-decoration: none;
@@ -263,26 +277,29 @@ header h1 {
   z-index: 3;
 }
 
-.img-01 {
+.images-home {
   text-align: center;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
-.img-01 img {
+.images-home img {
+  /*
   width: 250px;
   height: auto;
   left: auto;
   right: auto;
+    margin-top: 80px;
+  */
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.733));
-  margin-top: 80px;
   transition: transform 2s ease-out;
 }
-.img-01 p {
+.images-home p {
   font-family: "f-06";
   margin: 30px;
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.247));
 }
-.img-01 img:hover {
+.images-home img:hover {
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.911));
 }
 
@@ -295,9 +312,95 @@ header h1 {
   }
 }
 
-.image-01 {
+.ih {
   animation: tap 1s ease-in;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
 }
+
+.img{
+  transition: all 1s ease-in;
+  position: absolute;
+}
+.img-h01{
+  position: absolute;
+  width: 280px;
+  height: auto;
+ left: 700px;
+  top: 250px;
+}
+.img-h01:hover{
+  transform: translate(-10%, 10%);
+}
+.img-h02{
+  position: absolute;
+    width: 280px;
+  height: auto;
+  left: 700px;
+  top: 550px;
+}
+.img-h02:hover{
+  transform: translate(10%, -10%);
+}
+.img-h03{
+  position: absolute;
+    width: 280px;
+  height: auto;
+  left: 1000px;
+  top: 550px;
+}
+.img-h03:hover{
+  transform: translate(-10%, -10%);
+}
+.img-h04{
+  position: absolute;
+    width: 280px;
+  height: auto;
+  left: 1000px;
+  top: 250px;
+}
+.img-h04:hover{
+  transform: translate(10%, 10%);
+}
+
+/*
+.img-h01 {
+  top: 0%; 
+  left: 0%; 
+}
+.ih:hover .img-h01{
+  transform: translate(50%, 50%);
+}
+.img-h02 {
+  bottom: 0%; 
+  left: 0%; 
+}
+.ih:hover .img-h02{
+  transform: translate(-50%, 50%);
+}
+.img-h03 {
+  top: 0%;
+  right: 0%;
+}
+.ih:hover .img-h03{
+  transform: translate(50%, -50%);
+}
+.img-h04 {
+  bottom: 0%;
+  right: 0%;
+}
+.ih:hover .img-h04{
+  transform: translate(-50%, -50%);
+}
+*/
+
+
+
+
+
+
 
 .button-01 {
   color: rgb(221, 218, 44);
@@ -324,8 +427,16 @@ header h1 {
   cursor: pointer;
   transform: scaleX(1.05);
 }
-
+#home{
+  position: relative;
+  height: 1080px;
+}
+#s-01{
+  position: relative;
+  height: 480px;
+}
 #s-02-productos {
+  position: relative;
   height: 480px;
   /*
   background-color: crimson;
@@ -334,10 +445,15 @@ header h1 {
   display: flex
   */
 }
+#s-02-productos h4{
+top: 850px;
+}
 #s-03-servicios {
+  position: relative;
   height: 480px;
 }
 #s-04-sobreNosotros {
+  position: relative;
   height: 480px;
 }
 
@@ -353,11 +469,17 @@ header h1 {
   margin: 10px;
 }
 .t-01 {
-  font-size: 4rem;
+  position: absolute;
   text-align: center;
   margin: 20px;
-  margin-top: 200px;
+  top: 380px;
 }
+.t-01 h4{
+  font-size:4rem;
+  text-align: center;
+font-family: "f-04";
+}
+
 .p-01 {
   margin: 5px;
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.733));
@@ -482,12 +604,16 @@ footer {
 }
 
 /* Sides */
+.sides img{
+  top: 0;
+}
 .right-side {
   position: absolute;
   right: 0;
+  top: 155px;
 }
 .rightS img {
-  width: 140px;
+  max-width: 140px;
   height: 700px;
   opacity: 0.1;
   animation: escalar 4s ease;
@@ -528,6 +654,7 @@ footer {
 .left-side {
   position: absolute;
   left: 0;
+  top: 155px;
 }
 .leftS img {
   width: 140px;
@@ -554,3 +681,11 @@ footer {
     transform: scale(1);
   }
 }
+
+.text-home{
+  position: relative;
+  bottom: 0;
+width: 50%;
+margin: 40PX;
+}
+

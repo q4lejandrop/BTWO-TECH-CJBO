@@ -326,9 +326,9 @@ header h1 {
 }
 .img-h01{
   position: absolute;
-  width: 280px;
+  width: 220px;
   height: auto;
- left: 700px;
+ left: 450px;
   top: 250px;
 }
 .img-h01:hover{
@@ -336,29 +336,29 @@ header h1 {
 }
 .img-h02{
   position: absolute;
-    width: 280px;
+    width: 220px;
   height: auto;
-  left: 700px;
-  top: 550px;
+  left: 450px;
+  top: 490px;
 }
 .img-h02:hover{
   transform: translate(10%, -10%);
 }
 .img-h03{
   position: absolute;
-    width: 280px;
+    width: 220px;
   height: auto;
-  left: 1000px;
-  top: 550px;
+  left: 680px;
+  top: 490px;
 }
 .img-h03:hover{
   transform: translate(-10%, -10%);
 }
 .img-h04{
   position: absolute;
-    width: 280px;
+    width: 220px;
   height: auto;
-  left: 1000px;
+  left: 680px;
   top: 250px;
 }
 .img-h04:hover{

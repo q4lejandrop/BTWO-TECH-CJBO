@@ -330,6 +330,7 @@ header h1 {
   height: auto;
  left: 450px;
   top: 250px;
+  cursor: pointer;
 }
 .img-h01:hover{
   transform: translate(10%, 10%);

@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(0, 0, 0); /* rgb(49, 49, 49*/
 }
 
 @font-face {
@@ -35,7 +35,7 @@ body {
   color: rgb(221, 218, 44);
   font-size: 3rem;
   font-family: "f-04";
-  filter: drop-shadow(0 0 0.1rem rgb(221, 218, 44));
+  filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
 }
 h1 {
   font-family: "f-04";
@@ -328,8 +328,8 @@ header h1 {
   position: absolute;
   width: 220px;
   height: auto;
- left: 450px;
-  top: 250px;
+ left: 580px;
+  top: 380px;
   cursor: pointer;
 }
 .img-h01:hover{
@@ -339,27 +339,27 @@ header h1 {
   position: absolute;
     width: 220px;
   height: auto;
-  left: 450px;
-  top: 490px;
+  left: 970px;
+  top: 380px;
 }
 .img-h02:hover{
-  transform: translate(10%, -10%);
+  transform: translate(-10%, 10%);
 }
 .img-h03{
   position: absolute;
     width: 220px;
   height: auto;
-  left: 680px;
+  left: 770px;
   top: 490px;
 }
 .img-h03:hover{
-  transform: translate(-10%, -10%);
+  transform: translate(10%, -10%);
 }
 .img-h04{
   position: absolute;
-    width: 220px;
+  width: 220px;
   height: auto;
-  left: 680px;
+ left: 770px;
   top: 250px;
 }
 .img-h04:hover{
@@ -439,6 +439,8 @@ header h1 {
 #s-02-productos {
   position: relative;
   height: 480px;
+  background-color: red;
+  top: 440px;
   /*
   background-color: crimson;
   justify-content: center;
@@ -610,29 +612,29 @@ footer {
 }
 .right-side {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 155px;
 }
 .rightS img {
   max-width: 140px;
   height: 700px;
   opacity: 0.1;
-  animation: escalar 4s ease;
+  animation: escalar 2s ease;
   transition: transform 1s ease-in-out;
 }
 
 .rightS img:hover {
-  opacity: 0.3;
+  opacity: 0.1;
   cursor: pointer;
-  transform: scale(1.08);
- box-shadow: (0 0 10px rgb(221, 218, 44));
+  transform: scale(1.02);
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
 }
 
 .text-sideR {
   position: absolute;
   background-color: transparent;
   border: none;
-  right: 100px;
+  right: 65px;
   bottom: 90px;
   transition: transform 3s ease;
 }
@@ -654,21 +656,21 @@ footer {
 
 .left-side {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 155px;
 }
 .leftS img {
   width: 140px;
   height: 700px;
-  animation: escalar 4s ease;
+  animation: escalar 2s ease;
   opacity: 0.1;
   transition: transform 1s ease-in-out;
 }
 .leftS img:hover {
-  box-shadow: (0 0 10px rgb(221, 218, 44));
-  opacity: 0.3;
+  opacity: 0.1;
   cursor: pointer;
-  transform: scale(1.08);
+  transform: scale(1.02);
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
 }
 
 @keyframes escalar {
@@ -684,9 +686,24 @@ footer {
 }
 
 .text-home{
-  position: relative;
-  bottom: 0;
-width: 50%;
-margin: 40PX;
+position: absolute;
+display: flex;
+align-items: center;
+top: 580px;
+margin: 150px;
+}
+.th{
+padding: 80px;
+text-align: center;
 }
 
+.created{
+  display: flex;
+  flex-direction: column;
+}
+.c-img img{
+  align-items: end;
+  width: 45px;
+  height: auto;
+  margin: 25px;
+}

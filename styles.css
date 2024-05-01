@@ -312,17 +312,62 @@ header h1 {
   }
 }
 
+@keyframes levitation01 {
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(-15px);
+  }
+}
+@keyframes levitation02 {
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(15px);
+  }
+}
+@keyframes levitation03 {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-15px);
+  }
+}
+@keyframes levitation04 {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(15px);
+  }
+}
 .ih {
-  animation: tap 1s ease-in;
   justify-content: center;
   align-items: center;
   display: flex;
   overflow: hidden;
+  border: 1px rgb(255, 255, 255);
 }
 
 .img{
   transition: all 1s ease-in;
   position: absolute;
+}
+#imgH01{
+  animation: levitation01 3.53s infinite alternate ease-in;
+}
+
+#imgH02{
+  animation: levitation02 3.53s infinite alternate ease-in;
+}
+#imgH03{
+  animation: levitation03 3s infinite alternate ease-in;
+}
+#imgH04{
+  animation: levitation04 3s infinite alternate ease-in;
 }
 .img-h01{
   position: absolute;
@@ -575,7 +620,7 @@ footer {
 .TX {
   z-index: 3;
   font-size: 1.175rem;
-  color: black;
+
   justify-content: end;
   align-items: end;
   display: flex;
@@ -583,14 +628,18 @@ footer {
 .TX-text p {
   top: auto;
   padding: 50px;
-  color: black;
+  color: #fff;
 }
+
+.content-footer {
+display: flex;
+flex-direction: column;
+}
+
 .content-footer p {
-  z-index: 3;
-  margin: 0;
-  color: black;
-  font-size: 2rem;
-  text-align: center;
+justify-content: center;
+text-align: center;
+align-items:center;
 }
 
 .title-bar {

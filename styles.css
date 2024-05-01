@@ -175,7 +175,7 @@ header h1 {
 }
 
 .box-01 {
-  background-color: rgb(49, 49, 49);
+  background-color: rgba(0, 0, 0, 0.966);
   margin: 50px;
   height: 300px;
   width: 300px;
@@ -190,7 +190,7 @@ header h1 {
   cursor: pointer;
 }
 .box-02 {
-  background-color: rgb(49, 49, 49);
+  background-color: rgba(0, 0, 0, 0.966);
   margin: 50px;
   height: 300px;
   width: 300px;
@@ -227,7 +227,7 @@ header h1 {
 }
 
 .box-03 {
-  background-color: rgb(49, 49, 49);
+    background-color: rgba(0, 0, 0, 0.966);
   margin: 50px;
   height: 300px;
   width: 300px;
@@ -242,7 +242,7 @@ header h1 {
   cursor: pointer;
 }
 .box-04 {
-  background-color: rgb(49, 49, 49);
+  background-color: rgba(0, 0, 0, 0.966);
   margin: 50px;
   height: 300px;
   width: 300px;
@@ -744,6 +744,10 @@ margin: 150px;
 .th{
 padding: 80px;
 text-align: center;
+
+}
+.th p{
+  font-size:1rem;
 }
 
 .created{

@@ -31,6 +31,10 @@ body {
   font-family: "f-06";
   src: url(/fonts/RootUI-P.ttf);
 }
+@font-face {
+  font-family: "f-07";
+  src: url(/fonts/VDUB.TTF);
+}
 .title-b {
   color: rgb(221, 218, 44);
   font-size: 3rem;
@@ -475,7 +479,7 @@ header h1 {
 }
 #home{
   position: relative;
-  height: 1080px;
+  height: 700px;
 }
 #s-01{
   position: relative;
@@ -483,7 +487,7 @@ header h1 {
 }
 #s-02-productos {
   position: relative;
-  height: 480px;
+  height: 780px;
   background-color: red;
   top: 440px;
   /*
@@ -498,8 +502,44 @@ top: 850px;
 }
 #s-03-servicios {
   position: relative;
-  height: 480px;
+  height: 110vh;
+  background-color: rgb(0, 0, 0);
 }
+.services-flex{
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  height: auto;
+  gap: 50px;
+  overflow: auto;
+  justify-content: space-between;
+  padding: 25px;
+}
+.serv {
+flex: 1;
+box-shadow: 0 0 1rem rgb(255, 255, 255, 0.5);
+background-color: rgb(255, 255, 255);
+}
+.serv p{
+color: black;
+font-size: 1rem;
+padding: 15px;
+  }
+.s-01 {
+  margin: 0px;
+}
+.img-service01{
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+
+
+
+
+
+
 #s-04-sobreNosotros {
   position: relative;
   height: 480px;
@@ -612,15 +652,19 @@ font-family: "f-04";
 footer {
   z-index: 2;
   width: 100%;
-  height: 200px;
-  background-color: rgba(221, 218, 44, 0.089);
+  height: 300px;
+  background-color: rgba(128, 128, 128, 0.445);
   bottom: 0;
   backdrop-filter: blur(10px);
+  opacity: 0.6;
+}
+footer p{
+  color: rgb(255, 255, 255);
+  font-family: 'F-06';
 }
 .TX {
   z-index: 3;
   font-size: 1.175rem;
-
   justify-content: end;
   align-items: end;
   display: flex;
@@ -642,6 +686,11 @@ text-align: center;
 align-items:center;
 }
 
+.logo-footer{
+  position: absolute;
+  align-items: start;
+  bottom: 1px;
+}
 .title-bar {
   position: fixed;
   top: 0;
@@ -742,21 +791,34 @@ top: 580px;
 margin: 150px;
 }
 .th{
-padding: 80px;
+padding:40px;
 text-align: center;
 
 }
 .th p{
   font-size:1rem;
+  font-weight: lighter;
+  font-family: 'f-03';
 }
 
 .created{
   display: flex;
-  flex-direction: column;
+}
+.c-img{
+  flex-direction:column;
+  align-items: start;
 }
 .c-img img{
-  align-items: end;
+
   width: 45px;
   height: auto;
   margin: 25px;
+  bottom: 0;
+}
+
+.borders{
+  filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.308));
+}
+.borders:hover{
+  filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.7));
 }

@@ -118,9 +118,9 @@ header h1 {
 }
 
 .max p {
-  font-family: "f-02";
+  font-family: "f-04";
   letter-spacing: 4px;
-  font-size: 3rem;
+  font-size: 2rem;
   animation-duration: 3.5s;
   animation: slidetop 3s ease;
   margin-top: 110px;
@@ -152,7 +152,7 @@ header h1 {
     height: 10%;
   }
   to {
-    margin-top: 5.8%;
+    margin-top: 6.4%;
     height: 30%;
   }
 }
@@ -192,7 +192,11 @@ header h1 {
   transition: transform 0.3s ease-in;
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
 }
-.box-01:hover {
+.bh:hover {
+  filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
+}
+/* Focus boxes */
+.logo01:focus {
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
 }
 .box-02 {
@@ -206,10 +210,6 @@ header h1 {
   transition: transform 0.3s ease-in;
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
 }
-.box-02:hover {
-  filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
-}
-
 .description {
   font-size: 11rem;
 }
@@ -218,7 +218,6 @@ header h1 {
   font-size: 1.1rem;
   display: block;
 }
-
 .description2 {
   font-size: 11rem;
 }
@@ -242,9 +241,6 @@ header h1 {
   transition: transform 0.3s ease-in;
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
 }
-.box-03:hover {
-  filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
-}
 .box-04 {
   background-color: rgba(0, 0, 0, 0.966);
   margin: 50px;
@@ -255,9 +251,6 @@ header h1 {
   text-align: center;
   transition: transform 0.3s ease-in;
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
-}
-.box-04:hover {
-  filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
 }
 .logo01 {
   margin: 20px;

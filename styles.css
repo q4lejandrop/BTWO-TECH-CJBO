@@ -484,18 +484,19 @@ header h1 {
 #s-01{
   position: relative;
   height: 480px;
+  margin-bottom: 550px;
 }
 #s-02-productos {
   position: relative;
   height: 780px;
   background-color: red;
-  top: 440px;
   /*
   background-color: crimson;
   justify-content: center;
   align-items:center ;
   display: flex
   */
+  margin: 150px;
 }
 #s-02-productos h4{
 top: 850px;
@@ -504,6 +505,10 @@ top: 850px;
   position: relative;
   height: 110vh;
   background-color: rgb(0, 0, 0);
+}
+.title-section h4{
+  font-size: 6rem;
+  text-align: center;
 }
 .services-flex{
   display: flex;
@@ -518,26 +523,40 @@ top: 850px;
 .serv {
 flex: 1;
 box-shadow: 0 0 1rem rgb(255, 255, 255, 0.5);
-background-color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+border-radius: 5px;
+text-align: center;
 }
-.serv p{
-color: black;
+.img-s img{
+left: auto;
+right: auto;
+}
+
+.serv h2{
+  color: rgb(255, 255, 255);
+font-size: 2rem;
+padding: 15px;
+font-family: 'f-04';
+font-weight: bold;
+}
+.serv p {
+color: rgb(255, 255, 255);
 font-size: 1rem;
 padding: 15px;
-  }
-.s-01 {
-  margin: 0px;
+font-family: 'f-06';
 }
-.img-service01{
-  width: 100%;
-  height: auto;
+.s-01 {
   margin: 0;
 }
 
-
-
-
-
+.img-s {
+  max-width: 450px;
+  max-height: 450px;
+}
+.img-service01 {
+  margin: 0;
+  border-radius: 3px;
+}
 
 
 #s-04-sobreNosotros {
@@ -554,7 +573,7 @@ padding: 15px;
 .members {
   font-size: 4rem;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
 }
 .t-01 {
   position: absolute;
@@ -563,7 +582,7 @@ padding: 15px;
   top: 380px;
 }
 .t-01 h4{
-  font-size:4rem;
+  font-size:4.5rem;
   text-align: center;
 font-family: "f-04";
 }
@@ -702,6 +721,10 @@ align-items:center;
   font-size: 2rem;
   text-align: end;
   color: black;
+}
+.title-bar a {
+text-decoration: none;
+cursor: pointer;
 }
 
 /* Sides */

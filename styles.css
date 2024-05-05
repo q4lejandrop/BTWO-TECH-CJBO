@@ -476,9 +476,11 @@ header h1 {
   height: 480px;
   margin-bottom: 550px;
 }
+
+/* Products */
 #s-02-productos {
   position: relative;
-  height: 780px;
+  height: 2340px;
   background-color: red;
   /*
   background-color: crimson;
@@ -491,16 +493,52 @@ header h1 {
 #s-02-productos h4{
 top: 850px;
 }
+
+
+.list-products {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background-color: rgb(32, 32, 32);
+margin: 30px 20px;
+}
+
+.product {
+  align-items: center;
+  text-align: center;
+}
+.product img {
+  width: 500px;
+height:auto ;
+}
+.description p{
+  display: flex;
+  margin: 0;
+}
+.description p{
+display: block;
+}
 #s-03-servicios {
   position: relative;
   height: 130vh;
   background-color: rgb(0, 0, 0);
 }
-.title-section h4{
+.title-section {
+  background-color: black;
+  }
+.title-section h4 {
   font-size: 6rem;
   text-align: center;
 }
-.services-flex{
+.title-type h1 {
+  font-size: 2rem;
+  text-align: end;
+  color: #fff;
+}
+.title-type {
+  margin: 50px 0 0 0;
+}
+.services-flex {
   display: flex;
   flex-direction: row;
   margin: 50px;

@@ -465,7 +465,7 @@ header {
 /* Products */
 #s-02-productos {
   position: relative;
-  height: 2340px;
+  height: 4040px;
   background-color: red;
   /*
   background-color: crimson;
@@ -502,6 +502,42 @@ height:auto ;
   width: 530px;
 height:auto;
 }
+.cpus-p img {
+  width: 350px;
+height:auto ;
+}
+.cpus-p img{
+  background-color: rgb(255, 255, 255);
+}
+.cpu-top img {
+  width: 390px;
+height:auto;
+}
+.ram-p img{
+width: 350px;
+height: auto;
+}
+.r-top img {
+  width: 390px;
+height: auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+li {
+  background-color: #0f0f0f;
+  list-style-type: none;
+color: #fff;
+flex-direction: row;
+margin: 20px;
+font-family: 'f-04';
+padding: 5px;
+border-radius: 4px;
+}
+
 
 #s-03-servicios {
   position: relative;

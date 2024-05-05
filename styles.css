@@ -506,18 +506,13 @@ margin: 30px 20px;
 .product {
   align-items: center;
   text-align: center;
+  margin-top: 20px;
 }
 .product img {
   width: 500px;
 height:auto ;
 }
-.description p{
-  display: flex;
-  margin: 0;
-}
-.description p{
-display: block;
-}
+
 #s-03-servicios {
   position: relative;
   height: 130vh;
@@ -529,6 +524,7 @@ display: block;
 .title-section h4 {
   font-size: 6rem;
   text-align: center;
+  font-weight: 800;
 }
 .title-type h1 {
   font-size: 2rem;
@@ -537,6 +533,10 @@ display: block;
 }
 .title-type {
   margin: 50px 0 0 0;
+}
+
+.description .name-C p{
+  font-weight: 800;
 }
 .services-flex {
   display: flex;

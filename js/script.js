@@ -28,6 +28,8 @@ window.addEventListener('scroll', function() {
 
 });
 
+/* Scroll
+Bar */
 window.addEventListener('scroll', () => {
 const scrollTop = document.documentElement.scrollTop;
 const scrollHeight = document.documentElement.scrollHeight;
@@ -42,7 +44,7 @@ document.getElementById('statusBar').style.width = scrolled + '%';
 window.addEventListener('scroll', () => {
 const logo = document.getElementById('logo');
 const distanceY = window.pageYOffset || document.documentElement.scrollTop;
-const scrollChangePoint = 75;
+const scrollChangePoint = 30;
 
 if (distanceY > scrollChangePoint){
 logo.src = "/logo/main-logo-white-transparent-V02.png";
@@ -56,7 +58,7 @@ else {
 // Show div
 window.addEventListener('scroll', () => {
     const borra = document.getElementById('borra');
-    const scrollThreashold = 75;
+    const scrollThreashold = 30;
     
     if (window.scrollY > scrollThreashold){
 
@@ -72,7 +74,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY;
 
-    if (scrollTop >= 75) {
+    if (scrollTop >= 30) {
         document.getElementById('titleBar').style.color = 'rgba(226, 226, 226, 0.315)';
     }
     else{

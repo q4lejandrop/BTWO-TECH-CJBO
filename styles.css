@@ -97,24 +97,15 @@ p {
   font-family: "lato";
   font-size: 0.8rem;
 }
-header img {
-  z-index: 3;
-}
-header h1 {
-  z-index: 1;
-}
-.header {
-  position: absolute;
-  margin: 0;
-  top: 0;
-  width: 100%;
-  height: 100px;
+
+header {
   background-color: rgb(221, 218, 44);
-  filter: blur(1.5rem);
+  width: 100vw;
+  height: 70px;
 }
 .max {
   text-align: center;
-  margin: 3px;
+  margin-top: 50px;
 }
 
 .max p {
@@ -123,7 +114,7 @@ header h1 {
   font-size: 2rem;
   animation-duration: 3.5s;
   animation: slidetop 3s ease;
-  margin-top: 110px;
+
 }
 
 @keyframes slidein {
@@ -196,7 +187,7 @@ header h1 {
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
 }
 /* Focus boxes */
-.logo01:focus {
+.logo-01:focus {
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
 }
 .box-02 {
@@ -252,8 +243,8 @@ header h1 {
   transition: transform 0.3s ease-in;
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
 }
-.logo01 {
-  margin: 20px;
+.logo-01 {
+  margin-left: 5px;
   position: absolute;
   top: 0;
   z-index: 3;
@@ -280,13 +271,7 @@ header h1 {
   display: flex;
 }
 .images-home img {
-  /*
-  width: 250px;
-  height: auto;
-  left: auto;
-  right: auto;
-    margin-top: 80px;
-  */
+
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.733));
   transition: transform 2s ease-out;
 }
@@ -753,17 +738,17 @@ font-family: "f-04";
 
 .status-bar {
   position: fixed;
-  top: 10px;
+  top: 70px;
   width: 100%;
-  height: 5px;
-  background-color: #cccccc38;
+  height: 1px;
+  background-color: rgb(221, 218, 44, 0.5);
   z-index: 2;
 }
 .borrador {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 70px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   z-index: 2;
@@ -815,7 +800,7 @@ align-items:center;
   position: fixed;
   top: 0;
   right: 0;
-  margin: 20px;
+  margin: 5px;
   z-index: 3;
 }
 .title-bar h1 {

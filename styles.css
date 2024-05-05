@@ -535,9 +535,16 @@ height:auto ;
   margin: 50px 0 0 0;
 }
 
-.description .name-C p{
+.name-C {
   font-weight: 800;
+  font-size: 2.5rem;
 }
+
+.name-R {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
 .services-flex {
   display: flex;
   flex-direction: row;

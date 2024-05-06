@@ -797,7 +797,6 @@ footer {
   width: 100%;
   height: 300px;
   background-color: rgba(128, 128, 128, 0.445);
-  bottom: 0;
   backdrop-filter: blur(10px);
   opacity: 0.6;
 }
@@ -943,16 +942,16 @@ text-align: center;
 
 .created{
   display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-top: 20px;
 }
-.c-img{
-  flex-direction:column;
-  align-items: start;
+.c-img {
+margin: 20px;
 }
 .c-img img{
-
   width: 45px;
   height: auto;
-  margin: 25px;
   bottom: 0;
 }
 

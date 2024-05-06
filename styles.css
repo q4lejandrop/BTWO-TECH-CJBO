@@ -272,7 +272,7 @@ header {
 }
 .images-home img {
 
-  filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.733));
+  filter: drop-shadow(0 0 0.7rem #ddda2cbb);
   transition: transform 2s ease-out;
 }
 .images-home p {
@@ -429,7 +429,7 @@ header {
 
 
 .button-01 {
-  color: rgb(221, 218, 44);
+  color: #ddda2c;
   background-color: transparent;
   position: absolute;
   top: 200px;
@@ -588,8 +588,8 @@ border-radius: 4px;
   gap: 20px;
 }
 .ch {
-  border: 1px solid #0004;
-  padding: 5px;
+  box-shadow: inset 0 0 1rem rgb(255, 255, 255, 0.5);
+  padding: 25px;
   margin: 5px;
 }
 
@@ -604,10 +604,11 @@ border-radius: 4px;
 
 }
 .bills {
-  background-color: rgba(152, 187, 99, 0.39);
+
   border-radius: 10px;
   display: inline-block;
   padding: 20px;
+  box-shadow: inset 0 0 1rem rgba(81, 255, 0, 0.438);
 }
 .bills p {
   font-size: 1.2rem;

@@ -100,7 +100,7 @@ p {
 
 header {
   background-color: rgb(221, 218, 44);
-  width: 100vw;
+  width: 100%;
   height: 70px;
 }
 .max {
@@ -466,8 +466,9 @@ header {
 #s-02-productos {
   position: relative;
   height: 4040px;
+    /*
   background-color: red;
-  /*
+
   background-color: crimson;
   justify-content: center;
   align-items:center ;
@@ -487,6 +488,7 @@ flex-wrap: wrap;
 background-color: rgb(32, 32, 32);
 margin: 30px 20px;
 padding-bottom: 30px;
+border-radius: 5px;
 }
 
 .product {
@@ -495,30 +497,30 @@ padding-bottom: 30px;
   margin-top: 20px;
 }
 .product img {
-  width: 490px;
+width: 490px;
 height:auto ;
 }
 .mobo-top img{
-  width: 530px;
+ width: 530px;
 height:auto;
 }
 .cpus-p img {
-  width: 350px;
+width: 350px;
 height:auto ;
 }
 .cpus-p img{
   background-color: rgb(255, 255, 255);
 }
 .cpu-top img {
-  width: 390px;
+width: 390px;
 height:auto;
 }
 .ram-p img{
-width: 350px;
+width: 300px;
 height: auto;
 }
 .r-top img {
-  width: 390px;
+width: 390px;
 height: auto;
 }
 
@@ -602,7 +604,7 @@ border-radius: 4px;
 
 }
 .bills {
-  background-color: rgb(137, 201, 40, 0.5);
+  background-color: rgba(152, 187, 99, 0.39);
   border-radius: 10px;
   display: inline-block;
   padding: 20px;
@@ -612,7 +614,7 @@ border-radius: 4px;
   font-weight: 400;
 }
 .bills span {
-color: #ffff00;
+color: #f58b01e0;
 }
 
 .services-flex {

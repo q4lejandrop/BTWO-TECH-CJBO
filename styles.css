@@ -848,20 +848,22 @@ align-items:center;
 }
 
 /* Sides */
-.sides img{
-  top: 0;
+.sides {
+  display: flex;
+  justify-content: space-between;
 }
-.right-side {
-  position: absolute;
-  right: 10px;
-  top: 155px;
-}
-.rightS img {
+.sides img {
   max-width: 140px;
   height: 700px;
   opacity: 0.1;
   animation: escalar 2s ease;
   transition: transform 1s ease-in-out;
+}
+.right-side {
+
+  position: absolute;
+  right: 10px;
+  top: 155px;
 }
 
 .rightS img:hover {

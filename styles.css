@@ -54,18 +54,17 @@ h1 {
 
 }
 .bt-word {
-  position: absolute;
+position: relative;
+align-items: end;
 text-align: end;
-bottom: 0;
-right: 0;
+margin-top: auto;
   }
 
-.bt-word p{
+.btx p{
   font-family: "f-04";
-  font-size: 1.2rem;
+  font-size: 0.6rem;
   color: rgba(226, 226, 226, 0.315);
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.452));
-
   letter-spacing: 8px;
   filter: drop-shadow(0 0 0.2rem rgb(43, 43, 43));
   }
@@ -880,6 +879,7 @@ align-items: center;
 margin-top:auto;
 bottom: 0;
 }
+
 .th {
 padding:40px;
 text-align: center;

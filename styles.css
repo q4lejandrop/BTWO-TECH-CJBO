@@ -105,7 +105,7 @@ header {
 }
 .max {
   text-align: center;
-  margin-top: 50px;
+  margin-top: auto;
 }
 
 .max p {
@@ -160,6 +160,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  flex-wrap: wrap;
 }
 .boxes a {
   text-decoration: none;
@@ -265,24 +266,27 @@ header {
 }
 
 .images-home {
-  text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-top: auto;
 }
 .images-home img {
-
   filter: drop-shadow(0 0 0.7rem #ddda2cbb);
   transition: transform 2s ease-out;
 }
+.images-home:hover {
+  filter: drop-shadow(0 0 0.7rem #ffffff9f);
+}
+/* Text images
 .images-home p {
   font-family: "f-06";
   margin: 30px;
   filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.247));
 }
-.images-home img:hover {
-  filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.911));
-}
+*/
+
+
 
 @keyframes tap {
   from {
@@ -326,16 +330,14 @@ header {
   }
 }
 .ih {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  overflow: hidden;
-  border: 1px rgb(255, 255, 255);
+  background-color: green;
+  margin-top: auto;
+position: relative;
 }
-
-.img{
-  transition: all 1s ease-in;
+.ih img{
   position: absolute;
+  width: 200px;
+  transition: all 1s ease-in;
 }
 #imgH01{
   animation: levitation01 3.53s infinite alternate ease-in;
@@ -350,77 +352,41 @@ header {
 #imgH04{
   animation: levitation04 3s infinite alternate ease-in;
 }
-.img-h01{
-  position: absolute;
-  width: 220px;
-  height: auto;
- left: 580px;
-  top: 380px;
-}
-.img-h01:hover{
-  transform: translate(10%, 10%);
-}
-.img-h02{
-  position: absolute;
-    width: 220px;
-  height: auto;
-  left: 970px;
-  top: 380px;
-}
-.img-h02:hover{
-  transform: translate(-10%, 10%);
-}
-.img-h03{
-  position: absolute;
-    width: 220px;
-  height: auto;
-  left: 770px;
-  top: 490px;
-}
-.img-h03:hover{
-  transform: translate(10%, -10%);
-}
-.img-h04{
-  position: absolute;
-  width: 220px;
-  height: auto;
- left: 770px;
+
+
+
+.img-h01 {
+  left: -300px;
   top: 250px;
 }
-.img-h04:hover{
-  transform: translate(-10%, 10%);
-}
-
-/*
-.img-h01 {
-  top: 0%; 
-  left: 0%; 
-}
-.ih:hover .img-h01{
+.ih:hover {
   transform: translate(50%, 50%);
 }
+.img-h01:hover {
+filter: drop-shadow(0 0 0.7rem #ff0000bb);
+}
 .img-h02 {
-  bottom: 0%; 
-  left: 0%; 
+  left: 100px;
+  top: 250px;
 }
-.ih:hover .img-h02{
-  transform: translate(-50%, 50%);
-}
+.img-h02:hover {
+  filter: drop-shadow(0 0 0.7rem #ff0000bb);
+  }
 .img-h03 {
-  top: 0%;
-  right: 0%;
+  left: -100px;
+  top: 350px;
+
 }
-.ih:hover .img-h03{
-  transform: translate(50%, -50%);
-}
+.img-h03:hover {
+  filter: drop-shadow(0 0 0.7rem #ff0000bb);
+  }
 .img-h04 {
-  bottom: 0%;
-  right: 0%;
+  left: -100px;
+  top: 100px;
 }
-.ih:hover .img-h04{
-  transform: translate(-50%, -50%);
-}
-*/
+.img-h04:hover {
+  filter: drop-shadow(0 0 0.7rem #ff0000bb);
+  }
 
 
 
@@ -457,9 +423,8 @@ header {
   height: 700px;
 }
 #s-01{
-  position: relative;
-  height: 480px;
-  margin-bottom: 550px;
+  display: flex;
+  height: 100%;
 }
 
 /* Products */
@@ -830,10 +795,11 @@ align-items:center;
   color: black;
 }
 
-/* Sides */
+/* Sides 
 .sides {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;  
 }
 .sides img {
   max-width: 140px;
@@ -842,11 +808,10 @@ align-items:center;
   animation: escalar 2s ease;
   transition: transform 1s ease-in-out;
 }
-.right-side {
-
-  position: absolute;
-  right: 10px;
-  top: 155px;
+.right-side img{
+  display: flex;
+  align-items: end;
+right: 0;
 }
 
 .rightS img:hover {
@@ -867,7 +832,8 @@ align-items:center;
   transform: scale(1.03);
 }
 
-.text-button {
+*/
+.text-botton-01 {
   transform-origin: left center;
   position: absolute;
   transform: rotate(270deg);
@@ -908,27 +874,24 @@ align-items:center;
   }
 }
 
-.text-home{
-position: absolute;
+.text-home {
 display: flex;
 align-items: center;
-top: 580px;
-margin: 150px;
+margin-top:auto;
+bottom: 0;
 }
-.th{
+.th {
 padding:40px;
 text-align: center;
-
 }
 .th p{
   font-size:1rem;
   font-weight: lighter;
-  font-family: 'f-03';
+  font-family: sans-serif;
 }
 
 .created {
 margin: 20px;
-top: 200px;
 margin-top: auto;
 text-align: end;
 }

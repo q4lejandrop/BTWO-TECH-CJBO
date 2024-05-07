@@ -465,7 +465,7 @@ header {
 /* Products */
 #s-02-productos {
   position: relative;
-  height: 4400px;
+  height: 4500px;
     /*
   background-color: red;
 
@@ -523,13 +523,15 @@ height: auto;
 width: 390px;
 height: auto;
 }
-
-ul {
+.bg-ram {
+  background-color: transparent;
+}
+.section-all ul {
   display: flex;
   justify-content: space-around;
   margin: 10px;
 }
-li {
+.section-all li {
   background-color: #0f0f0f;
   list-style-type: none;
 color: #fff;
@@ -689,8 +691,10 @@ opacity: 0.5;
 }
 
 #s-04-sobreNosotros {
-  position: relative;
-  height: 480px;
+  height: 1000px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
 .photos {
@@ -723,10 +727,10 @@ font-family: "f-04";
 
 .p-01 {
   margin: 5px;
-  filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.733));
+  filter: drop-shadow(0 0 0.8rem rgba(221, 218, 44, 0.2));
 }
 .p-01:hover {
-  filter: drop-shadow(0 0 0.7rem rgba(221, 218, 44, 0.911));
+  filter: drop-shadow(0 0 1rem rgba(221, 218, 44, 0.4));
 }
 .p-01 img {
   width: 150px;
@@ -922,24 +926,32 @@ text-align: center;
   font-family: 'f-03';
 }
 
-.created{
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  padding-top: 20px;
+.created {
+margin: 20px;
+top: 200px;
+margin-top: auto;
+text-align: end;
+}
+.created p {
+  font-family: 'f-04';
+  font-size: 0.5rem;
+  letter-spacing: -2px;
 }
 .c-img {
-margin: 20px;
+  margin: 30px 0 10px 10px;
 }
 .c-img img{
+  margin-right: 10px;
+}
+.created-icons {
   width: 45px;
   height: auto;
-  bottom: 0;
+  opacity: 0.3;
 }
-
-.borders{
-  filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.308));
+.created-icons {
+  filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.11));
 }
-.borders:hover{
-  filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.7));
+.created-icons:hover{
+  filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255, 0.274));
+  opacity: 0.8;
 }

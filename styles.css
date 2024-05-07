@@ -99,22 +99,21 @@ p {
 }
 
 header {
-  background-color: rgb(221, 218, 44);
+  background-color: rgba(255, 251, 30, 0.897);
+  /*background-color: rgba(221, 218, 44, 0);*/
   width: 100%;
   height: 70px;
 }
 .max {
   text-align: center;
   margin-top: auto;
+  animation: slidetop 3s  forwards;
 }
 
 .max p {
   font-family: "f-04";
   letter-spacing: 4px;
   font-size: 2rem;
-  animation-duration: 3.5s;
-  animation: slidetop 3s ease;
-
 }
 
 @keyframes slidein {
@@ -139,12 +138,10 @@ header {
 }
 @keyframes slidetop {
   from {
-    margin-top: 0%;
-    height: 10%;
+    margin-top: -10%;
   }
   to {
-    margin-top: 6.4%;
-    height: 30%;
+    margin-top: 1px;
   }
 }
 
@@ -273,11 +270,11 @@ header {
   transition: 1s ease;
 }
 .images-home img {
-  filter: drop-shadow(0 0 0.7rem #ddda2cbb);
-  transition: transform 2s ease-out;
+  filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));
+  transition: transform 1s ease-out;
 }
 .images-home:hover {
-  filter: drop-shadow(0 0 0.7rem hsla(0, 0%, 100%, 0.5));
+  filter: drop-shadow(0 0 0.2rem hsla(0, 0%, 100%, 0.2));
 }
 /* Text images
 .images-home p {
@@ -303,7 +300,7 @@ header {
     transform: translateX(0px);
   }
   to{
-    transform: translateX(-15px);
+    transform: translateX(-20px);
   }
 }
 @keyframes levitation02 {
@@ -311,23 +308,23 @@ header {
     transform: translateX(0px);
   }
   to{
-    transform: translateX(15px);
+    transform: translateX(20px);
   }
 }
 @keyframes levitation03 {
   from{
-    transform: translateY(0px);
+    transform: translateY(5px);
   }
   to{
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
 }
 @keyframes levitation04 {
   from{
-    transform: translateY(0px);
+    transform: translateY(5px);
   }
   to{
-    transform: translateY(15px);
+    transform: translateY(20px);
   }
 }
 .ih {
@@ -338,26 +335,26 @@ position: relative;
 .ih img{
   position: absolute;
   width: 200px;
-  transition: all 1s ease-in;
+  transition: all 0.3s ease;
 }
 #imgH01{
-  animation: levitation01 5s infinite alternate cubic-bezier(0.5,11,0.5,1);
+  animation: levitation01 1s  /*infinite*/ alternate cubic-bezier(0.5,11,0.9,1) forwards;
 }
 
 #imgH02{
-  animation: levitation02 5s infinite alternate cubic-bezier(0.5,11,0.5,1);
+  animation: levitation02 1s   alternate cubic-bezier(0.5,11,0.9,1) forwards;
 }
 #imgH03{
-  animation: levitation03 4s infinite alternate cubic-bezier(0,0,0.5,4.8);
+  animation: levitation03 1s   alternate cubic-bezier(0,0,0.2,4.8) forwards;
 }
 #imgH04{
-  animation: levitation04 4s infinite alternate cubic-bezier(0,0,0.5,4.8);
+  animation: levitation04 1s   alternate cubic-bezier(0,0,0.2,4.8) forwards;
 }
 
 
 
 .img-h01 {
-  left: -300px;
+  left: -295px;
   top: 300px;
 }
 .ih:hover {
@@ -367,7 +364,7 @@ position: relative;
 filter: drop-shadow(0 0 0.7rem #ff0000bb);
 }
 .img-h02 {
-  left: 100px;
+  left: 105px;
   top: 300px;
 }
 .img-h02:hover {
@@ -375,7 +372,7 @@ filter: drop-shadow(0 0 0.7rem #ff0000bb);
   }
 .img-h03 {
   left: -100px;
-  top: 400px;
+  top: 480px;
 
 }
 .img-h03:hover {
@@ -383,7 +380,7 @@ filter: drop-shadow(0 0 0.7rem #ff0000bb);
   }
 .img-h04 {
   left: -100px;
-  top: 150px;
+  top: 130px;
 }
 .img-h04:hover {
   filter: drop-shadow(0 0 0.7rem #ff0000bb);
@@ -572,11 +569,13 @@ border-radius: 4px;
 
 }
 .bills {
-
   border-radius: 10px;
   display: inline-block;
   padding: 20px;
-  box-shadow: inset 0 0 1rem rgba(81, 255, 0, 0.438);
+  box-shadow: inset 0 0 1rem rgba(81, 255, 0, 0.4);
+}
+.bills:hover{
+  box-shadow: inset 0 0 1rem rgba(81, 255, 0, 0.9);
 }
 .bills p {
   font-size: 1.2rem;

@@ -70,7 +70,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// change color name company
+// Change color name company
 window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY;
 
@@ -81,3 +81,12 @@ window.addEventListener('scroll', function() {
         document.getElementById('titleBar').style.color = 'black';
     }
 });
+
+/* Play animation
+const exans =  document.querySelector('.ih img');
+const duration = parseFloat(getComputedStyle(exans).animationDuration) * 1000;
+
+setTimeout(() => {
+    exans.style.animation = 'levitation 2s forward';
+}, duration);
+*/

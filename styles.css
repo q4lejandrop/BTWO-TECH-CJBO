@@ -470,7 +470,7 @@ header {
 }
 
 /* Responsive */
-@media  screen and (max-width: 890px) {
+@media  screen and (max-width: 960px) {
   .ih-02 {
     margin-top: auto;
     position: relative;
@@ -499,7 +499,20 @@ header {
     left: -80px;
     top: 130px;
   }
+
+    /* Inovation */
+.i-w {
+  width: 400px;
+  height: 100px;
 }
+
+}
+
+
+
+
+
+
 /* Text home */
 .text-home {
   display: flex;
@@ -661,11 +674,46 @@ header {
   align-items: center;
   font-weight: 800;
   max-width: 100%;
-  margin: 80px;
+  margin: 100px 80px 100px 100px;
+}
+.title-section {
+position: relative;
 }
 .title-section h4 {
-  font-size: 6rem;
-  font-weight: 800;
+font-size: 4.5rem;
+font-weight: 800;
+}
+
+/* Responsive text */
+@media screen and (max-width: 960px){
+  .title-section {
+    margin: 100px 80px 100px 100px;
+  }
+  .title-section h4 {
+  font-size: 3rem;
+  }
+
+  .text-s01 {
+    margin: 50px 0;
+  }
+  .text-s01 h4{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px){
+  .title-section {
+    margin: 100px 80px 100px 100px;
+  }
+  .title-section h4 {
+  font-size: 2rem;
+  }
+
+  .text-s {
+    margin: 50px 0;
+  }
+  .text-s h4{
+    font-size: 2rem;
+  }
 }
 .title-ts {
   margin: 0;
@@ -785,7 +833,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 30px;
+  margin: 30px 0;
+  max-width: 100%;
 }
 
 .i-width {
@@ -806,7 +855,7 @@ header {
 }
 .i-w h4 {
   color: rgb(255, 255, 255);
-  font-size: 3.5rem;
+  font-size: 1.5rem;
 }
 .text-w {
   position: absolute;
@@ -841,7 +890,7 @@ header {
   text-align: center;
   margin: 20px;
 }
-.text-s01 {
+.text-s {
   display: flex;
   flex-wrap: wrap;
   width: 100%;

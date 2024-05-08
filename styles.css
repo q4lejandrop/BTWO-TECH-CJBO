@@ -594,13 +594,14 @@ height: auto;
 
 .section-all {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin: 20px;
-
   }
-  
+  .section-all ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
 .se-a {
   display: flex;
 }

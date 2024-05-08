@@ -217,6 +217,8 @@ header {
   z-index: 7;
   overflow: hidden;
 }
+
+/*
 .leftS::before,
 .leftS::after {
   content: "";
@@ -256,6 +258,7 @@ header {
   right: -270px;
   transform: rotate(45deg);
 }
+*/
 
 .intro-text {
   font-size: 1.5rem;
@@ -720,12 +723,16 @@ font-weight: 800;
 }
 .title-type h1 {
   font-size: 2rem;
-  text-align: end;
   color: #fff;
+  text-align: end;
 }
 .title-type {
+  display: flex;
   margin: 50px 0 0 0;
-  width: 100%;
+  max-width: 100%;
+  align-items: end;
+  justify-content: end;
+  flex-direction: row;
 }
 .name-C {
   font-weight: 800;
@@ -1003,11 +1010,42 @@ footer p {
   right: 0;
   margin: 5px;
   z-index: 3;
+  max-width: 100%;
 }
 .title-bar h1 {
   font-size: 2rem;
   text-align: end;
   color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .title-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    z-index: 3;
+    max-width: 100%;
+  }
+
+  .title-bar h1 {
+    font-size: 1rem;
+  }
+  
+}
+@media screen and (max-width: 700px) {
+  .title-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  z-index: 3;
+  max-width: 100%;
+}
+
+  .title-bar h1 {
+    font-size: 0.5rem;
+  }
 }
 
 @keyframes escalar {

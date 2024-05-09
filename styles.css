@@ -117,7 +117,7 @@ header {
   text-align: center;
   margin-top: auto;
   animation: slidetop 3s forwards;
-  z-index: 4;
+  z-index: 2;
   width: 100%;
 }
 
@@ -195,7 +195,7 @@ header {
 
 .text-v {
   position: absolute;
-  z-index: 8;
+  z-index: 7;
   font-size: 2rem;
   left: -50;
   transform: rotate(-90deg);
@@ -478,37 +478,61 @@ header {
   filter: drop-shadow(0 0 0.7rem #ff0000bb);
 }
 
-/* Responsive */
-@media  screen and (max-width: 960px) {
-  .ih-02 {
-    margin-top: auto;
-    position: relative;
-    display: flex;
-    height: 100%;
-    flex-wrap: wrap;
-  }
+/* Responsive 700px */
+@media  screen and (max-width: 700px) {
+    /* Images home*/
   .ih-02 img {
-    position: absolute;
-    width: 150px;
-    transition: all 0.3s ease;
+    width: 125px;
   }
   .img-h01 {
-    left: -275px;
+    left: -110px;
     top: 300px;
   }
   .img-h02 {
-    left: 85px;
+    left: -10px;
     top: 300px;
   }
   .img-h03 {
-    left: -80px;
+    left: -55px;
     top: 480px;
   }
   .img-h04 {
-    left: -80px;
+    left: -55px;
     top: 130px;
   }
 
+    /* Inovation */
+.i-w {
+  width: 400px;
+  height: 100px;
+}
+
+/* Sides */
+.rightS {
+  height: 650px;
+  background-color: rgb(187, 255, 0);
+  top: 50px;
+  margin: 2px;
+  width: 45px;
+}
+.text-v {
+  position: absolute;
+  z-index: 8;
+  font-size: 1.5rem;
+  right: -125px;
+  top: 370px;
+  padding: 5px;
+}
+.leftS {
+  height: 650px;
+  width: 45px;
+  background-color: rgb(187, 255, 0);
+  top: 50px;
+  margin: 2px;
+}
+}
+/* Responsive 960px*/
+@media  screen and (max-width: 960px) {
     /* Inovation */
 .i-w {
   width: 400px;
@@ -883,6 +907,7 @@ font-weight: 800;
   margin: 10px;
   gap: 50px;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 .photos img {
   width: 400px;
@@ -1016,10 +1041,12 @@ footer p {
 }
 
 .title-bar {
-  position: absolute;
+  position: fixed;
   margin: 5px 0;
   z-index: 3;
   max-width: 100%;
+  top: 0;
+  right: 0;
 }
 .title-bar h1 {
   font-size: 2rem;
@@ -1074,6 +1101,7 @@ footer p {
   margin-top: auto;
   position: relative;
   flex-direction: row;
+  margin-top: auto;
 }
 .created p {
   font-family: "f-04";

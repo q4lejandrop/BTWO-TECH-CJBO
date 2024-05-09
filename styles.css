@@ -720,13 +720,6 @@ font-weight: 800;
   .title-section h4 {
   font-size: 3rem;
   }
-
-  .text-s01 {
-    margin: 50px 0;
-  }
-  .text-s01 h4{
-    font-size: 3rem;
-  }
 }
 @media screen and (max-width: 700px){
   .title-section {
@@ -904,15 +897,20 @@ font-weight: 800;
 .photos {
   display: flex;
   justify-content: center;
-  margin: 10px;
   gap: 50px;
   flex-wrap: wrap;
   margin-top: auto;
+  background-color: rgba(20, 20, 20, 0.37);
+  box-shadow: inset 0 0 1rem rgba(217, 255, 0, 0.010);
+  margin: 0;
+  padding: 40px;
 }
 .photos img {
   width: 400px;
   height: auto;
   border-radius: 15;
+  border: 1px solid rgb(255, 217, 0, 0.7);
+  filter: drop-shadow(0 0 15rem  rgba(255, 217, 0, 0.164));
 }
 .photos-img {
   -webkit-clip-path: polygon(0 0, 130% 50%, 90% 180%);

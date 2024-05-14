@@ -464,7 +464,7 @@ header {
 
     /* Inovation */
 .i-w {
-  width: 400px;
+  width: 300px;
   height: 100px;
 }
 
@@ -496,7 +496,7 @@ header {
 @media  screen and (max-width: 960px) {
     /* Inovation */
 .i-w {
-  width: 400px;
+  width: 200px;
   height: 100px;
 }
 
@@ -687,14 +687,14 @@ font-weight: 800;
     margin: 100px 80px 100px 100px;
   }
   .title-section h4 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   }
 
   .text-s {
     margin: 50px 0;
   }
   .text-s h4{
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 .title-ts {
@@ -805,8 +805,9 @@ font-weight: 800;
 }
 
 .img-s {
-  max-width: 450px;
-  max-height: 450px;
+  max-width: 400px;
+  max-height: auto;
+
 }
 .img-service01 {
   margin: 0;
@@ -933,7 +934,7 @@ font-weight: 800;
 .status-bar {
   position: fixed;
   top: 70px;
-  width: 100%;
+  width: 100vw;
   height: 1px;
   background-color: rgb(221, 218, 44, 0.5);
   z-index: 2;
@@ -941,7 +942,7 @@ font-weight: 800;
 .borrador {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 70px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
@@ -1007,7 +1008,7 @@ footer {
 }
 .title-bar {
   position: fixed;
-  margin: 5px 0;
+  margin: 0;
   z-index: 3;
   max-width: 100%;
   top: 0;

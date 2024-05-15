@@ -916,11 +916,18 @@ font-weight: 800;
 }
 .i-w h4 {
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 .text-w {
   position: absolute;
 }
+
+@media screen and (max-width: 700px) {
+  .i-w h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+  }
+  }
 
 #s-04-sobreNosotros {
   position: relative;

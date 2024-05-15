@@ -499,7 +499,6 @@ header {
   width: 200px;
   height: 100px;
 }
-
 }
 
 /* Text home */
@@ -582,36 +581,6 @@ header {
   padding-bottom: 30px;
   border-radius: 5px;
 }
-
-@media screen and (max-width: 700px) {
-  .list-products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgb(32, 32, 32);
-    margin: 30px 10px;
-  }
-  .description-products {
-    width: 350px;
-    height: auto;
-  }
-
-
-  .product img {
-    width: 200px;
-    height: auto;
-  }
-  .mobo-top img {
-    width: 300px;
-    height: auto;
-  }
-
-  .cpu-top img {
-    width: 300px;
-    height: auto;
-  }
-}
-
 .product {
   align-items: center;
   text-align: center;
@@ -648,6 +617,55 @@ header {
   background-color: transparent;
 }
 
+@media screen and (max-width: 700px) {
+  .list-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(32, 32, 32);
+    margin: 30px 10px;
+  }
+  .description-products {
+    width: 350px;
+    height: auto;
+  }
+
+
+  .product img {
+    width: 200px;
+    height: auto;
+  }
+  .mobo-top img {
+    width: 300px;
+    height: auto;
+  }
+
+  .cpu-top img {
+    width: 300px;
+    height: auto;
+  }
+  .r-top img {
+    width: 300px;
+    height: auto;
+  }
+
+  .text-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    flex-direction: column;
+    margin: 5px 30px;
+  }
+  
+  .th {
+    padding-bottom: 45px;
+    text-align: center;
+  }
+  .th p {
+    font-size: 0.8rem;
+  }
+}
 .section-all {
   display: flex;
   align-items: center;
@@ -702,6 +720,23 @@ font-size: 4.5rem;
 font-weight: 800;
 }
 
+.title-ts {
+  margin: 0;
+}
+.title-type h1 {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: end;
+}
+.title-type {
+  display: flex;
+  margin: 50px 0 0 0;
+  max-width: 100;
+  align-items: end;
+  justify-content: end;
+  flex-direction: row;
+}
+
 /* Responsive text */
 @media screen and (max-width: 960px){
   .title-section {
@@ -726,22 +761,11 @@ font-weight: 800;
     font-size: 1.2rem;
   }
   
-}
-.title-ts {
-  margin: 0;
-}
-.title-type h1 {
-  font-size: 1.2rem;
-  color: #fff;
-  text-align: end;
-}
-.title-type {
-  display: flex;
-  margin: 50px 0 0 0;
-  max-width: 100;
-  align-items: end;
-  justify-content: end;
-  flex-direction: row;
+  .title-type h1 {
+    font-size: 1rem;
+    color: #fff;
+    text-align: end;
+  }
 }
 .name-C {
   font-weight: 800;

@@ -576,7 +576,7 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgb(32, 32, 32);
+  /* background-color: rgb(32, 32, 32); */
   margin: 30px 120px;
   padding-bottom: 30px;
   border-radius: 5px;
@@ -619,10 +619,6 @@ header {
 
 @media screen and (max-width: 700px) {
   .list-products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgb(32, 32, 32);
     margin: 30px 10px;
   }
   .description-products {

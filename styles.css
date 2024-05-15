@@ -622,7 +622,7 @@ header {
   height: auto;
 }
 .mobo-top img {
-  width: 450px;
+  width: 400px;
   height: auto;
 }
 .cpus-p img {
@@ -802,7 +802,7 @@ font-weight: 800;
 .services-flex {
   display: flex;
   flex-direction: row;
-  margin: 50px;
+  margin: 5px;
   height: auto;
   gap: 50px;
   overflow: auto;
@@ -842,6 +842,30 @@ font-weight: 800;
 .img-service01 {
   margin: 0;
   border-radius: 3px;
+}
+
+/* Responsive services */
+@media screen and (max-width: 700px) {
+  .services-flex {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    height: auto;
+    gap: 25px;
+    overflow: auto;
+    justify-content: space-between;
+    padding: 2px;
+  }
+  .serv h2 {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  
+  .img-s {
+    max-width: 250px;
+    max-height: auto;
+  }
+  
 }
 
 /* Image full width */

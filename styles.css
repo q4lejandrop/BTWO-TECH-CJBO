@@ -872,23 +872,56 @@ font-weight: 800;
 }
 
 /* Support */
-.support {
+#support {
   background-color: #fff;
-  margin: 150px 180px;
+  margin: 90px;
   margin-top: auto;
   border-radius: 20px;
   justify-content: center;
-  top: 40;
+  padding-bottom: 50px;
+  padding-top: 5px;
 }
-.support h1{
+#support h1{
 font-size: 4rem;
 color: #000;
 text-align: center;
 margin-top: 50px;
 }
 .spp {
-  padding: 100px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 25px;
+}
+
+.spp p{
+color: #000;
+padding-top: 30px;
+font-size: 1.4rem;
+font-family: 'f-06';
+}
+
+.spp-images {
+  padding: 90px 45px;
+  border: red;
+  margin: 25px;
+  background-color: green;
+  border-radius: 3px;
+}
+.spp-images:hover {
+  background-color: red;
+}
+.spp-images:active {
+  background-color: rgb(255, 0, 234);
+}
+.spp-images:focus {
+  border-color: rgb(255, 187, 0);
+}
+
+.spp-images img {
+  width: 80px;
+  height: auto;
 }
 
 /* Responsive services */

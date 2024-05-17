@@ -134,7 +134,7 @@ header {
 
 .rightS {
   height: 700px;
-  width: 55px;
+  width: 65px;
   opacity: 1;
   background-color: rgb(221, 218, 44);
   /*
@@ -168,7 +168,7 @@ header {
 }
 .leftS {
   height: 700px;
-  width: 55px;
+  width: 65px;
   opacity: 1;
   background-color: rgb(221, 218, 44);
   position: absolute;
@@ -699,7 +699,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #41dd2c;
-  margin: 20px;
+  padding: 40px;
 }
 
 #s-03-servicios h4 {
@@ -722,6 +722,7 @@ position: relative;
 .title-section h4 {
 font-size: 4.5rem;
 font-weight: 800;
+color: #000;
 }
 
 .title-ts {

@@ -87,7 +87,7 @@ header {
   letter-spacing: 4px;
   font-size: 2rem;
 }
-@media  screen and (max-width: 700px) {
+@media  screen and (max-width: 800px) {
   .max p {
     font-size: 1rem;
   }
@@ -439,8 +439,8 @@ header {
   filter: drop-shadow(0 0 0.7rem #ff0000bb);
 }
 
-/* Responsive 700px */
-@media  screen and (max-width: 700px) {
+/* Responsive 800px */
+@media  screen and (max-width: 800px) {
     /* Images home*/
   .ih-02 img {
     width: 125px;
@@ -617,7 +617,7 @@ header {
   background-color: transparent;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .list-products {
     margin: 30px 10px;
   }
@@ -708,6 +708,11 @@ header {
   text-align: center;
   color: #000;
 }
+@media  screen and (max-width: 800px) {
+  #s-03-servicios h4 {
+    font-size: 1.2rem;
+  }
+}
 .title-section {
   display: flex;
   justify-content: center;
@@ -751,7 +756,7 @@ color: #000;
   font-size: 3rem;
   }
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   .title-section {
     margin: 100px 80px 100px 100px;
   }
@@ -883,11 +888,17 @@ color: #000;
   padding-top: 5px;
 }
 #support h1{
-font-size: 4rem;
+font-size: 2rem;
 color: #000;
 text-align: center;
 margin-top: 50px;
 }
+#support span{
+  font-size: 3.5rem;
+  color: #000;
+  text-align: center;
+  margin-top: 50px;
+  }
 .spp {
   display: flex;
   justify-content: center;
@@ -905,9 +916,9 @@ font-family: 'f-06';
 
 .spp-images {
   padding: 90px 45px;
-  border: red;
+  border: 0.5px solid #000;
   margin: 25px;
-  background-color: green;
+  background-color: rgb(112, 255, 112);
   border-radius: 3px;
 }
 .spp-images:hover {
@@ -925,8 +936,31 @@ font-family: 'f-06';
   height: auto;
 }
 
+/* Responsive support */
+@media screen and (max-width: 800px) {
+  #support {
+    background-color: #fff;
+    margin: 20px;
+    margin-top: auto;
+    border-radius: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 5px;
+  }
+
+  #support h1{
+    font-size: 0.8rem;
+    color: #000;
+    text-align: center;
+    margin-top: 25px;
+    }
+    #support span{
+      font-size: 1.2rem;
+      }
+}
+
 /* Responsive services */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .services-flex {
     display: flex;
     flex-direction: row;
@@ -983,7 +1017,7 @@ font-family: 'f-06';
   position: absolute;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .i-w h4 {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
@@ -1177,7 +1211,7 @@ footer {
   }
   
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .title-bar {
   position: fixed;
   top: 0;

@@ -837,6 +837,10 @@ color: #000;
 position: absolute;
 Z-index: -1;
 }
+.bg-services {
+width: 500px;
+height: auto;
+}
 .services-flex {
   display: flex;
   margin: 2px;

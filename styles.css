@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   background-color: rgb(0, 0, 0); /* rgb(49, 49, 49*/
@@ -696,9 +697,10 @@ header {
 #s-03-servicios {
   position: relative;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 17, 17, 0);
+  background-color: rgb(255, 0, 0);
   padding: 40px;
 }
 
@@ -838,14 +840,15 @@ position: absolute;
 Z-index: -1;
 }
 .bg-services {
-width: 500px;
+width: 95%;
 height: auto;
 }
 .services-flex {
   display: flex;
   margin: 2px;
   height: auto;
-  gap: 30px;
+  width: 100%;
+  gap: 10px;
   overflow: auto;
   justify-content: space-between;
   padding: 25px;
@@ -856,8 +859,14 @@ height: auto;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 5px;
   text-align: center;
+  padding: 10px;
+  animation: transition ease-in;
 }
-
+.serv:hover {
+  box-shadow: 0 0 1rem rgb(0, 0, 0);
+  background-color: rgb(255, 217, 0);
+  color: #000;
+}
 .serv h2 {
   color: rgb(255, 255, 255);
   font-size: 2rem;
@@ -878,7 +887,10 @@ height: auto;
 .img-s {
   max-width: 350px;
   max-height: auto;
-
+}
+.img-s:hover {
+  transform: translateY(20px);
+  margin-bottom: 20px;
 }
 .img-service01 {
   margin: 0;

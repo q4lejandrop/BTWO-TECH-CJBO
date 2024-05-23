@@ -46,7 +46,6 @@ h4 {
   font-size: 2rem;
   color: rgb(221, 218, 44);
   font-family: "f-04";
-  margin-left: 20px;
 }
 
 p {
@@ -236,36 +235,44 @@ header {
   font-weight: bolder;
 }
 .boxes {
+  width: 100vw;
   position: relative;
   display: flex;
+  flex: 1;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   top: 150px;
-  gap: 80px;
+  gap: 50px;
   margin-top: auto;
   margin-bottom: 180px;
+  padding: 0 5px;
+  border-bottom: 15px solid rgb(255, 255, 255);
 }
 .boxes h4 {
   font-family: "f-04";
   font-size: 1rem;
+  text-align: center;
   right: auto;
   left: auto;
-  padding: 15px;
 }
 
 .bh {
-  height: 300px;
-  width: 300px;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  padding-top: 30px;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.966);
   border-radius: 4px;
   box-shadow: 0 0 0.5rem rgba(221, 218, 44, 0.733);
-  text-align: center;
   transition: transform 0.3s ease-in;
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
   margin-top: auto;
-  position: relative;
+  flex: 1;
+
 }
 .bh:hover {
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
@@ -274,7 +281,9 @@ header {
 .logo-01:focus {
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
 }
-
+.box-04 h4 {
+  margin-bottom: -18px;
+}
 .description {
   font-size: 11rem;
 }
@@ -283,13 +292,15 @@ header {
   font-size: 1.1rem;
   display: block;
 }
-.description2 {
+.description-02 {
   font-size: 11rem;
+  color: rgb(255, 0, 0);
 }
-.description2 span {
+.description-02 span {
   font-family: "f-04";
   font-size: 1.1rem;
   display: block;
+  color: #fff;
 }
 .letter {
   font-family: "f-02";
@@ -767,10 +778,10 @@ color: #000;
   }
 
   .text-s {
-    margin: 50px 0;
+    width: 100vw;
   }
   .text-s h4{
-    font-size: 1.2rem;
+    width: 100vw;
   }
   
   .title-type h1 {
@@ -1083,15 +1094,10 @@ font-family: 'f-06';
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 50px 0;
+  margin: 25px 0;
   align-items: center;
   justify-content: center;
   flex: 1;
-}
-.t-01 {
-  font-size: 6rem;
-  font-family: "f-04";
-  text-align: center;
 }
 .p-01 {
   margin: 5px;

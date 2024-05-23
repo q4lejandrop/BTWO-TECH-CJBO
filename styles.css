@@ -123,6 +123,26 @@ header {
   }
 }
 
+/* Linea horizontal */
+.linear {
+  position: absolute;
+  top: 50vh;
+  width: 1vw;
+  height: 15px;
+  background-color: red;
+  animation: linear-h 7s ease infinite;
+}
+@keyframes linear-h {
+  0% {
+    left: 0;
+    background-color: green;
+  }
+  100% {
+    right: 0;
+    width: 100vw;
+    background-color: red;
+  }
+}
 /* Sides */
 .sides {
   display: flex;
@@ -228,11 +248,17 @@ header {
 */
 
 .intro-text {
-  font-size: 1.5rem;
-  margin: 50px;
-  padding-top: 50px;
-  font-family: "f-03";
-  font-weight: bolder;
+
+  padding: 50px;
+  color:rgb(255, 255, 255);
+  background:linear-gradient(40deg, rgba(22, 22, 22), rgb(0, 0, 0));
+  border-left: 1px solid yellow;
+  padding-left: 2px;
+}
+.intro-text p {
+  padding-left: 40px;
+  font-family: "lato";
+  font-size: 1rem;
 }
 .boxes {
   width: 100vw;
@@ -249,7 +275,7 @@ header {
   margin-top: auto;
   margin-bottom: 180px;
   padding: 0 5px;
-  border-bottom: 15px solid rgb(255, 255, 255);
+  border-bottom: 20px rgb(255, 255, 255,0.5);
 }
 .boxes h4 {
   font-family: "f-04";
@@ -272,7 +298,6 @@ header {
   filter: drop-shadow(0 0 1.5rem rgba(221, 218, 44, 0.466));
   margin-top: auto;
   flex: 1;
-
 }
 .bh:hover {
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
@@ -288,16 +313,17 @@ header {
   font-size: 11rem;
 }
 .description span {
-  font-family: "f-05";
+  font-family: "lato";
   font-size: 1.1rem;
   display: block;
+  font-weight: 500;
 }
 .description-02 {
   font-size: 11rem;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 238, 0);
 }
 .description-02 span {
-  font-family: "f-04";
+  font-family: "lato";
   font-size: 1.1rem;
   display: block;
   color: #fff;
@@ -557,21 +583,22 @@ header {
   transform: scaleX(1.05);
 }
 #home {
-  height: 870px;
+  height: 100vh;
+  width: 100vw;
   position: relative;
   margin: auto;
   display: flex;
   flex-direction: column;
   flex: 1;
-  width: 100%;
 }
 #s-01-categories-home {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   margin-top: auto;
   flex: 1;
   justify-content: flex-start;
+  background: linear-gradient(360deg, rgb(0, 0, 0), rgb(22, 22, 22));
 }
 
 /* Products */
@@ -581,7 +608,7 @@ header {
   height: 100%;
   margin-top: auto;
   flex: 1;
-  background-color: #ddda2c;
+  background-color: #dd2c99;
 }
 
 .list-products {

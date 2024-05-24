@@ -127,7 +127,7 @@ header {
 .linear {
   position: absolute;
   top: 50vh;
-  width: 1vw;
+  width: 4vw;
   height: 15px;
   background-color: red;
   animation: linear-h 7s ease infinite;

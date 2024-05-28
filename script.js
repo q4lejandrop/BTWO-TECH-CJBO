@@ -75,10 +75,10 @@ window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY;
 
     if (scrollTop >= 30) {
-        document.getElementById('titleBar').style.color = 'rgba(226, 226, 226, 0.315)';
+        document.getElementById('titleBar').style.color = 'rgba(226, 226, 226, 0.5)';
     }
     else{
-        document.getElementById('titleBar').style.color = 'black';
+        document.getElementById('titleBar').style.color = 'yellow';
     }
 });
 

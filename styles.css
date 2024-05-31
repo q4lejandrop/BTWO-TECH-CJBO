@@ -664,7 +664,7 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   height: 100%;
   margin-top: auto;
   flex: 1;
-  background-color: #dd2c99;
+  background-color: #fff;
 }
 
 .list-products {

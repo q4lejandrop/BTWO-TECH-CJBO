@@ -78,7 +78,7 @@ window.addEventListener('scroll', function() {
         document.getElementById('titleBar').style.color = 'rgba(226, 226, 226, 0.5)';
     }
     else{
-        document.getElementById('titleBar').style.color = 'yellow';
+        document.getElementById('titleBar').style.color = 'rgb(255, 73, 2)';
     }
 });
 

@@ -1,3 +1,8 @@
+:root {
+  p {
+    color: #fff;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +16,7 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
 @font-face {
   font-family: "f-01";
   src: url(/fonts/FujitaRay.ttf);
@@ -42,8 +48,7 @@ a {
 .title-bar h1 {
   font-size: 2rem;
   text-align: end;
-  /* color: rgb(255, 73, 2); */
-  color: yellow;
+  color: rgb(255, 73, 2); 
   font-family: "f7";
   text-align: end;
   padding: 10px;
@@ -70,7 +75,7 @@ p {
 
 header {
   font-size: 4rem;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 70px;
 }
@@ -92,13 +97,15 @@ header {
   margin-top: auto;
   animation: slidetop 3s forwards;
   z-index: 2;
-  width: 100%;
+  padding-top: 80px;
+  width: 100vw;
 }
 
 .max p {
   font-family: "f-04";
   letter-spacing: 4px;
-  font-size: 2rem;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 @media  screen and (max-width: 800px) {
   .max p {
@@ -140,21 +147,26 @@ header {
 .linear {
   position: absolute;
   top: 50vh;
-  width: 100vw;
-  height: 50vh;
+  width: 3vw;
+  height: 1.5vh;
   background-color: rgb(255, 251, 0);
-  animation: linear-h 7s ease forwards;
-}
+  animation: linear-h 1s linear infinite both;
+  animation-delay: 5s;
+  }
 @keyframes linear-h {
   0% {
     left: 0;
-    background-color: rgb(41, 41, 41);
+    width: 0vw;
+    background-color: rgb(5, 5, 5);
+    opacity: 1;
   }
   100% {
-    right: 0;
     width: 100vw;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(208, 255, 0);
     efect:blur(10px);
+    opacity: 0.5;
+    left: 0;
+
   }
 }
 /* Sides */
@@ -313,6 +325,15 @@ header {
   margin-top: auto;
   flex: 1;
 }
+.bh p {
+  font-size: 11rem;
+}
+.bh span {
+  font-family: "lato";
+  font-size: 1.1rem;
+  display: block;
+  font-weight: 500;
+}
 .bh:hover {
   filter: drop-shadow(0 0 0.7rem rgb(221, 218, 44));
 }
@@ -323,24 +344,15 @@ header {
 .box-04 h4 {
   margin-bottom: -18px;
 }
-.description {
-  font-size: 11rem;
-}
-.description span {
-  font-family: "lato";
-  font-size: 1.1rem;
-  display: block;
-  font-weight: 500;
-}
-.description-02 {
+
+.description-sn {
   font-size: 11rem;
   color: rgb(255, 238, 0);
 }
-.description-02 span {
+.description-sn span {
   font-family: "lato";
   font-size: 1.1rem;
   display: block;
-  color: #fff;
 }
 .letter {
   font-family: "f-02";
@@ -444,11 +456,12 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   margin-top: auto;
   position: relative;
   display: flex;
-  height: 100%;
+  height: 60vh;
+  width: 100vw;
 }
 .ih-02 img {
   position: absolute;
-  width: 130px;
+  width: 380px;
   height: auto;
   transition: all 0.3s ease;
 }
@@ -465,39 +478,34 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   animation: levitation04 1s alternate cubic-bezier(0, 0, 0.2, 4.8) forwards;
 } */
 
+
 .imgH {
-  filter: drop-shadow( 0 0 0.1rem #fff);
+  filter: drop-shadow( 0 0 0.2rem #fff);
+  opacity: 0.5;
+}
+.imgH:hover {
+  filter: drop-shadow(0 0 0.7rem rgb(255, 73, 2, 0.5));
+}
+.imgH:active {
+  filter: blur(1px);
 }
 .img-h01 {
-  left: -240px;
-  top: 250px;
+  right: 170px;
+  top: 50px;
 
-}
-.img-h01:hover {
-  filter: drop-shadow(0 0 0.7rem #ff0000bb);
 }
 .img-h02 {
-  left: 40px;
-  top: 250px;
-}
-.img-h02:hover {
-  filter: drop-shadow(0 0 0.7rem #ff0000bb);
+  right: 570px;
+  top: 50px;
 }
 .img-h03 {
-  left: -100px;
-  top: 400px;
-}
-.img-h03:hover {
-  filter: drop-shadow(0 0 0.7rem #ff0000bb);
+  left: 570px;
+  top: 50px;
 }
 .img-h04 {
-  left: -100px;
-  top: 100px;
+  left: 170px;
+  top: 50px;
 }
-.img-h04:hover {
-  filter: drop-shadow(0 0 0.7rem #ff0000bb);
-}
-
 /* Responsive 800px */
 @media  screen and (max-width: 800px) {
     /* Images home*/
@@ -570,13 +578,14 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
 }
 
 .th {
+  z-index: 1;
   padding: 60px;
   text-align: center;
 }
 .th p {
   font-size: 1rem;
-  font-weight: lighter;
   font-family: 'f-06';
+  color: #919191;
 }
 
 .button-01 {
@@ -611,29 +620,31 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   flex-direction: column;
   flex: 1;
   background-image: url(https://img.freepik.com/premium-photo/abstract-dark-background-with-green-lines_974629-28774.jpg);
+  background-repeat: none;
+
 }
 .home-w {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(17, 17, 17, 0.527);
+  background-color: rgba(0, 0, 0, 0.753);
 }
 #home:hover {
   #imgH01 {
     animation: secuencial 3s  both forwards;
-    animation-delay: 100ms;
+    animation-delay: 0.1s;
   }
   #imgH02 {
     animation: secuencial 3s  both forwards;
-    animation-delay: 200ms;
+    animation-delay: 0.2s;
   }
   #imgH03 {
     animation: secuencial 3s  both forwards;
-    animation-delay: 300ms;
+    animation-delay: 0.3s;
   }
   #imgH04 {
     animation: secuencial 3s  both forwards;
-    animation-delay: 400ms;
+    animation-delay: 0.4s;
   }
 }
 #s-01-categories-home {
@@ -783,7 +794,7 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(15, 15, 15);
   padding: 40px;
 }
 
@@ -966,15 +977,11 @@ height: auto;
 .s-01 {
   margin: 0;
 }
-
 .img-s {
   max-width: 350px;
   max-height: auto;
 }
-.img-s:hover {
-  transform: translateY(20px);
-  margin-bottom: 20px;
-}
+
 .img-service01 {
   margin: 0;
   border-radius: 3px;
@@ -982,62 +989,86 @@ height: auto;
 
 /* Support */
 #support {
-  background-color: #fff;
-  margin: 90px;
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  background-size: contain;
   margin-top: auto;
-  border-radius: 20px;
   justify-content: center;
-  padding-bottom: 50px;
-  padding-top: 5px;
+  align-items: center;
+  background-image: url(https://mymodernmet.com/wp/wp-content/uploads/2019/12/stefano-gardel-japan-night-photography-thumbnail.jpg);
+  background-repeat: no-repeat;
 }
 #support h1{
-font-size: 2rem;
-color: #000;
+font-size: 6rem;
+color: #fff;
 text-align: center;
-margin-top: 50px;
+padding: 40px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 400;
+width: 100vh;
+margin: 0 auto;
+background-color: rgba(0, 0, 0, 0.11);
+backdrop-filter: blur(6px) ;
+opacity: 0.9;
 }
-#support span{
-  font-size: 3.5rem;
-  color: #000;
-  text-align: center;
-  margin-top: 50px;
-  }
 .spp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.spp-02{
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  gap: 25px;
+  padding: 20px;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(6px) ;
 }
-
-.spp p{
-color: #000;
+.spp-02 p{
+color: #fff;
 padding-top: 30px;
 font-size: 1.4rem;
-font-family: 'f-06';
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.spp-02 span{
+  color: red;
+  font-weight: 200;
 }
 
 .spp-images {
-  padding: 90px 45px;
+  padding: 15px;
   border: 0.5px solid #000;
   margin: 25px;
-  background-color: rgb(112, 255, 112);
+  box-shadow:inset 0 0 0.3rem #fff ;
   border-radius: 3px;
+  flex: 1;
+  transition: 0.3s ease-out;
+  background-color: rgb(255, 255, 255, 0.1);
 }
-.spp-images:hover {
-  background-color: red;
-}
-.spp-images:active {
-  background-color: rgb(255, 0, 234);
-}
-.spp-images:focus {
-  border-color: rgb(255, 187, 0);
-}
-
 .spp-images img {
   width: 80px;
   height: auto;
 }
+.spp-images:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.spp-images:active {
+  background-color: rgb(255, 251, 0, 0.7);
+  transition: 0.2s ease-in-out;
+}
+.spp-images:focus {
+  border-color: rgb(255, 255, 255);
+}
+
 
 /* Responsive support */
 @media screen and (max-width: 800px) {
@@ -1199,10 +1230,13 @@ font-family: 'f-06';
   text-align: center;
   margin: 15px;
   left: 50px;
+  padding: 2.7rem 0.5rem;
 }
 .name-u p {
   font-family: "f-04";
   font-size: 0.5rem;
+  border-top:1px solid  rgba(221, 218, 44, 0.4) ;
+  padding-top: 0.4rem;
 }
 
 .status-bar {

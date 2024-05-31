@@ -140,20 +140,21 @@ header {
 .linear {
   position: absolute;
   top: 50vh;
-  width: 4vw;
-  height: 15px;
-  background-color: red;
-  animation: linear-h 7s ease infinite;
+  width: 100vw;
+  height: 50vh;
+  background-color: rgb(255, 251, 0);
+  animation: linear-h 7s ease forwards;
 }
 @keyframes linear-h {
   0% {
     left: 0;
-    background-color: green;
+    background-color: rgb(41, 41, 41);
   }
   100% {
     right: 0;
     width: 100vw;
-    background-color: red;
+    background-color: rgb(5, 5, 5);
+    efect:blur(10px);
   }
 }
 /* Sides */

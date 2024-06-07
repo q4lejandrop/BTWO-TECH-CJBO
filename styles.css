@@ -685,8 +685,8 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   flex-direction: column;
   height: 100%;
   margin-top: auto;
-  flex: 1;
-  background: radial-gradient( green, #000);
+  flex: 1; 
+  background: radial-gradient(#ffffff88, #000);
 }
 /* #s-02-productos p {
 } */
@@ -840,14 +840,12 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   font-weight: 800;
   max-width: 100%;
   margin: 100px 80px 100px 100px;
-}
-.title-section {
-position: relative;
+  color: #fff;
 }
 .title-section h4 {
 font-size: 4.5rem;
 font-weight: 800;
-color: #000;
+color: #fff;
 }
 
 .title-ts {

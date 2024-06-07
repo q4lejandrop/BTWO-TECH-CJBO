@@ -50,7 +50,7 @@ if (distanceY > scrollChangePoint){
 logo.src = "/logo/main-logo-white-transparent-V02.png";
 }
 else {
-    logo.src = "/logo/logo-with-out-text.png";
+    logo.src = "/logo/main-logo-white-transparent-V02.png";
 }
 
 });

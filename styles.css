@@ -11,6 +11,7 @@
 }
 body {
   background-color: rgb(0, 0, 0);
+  width: 100%;
 }
 a {
   cursor: pointer;
@@ -46,6 +47,7 @@ a {
   right: 0;
 }
 .title-bar h1 {
+  width: 100%;
   font-size: 2rem;
   text-align: end;
   color: rgb(255, 73, 2); 
@@ -146,7 +148,7 @@ header {
 /* Linea horizontal */
 .linear {
   position: absolute;
-  top: 50vh;
+  top: 85vh;
   width: 3vw;
   height: 1.5vh;
   background-color: rgb(255, 251, 0);
@@ -532,6 +534,17 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   gap: 20px;
   flex-wrap: wrap;
 }
+.ih-02 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  flex-direction: column-reverse;
+  color: #fff;
+  font-family: "f-03";
+
+}
 .ih-02 img {
   width: 290px;
   height: auto;
@@ -725,6 +738,7 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   margin-top: auto;
   flex: 1;
   justify-content: flex-start;

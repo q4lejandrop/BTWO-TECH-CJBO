@@ -38,6 +38,10 @@ a {
   font-family: "f7";
   src: url(/fonts/Neotriad.otf);
 }
+@font-face {
+  font-family: 'f8';
+  src: url(/fonts/Revenant.otf);
+}
 .title-bar {
   position: fixed;
   margin: 0;
@@ -45,21 +49,23 @@ a {
   max-width: 100%;
   top: 0;
   right: 0;
+  text-transform: uppercase;
 }
 .title-bar h1 {
   width: 100%;
   font-size: 2rem;
   text-align: end;
   color: rgb(255, 73, 2); 
-  font-family: "f7";
+  font-family: 'f8';
   text-align: end;
   padding: 10px;
-  letter-spacing: 8px;
+  /* letter-spacing: 8px; */
+
 }
 .title-b {
   color: #fff;
   font-size: 4rem;
-  font-family: "f7";
+  font-family: "f8";
   filter: drop-shadow(0 0 0.2rem rgb(255, 73, 2, 0.5));
 }
 
@@ -150,21 +156,22 @@ header {
   position: absolute;
   top: 85vh;
   width: 3vw;
-  height: 1.5vh;
-  background-color: rgb(255, 251, 0);
-  animation: linear-h 1s linear infinite both;
-  animation-delay: 5s;
+  height: 0.1vh;
+  background-color: rgb(255, 255, 255);
+  animation: linear-h 1s linear both ;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
   }
 @keyframes linear-h {
   0% {
     left: 0;
     width: 0vw;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(208, 255, 0);
     opacity: 1;
   }
   100% {
     width: 100%;
-    background-color: rgb(208, 255, 0);
+    background-color: #fff;
     efect:blur(10px);
     opacity: 0.5;
     left: 0;
@@ -528,7 +535,7 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   margin-top: auto;
   display: flex;
   height: 60vh;
-  width: 100%;
+  width: 85%;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -546,7 +553,7 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
 
 }
 .ih-02 img {
-  width: 290px;
+  width: 250px;
   height: auto;
   transition: all 0.3s ease;
 }
@@ -892,7 +899,7 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   margin: 40px;
   font-size: 4rem;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 @media  screen and (max-width: 800px) {
   #s-03-servicios h4 {

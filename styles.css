@@ -59,7 +59,7 @@ a {
   font-family: 'f8';
   text-align: end;
   padding: 10px;
-  /* letter-spacing: 8px; */
+  letter-spacing: 8px;
 
 }
 .title-b {
@@ -574,14 +574,15 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
 .imgH {
   filter: drop-shadow( 0 0 0.2rem #fff);
   opacity: 0.6;
+  transition: 9s ease-in;
 }
 .imgH:hover {
   filter: drop-shadow(0 0 0.7rem rgb(255, 73, 2, 0.5));
   filter: brightness(5);
-  animation: 90s ease-in;
+
 }
 .imgH:active {
-  filter: blur(1px);
+  transform: rotateY(180deg);
 }
 .img-h01 {
   right: 170px;

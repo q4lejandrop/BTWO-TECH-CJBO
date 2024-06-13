@@ -90,3 +90,5 @@ setTimeout(() => {
     exans.style.animation = 'levitation 2s forward';
 }, duration);
 */
+
+// Post animation

@@ -44,6 +44,10 @@ a {
   font-family: 'f8';
   src: url(/fonts/Invincible-Regular.otf);
 }
+
+ul {
+  font-size: 1rem;
+}
 .title-bar {
   position: fixed;
   margin: 0;
@@ -1378,7 +1382,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  background-color: rgba(128, 128, 128, 0.445);
+  background: linear-gradient( #525252, #000);
   backdrop-filter: blur(10px);
   opacity: 0.6;
   margin-top: auto;

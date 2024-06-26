@@ -89,9 +89,9 @@ p {
 
 header {
   font-size: 4rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 0, 0, 0.2);
   width: 100%;
-  height: 70px;
+  height: 170px;
 }
 .behind-b {
   z-index: -5;
@@ -160,7 +160,7 @@ header {
 /* Linea horizontal */
 .linear {
   position: absolute;
-  top: 85vh;
+  top: 10vh;
   width: 3vw;
   height: 0.1vh;
   background-color: rgb(255, 255, 255);
@@ -1371,7 +1371,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   z-index: 2;

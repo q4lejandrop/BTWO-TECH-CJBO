@@ -35,7 +35,6 @@ li a {
   transition:  0.2s ease;
 }
 li a:hover {
-
   box-shadow: 0 0 3px #c2c50494;
 }
 .navegation {
@@ -177,28 +176,31 @@ header {
 }
 /* Sides */
 .sides {
-  display: flex;
+  display: inline-flex;
   position: relative;
   justify-content: end;
-  margin-top: 10rem;
-  margin-right: 3rem;
+  margin-top: 12rem;
+  margin-right: 2rem;
 }
 
 .rightS {
   display: flex;
   justify-content: end;
-  background-color: rgb(221, 218, 44);
-
-  border-radius: 1000px;
+  box-shadow: 1px 0 0 #000;
+  filter: drop-shadow(0 2rem rgba(0, 0, 0, 0.1));
+  border-radius: 100px;
   margin: 1rem;
   position: relative;
   align-items: end;
+}
+.rightS:hover {
+  box-shadow: 0 0 0 1px #000;
 }
 .rightS p {
   color: #000;
   font-size: 1rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   padding: 10px;
 }
 
@@ -247,18 +249,16 @@ header {
 */
 
 .intro-text {
+  font-size: 1.2rem;
   position: relative;
-  padding: 50px;
   color:rgb(255, 255, 255);
-  background:linear-gradient(40deg, rgba(22, 22, 22), rgb(0, 0, 0));
+  background-color: #000;
   border-left: 1px solid yellow;
-  padding-left: 2px;
+  padding: 20px;
+  margin: 20px;
+  font-weight: 500;
 }
-.intro-text p {
-  padding-left: 40px;
-  font-family: "lato";
-  font-size: 1rem;
-}
+
 .boxes {
   width: 100vw;
   position: relative;
@@ -335,17 +335,6 @@ text-align: center;
   display: block;
 }
 @media screen and (max-width:800px){
-  .intro-text {
-    position: relative;
-    padding: 50px;
-    color:rgb(255, 255, 255);
-    background:linear-gradient(40deg, rgba(22, 22, 22), rgb(0, 0, 0));
-    border-left: 1px solid yellow;
-    padding-left: 2px;
-  }
-  .intro-text p {
-    font-size: 0.7rem;
-  }
   .boxes {
     position: relative;
     width: 100vw;
@@ -709,10 +698,10 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
 #s-02-productos {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  width: 90%;
   margin-top: auto;
   flex: 1;
-  background-color: #dd2c99;
+  background-color: #000;
 }
 /* #s-02-productos p {
 } */
@@ -823,22 +812,19 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
 .se-a {
   display: flex;
 }
-.se-a li {
-  margin: 10px;
-}
 .section-all li {
-  background-color: #0f0f0f;
+  background-color: rgb(20, 20, 20);
   list-style-type: none;
   color: #fff;
-  margin: 20px;
-  font-family: "f-04";
-  padding: 20px;
+  margin: 5px;
+  padding: 10px;
   border-radius: 4px;
   transition: 0.2s ease-in-out;
+  font-weight: 100;
 }
 
 .section-all li:hover {
-  filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0 0 0.1rem #c2c50494);
 }
 
 #s-03-servicios {
@@ -851,12 +837,7 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   padding: 40px;
 }
 
-#s-03-servicios h4 {
-  margin: 40px;
-  font-size: 4rem;
-  text-align: center;
-  color: #fff;
-}
+
 @media  screen and (max-width: 800px) {
   #s-03-servicios h4 {
     font-size: 1.2rem;
@@ -950,9 +931,16 @@ color: #fff;
   gap: 20px;
 }
 .ch {
-  box-shadow: inset 0 0 1rem rgb(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 1px rgb(255, 255, 255, 0.5);
   padding: 25px;
   margin: 5px;
+  transition: 0.3s ease;
+}
+.ch:hover .c-all p{
+color: #000;
+}
+.ch:hover {
+  background-color: #c2c504ea;
 }
 
 .t-pasta {
@@ -964,16 +952,15 @@ color: #fff;
   text-align: center;
 }
 .bills {
-  border-radius: 10px;
+  border-radius: 5px;
   display: inline-block;
-  padding: 20px;
-  box-shadow: inset 0 0 1rem rgba(81, 255, 0, 0.4);
+  padding: 15px;
+  border-right: 1px solid rgb(22, 180, 30);
+  margin: 10px;
 }
-.bills:hover {
-  box-shadow: inset 0 0 1rem rgba(81, 255, 0, 0.9);
-}
+
 .bills p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .bills span {
@@ -1212,20 +1199,6 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   justify-content: center;
   flex-direction: row;
 }
-.i-w h4 {
-  color: rgb(255, 255, 255);
-  font-size: 3rem;
-}
-.text-w {
-  position: absolute;
-}
-
-@media screen and (max-width: 800px) {
-  .i-w h4 {
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-  }
-  }
 
 #s-04-sobreNosotros {
   position: relative;
@@ -1234,7 +1207,6 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   flex-direction: column;
   flex: 1;
 }
-
 .photos {
   display: flex;
   justify-content: center;

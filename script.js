@@ -74,7 +74,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY;
 
-    if (scrollTop >= 30) {
+    if (scrollTop >= 0) {
         document.getElementById('titleBar').style.color = 'rgba(226, 226, 226, 0.5)';
     }
     else{
@@ -91,6 +91,21 @@ setTimeout(() => {
 }, duration);
 */
 
-// Post animation
+// Post animation|
+
+let imgCarrusel = document.getElementById('imgs-carrusel')
+imgCarrusel.addEventListener('mouseover', (addStop))
+function addStop() {
+imgCarrusel.classList.add('stop-carrusel');
+}
+imgCarrusel.addEventListener('mouseout', (removeStop))
+function removeStop() {
+    imgCarrusel.classList.remove('stop-carrusel');
+    }
+
+
+
+
+
 
 

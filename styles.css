@@ -399,17 +399,16 @@ text-align: center;
 }
 
 .images-home {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: auto;
-  flex: 1;
   position: relative;
-  animation:  carrusel-auto 8s ease-in-out infinite;
+  text-align: center;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  margin: 20px;
+  margin: auto;
 }
 .images-home img {
-  transition: transform 1s ease-out;
+  transition: transform 1s ease-out ;
 }
 .images-home:hover {
   filter: drop-shadow(0 0 0.2rem hsla(0, 0%, 100%, 0.2));
@@ -473,37 +472,29 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
 }
 }
 .ih-02 {
-  margin-top: auto;
   display: flex;
-  height: 60vh;
-  width: 85%;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
-
+  animation:  carrusel-auto 7s linear infinite;
+  width: calc(500px * 4);
 }
 @keyframes carrusel-auto {
-  from {
-    left: 0;
-    width: 0%;
-  }
-  to {
-    right: 0; 
-    width: 250%;
-  }
+  0% {
+    transform: translateX(-50%);
 }
-
-
-
+100% {
+    transform: translateX(100%);
+}
+}
+.stop-carrusel {
+  animation-play-state: paused;
+}
 
 .ih-02 a {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   flex-direction: column-reverse;
-
 }
 .title-services-carrusel {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -512,12 +503,6 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
   padding: 20px;
   font-weight: 500;
   opacity: 0.7;
-}
-.ih-02 img {
-  width: 250px;
-  height: auto;
-  transition: all 0.3s ease;
-  opacity: 0.5;
 }
 /* #imgH01 {
   animation: levitation01 1s infinite alternate forwards;
@@ -535,7 +520,16 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
 
 .imgH {
   filter: drop-shadow( 0 0 20px #00000080);
-  transition: 9s ease-in;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+.imgH img {
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .imgH:hover {
   filter: brightness(2);
@@ -560,42 +554,6 @@ filter: drop-shadow(0 0 0.7rem hsla(59, 72%, 52%, 0.4));;
 .img-h04 {
   left: 170px;
   top: 50px;
-}
-/* Responsive 800px */
-@media  screen and (max-width: 800px) {
-    /* Images home*/
-  .ih-02 img {
-    width: 125px;
-  }
-  .img-h01 {
-    left: -110px;
-    top: 300px;
-  }
-  .img-h02 {
-    left: -10px;
-    top: 300px;
-  }
-  .img-h03 {
-    left: -55px;
-    top: 480px;
-  }
-  .img-h04 {
-    left: -55px;
-    top: 130px;
-  }
-    /* Innovation */
-.i-w {
-  width: 300px;
-  height: 100px;
-}
-}
-/* Responsive 960px*/
-@media  screen and (max-width: 960px) {
-    /* Inovation */
-.i-w {
-  width: 200px;
-  height: 100px;
-}
 }
 
 /* Text home */

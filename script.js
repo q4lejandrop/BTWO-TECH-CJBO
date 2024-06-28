@@ -70,8 +70,24 @@ function removeStop() {
     }
 
 
+//Show information about services
+let contentServices = document.getElementById('content-services')
+let despList01 = document.getElementById('desp-list-s01')
+function showInfo01() {
+    despList01.style.display = 'block';
+    despList01.classList.add('animation-title-r');
+}
+let despList02 = document.getElementById('desp-list-s02')
+function showInfo02() {
+    despList02.style.display = 'block';
+    despList02.classList.add('animation-title-r');
+}
 
-
+let despList03 = document.getElementById('desp-list-s03')
+function showInfo03() {
+    despList03.style.display = 'block';
+    despList03.classList.add('animation-title-r');
+}
 
 
 

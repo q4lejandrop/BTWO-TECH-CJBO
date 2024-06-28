@@ -62,7 +62,7 @@
         <!-- Hexagons images -->
         <div class="images-home" id="imagesHome">
             <div class="ih-02" id="imgs-carrusel">
-                <a href="#s-03-servicios"><h4 class="title-services-carrusel">SERVICIOS</h4>
+                <a href="#services"><h4 class="title-services-carrusel">SERVICIOS</h4>
                     <img class="imgH" src="/images/home/hexa/C-01.png" alt="Imagen servicios"/>
                 </a>
                 <a href="#support"><h4 class="title-services-carrusel">ASISTENCIA</h4>
@@ -86,29 +86,29 @@
         <div class="boxes">
             <h3>Te<br/>Ofrecemos</h3>
             <a href="#products">
-                <div class="box-01 bh">
+                <div class="box-01 bh" onmouseenter="showInfoServices01()"> 
                     <h4>PRODUCTOS</h4>
-                    <P>9<span>REFERENCIAS</span><p>
+                    <P>9<span class="serv-01" id="bh-01">REFERENCIAS</span><p>
                 </div>
             </a>
             <a href="#services">
-                <div class="box-02 bh">
+                <div class="box-02 bh" onmouseenter="showInfoServices02()">
                     <h4>SERVICIOS</h4>
-                    <p>3<span>SERVICES</span><p>
+                    <p>3<span class="serv-02" id="bh-02">SERVICES</span><p>
                 </div>
             </a>
 
             <a href="#support">
-                <div class="box-03 bh">
+                <div class="box-03 bh" onmouseenter="showInfoServices03()">
                     <h4>ASISTENCIA</h4>
-                    <p>24<span>HORAS</span><p>
+                    <p>24<span class="serv-03" id="bh-03">HORAS</span><p>
                 </div>
             </a>
 
             <a href="#s-04-sobreNosotros">
-                <div class="box-04 bh">
+                <div class="box-04 bh" onmouseenter="showInfoServices04()">
                     <h4>SOBRE NOSOTROS</h4>
-                    <p>7<span>AÑOS</span></p>
+                    <p>7<span class="serv-04" id="bh-04">AÑOS</span></p>
                 </div>
             </a>
 
@@ -141,12 +141,14 @@
             <h1>PLACAS MADRE</h1>
         </div>
             <div class="product" id="pM">
-                <img src="https://asset.msi.com/resize/image/global/product/product_8_20190708134930_5d22d96aeb5df.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"
-                    alt="MOBO-01">
+                <div class="container-img-pdt" onmousemove="zoom()" onmouseout="removeZoom()">
+                <img src="https://asset.msi.com/resize/image/global/product/product_8_20190708134930_5d22d96aeb5df.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="Placa madre MSI B450 PRO-VDH MAX" class="img-product" id="img-product" onclick="zoom02()" onmouseout="resize()">
+                </div>
+                <div class="filter" id="filter-pdt"></div>
+                <div class="filter-02" id="filter-pdt-02"></div>
                 <div class="description-products">
                     <p class="name-C">MSI</p>
                     <p class="name-R">B450M PRO-VDH MAX</p>
-
                     <div class="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                         <div class="charts">
@@ -168,8 +170,11 @@
             </div>
 
             <div class="product mobo-top">
-                <img src="https://dlcdnwebimgs.asus.com/gain/8E88DC59-A399-4385-8BCB-C3877F4EB746/w717/h525"
-                    alt="MOBO-02">
+                    <div class="container-img-pdt" onmousemove="zoom()" onmouseout="removeZoom()">
+                        <img src="https://dlcdnwebimgs.asus.com/gain/8E88DC59-A399-4385-8BCB-C3877F4EB746/w717/h525" alt="Placa madre ASUS ROG Maximus Z790 Extreme" class="img-product" id="img-product" onclick="zoom02()" onmouseout="resize()">
+                        </div>
+                        <div class="filter" id="filter-pdt"></div>
+                        <div class="filter-02" id="filter-pdt-02"></div>
                 <div class="description-products">
                     <p class="name-C">ASUS</p>
                     <p class="name-R">ROG Maximus Z790 Extreme</p>
@@ -196,7 +201,11 @@
             </div>
 
             <div class="product">
-                <img src="https://www.mrpc.com.co/wp-content/uploads/2023/06/A520M-HDVM2.png" alt="MOBO-03">
+                <div class="container-img-pdt" onmousemove="zoom()" onmouseout="removeZoom()">
+                    <img src="https://www.mrpc.com.co/wp-content/uploads/2023/06/A520M-HDVM2.png" alt="Placa madre ASROCK A520M-HDV" class="img-product" id="img-product" onclick="zoom02()" onmouseout="resize()">
+                    </div>
+                    <div class="filter" id="filter-pdt"></div>
+                    <div class="filter-02" id="filter-pdt-02"></div>
                 <div class="description-products">
                     <p class="name-C">ASROCK</p>
                     <p class="name-R">A520M-HDV</p>
@@ -403,7 +412,7 @@
     <section id="services">
         <h2 class="intro-text">SERVICIOS</h2>
         <div class="services-flex">
-            <div class="serv s-01" onmouseenter="showInfo01()">
+            <div class="serv s-01" onmouseenter="showInfo01()" onclick="closeInfo()">
                 <div class="content-services">
                 <img src="https://econsultora.com.ar/wp-content/uploads/2021/10/Social-strategy.gif"
                     class="img-service01 img-s" alt="Imagen outsourcing"/>
@@ -441,7 +450,7 @@
                     </p>
                 </div>
             </div>
-            <div class="serv s-02" onmouseenter="showInfo02()">
+            <div class="serv s-02" onmouseenter="showInfo02()" onclick="closeInfo()">
                 <div class="content-services">
                 <img src="https://www.un.edu.mx/wp-content/uploads/2023/03/Universidad-del-Norte-Que-es-la-administracion-de-ingenieria-Vale-la-pena-obtener-un-titulo-en-administracion-de-ingenieria-subtitulo.png"
                     class="img-service01 img-s" alt="s/img" />
@@ -481,7 +490,7 @@
                     </p>
                 </div>
             </div>
-            <div class="serv s-03" onmouseenter="showInfo03()">
+            <div class="serv s-03" onmouseenter="showInfo03()" onclick="closeInfo()">
                 <div class="content-services">
                 <img src="https://st4.depositphotos.com/18434074/28352/v/450/depositphotos_283523310-stock-illustration-webpage-under-construction.jpg"
                     class="img-service01 img-s" alt="s/img" />
@@ -523,19 +532,22 @@
 
     <section id="support">
         <h2 class="intro-text">ASISTENCIA</h2>
+        <div class="img-asistant">
+        <img src="/images/support/gradient-ai-alignment-illustration.png" alt="Imagen soporte por IA" loading="lazy">
+    </div>
         <div class="spp">
         <div class="spp-02">
-            <div class="spp-images"><img src="https://cdn-icons-png.flaticon.com/512/5529/5529010.png" alt="support">
+            <div class="spp-images"><img src="/images/support/help-chat_15792502.png" alt="Imagen soporte">
                 <p>Soporte <span>24/7</span><br/> pedir ayuda</p>
             </div>
 
             <div class="spp-images"><img src="https://cdn-icons-png.flaticon.com/512/5676/5676289.png" alt="location">
                 <p>Asistencia en punto</p>
             </div>
-            <div class="spp-images"><img src="https://cdn-icons-png.flaticon.com/512/3282/3282224.png" alt="questions">
+            <div class="spp-images"><img src="/images/support/faq.png" alt="questions">
                 <p>Preguntas frecuentes</p>
             </div>
-            <div class="spp-images"><img src="https://cdn-icons-png.flaticon.com/512/3326/3326733.png" alt="message">
+            <div class="spp-images"><img src="/images/support/business.png" alt="message">
                 <p>Reportar problema</p>
             </div>
         </div>

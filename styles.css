@@ -60,12 +60,12 @@ li a:hover {
   display: none;
 }
 .animation-title {
-  animation: show 0.3s ease-in-out;
+  animation: show-c 3s ease-in-out;
 }
 .animation-title-r {
   animation: show-r 0.3s ease-in-out;
 }
-@keyframes show {
+@keyframes show-c {
   from {
     opacity: 1;
   }
@@ -141,7 +141,7 @@ p {
 }
 
 header {
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   font-size: 4rem;
   background-color: rgba(0, 0, 0, 0.8);
@@ -351,13 +351,24 @@ header {
 .bh span {
   font-family: "lato";
   font-size: 1rem;
-  display: block;
   font-weight: 500;
   margin: 1rem;
   padding: 1rem;
 }
 .bh:hover {
   filter: drop-shadow(0 0 1rem rgb(221, 218, 44, 0.3));
+}
+.serv-01 {
+  display: none;
+}
+.serv-02 {
+  display: none;
+}
+.serv-03 {
+  display: none;
+}
+.serv-04 {
+  display: none;
 }
 
 .letter {
@@ -642,13 +653,69 @@ header {
   align-items: center;
   text-align: center;
   margin-top: 20px;
+  gap: 50px;
 }
 .ch {
-  margin: 20px 120px 120px 120px;
+  margin: 40px;
 }
-.product img {
-  width: 400px;
+.container-img-pdt {
+  width: 500px;
   height: auto;
+}
+.img-product  {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.img-product-zoom  {
+  width: 125%;
+  height: 125%;
+    cursor: crosshair;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.img-product-zoom-02 {
+  width: 150%;
+  height: 150%;
+}
+.filter {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: none;
+}
+.filter-02 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: none;
+}
+.wo-opacity {
+  animation: wo-opacity 0.3s linear;
+}
+.w-opacity {
+  animation: w-opacity 0.3s linear;
+}
+@keyframes wo-opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes w-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .mobo-top img {
   width: 400px;
@@ -677,51 +744,6 @@ header {
   background-color: transparent;
 }
 
-@media screen and (max-width: 800px) {
-  .list-products {
-    margin: 30px 10px;
-  }
-  .description-products {
-    width: 350px;
-    height: auto;
-  }
-
-  .product img {
-    width: 200px;
-    height: auto;
-  }
-  .mobo-top img {
-    width: 300px;
-    height: auto;
-  }
-
-  .cpu-top img {
-    width: 300px;
-    height: auto;
-  }
-  .r-top img {
-    width: 300px;
-    height: auto;
-  }
-
-  .text-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    flex-direction: column;
-    margin: 5px 30px;
-  }
-
-  .th {
-    padding-bottom: 45px;
-    text-align: center;
-  }
-  .th p {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-}
 .section-all {
   display: flex;
   align-items: center;
@@ -757,7 +779,6 @@ header {
   display: flex;
   flex-direction: column;
   background: radial-gradient(#111111, rgb(15, 15, 15));
-  padding: 40px;
 }
 .title-section {
   display: flex;
@@ -850,6 +871,7 @@ header {
   padding: 25px;
   margin: 5px;
   transition: 0.3s ease;
+  flex: 1;
 }
 .charts p {
   color: #000;
@@ -858,17 +880,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  background-color: red;
-  border-bottom: 1px solid #000;
+  background: rgba(70, 70, 70, 0.3);
+  backdrop-filter: blur(10px);
   width: 100%;
 }
-.title-precio {
+.title-precio H6{
   display: flex;
   justify-content: start;
   align-items: start;
   top: 0;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   padding: 10px;
   color: #fff;
@@ -885,27 +907,27 @@ header {
   font-weight: 400;
 }
 .bills span {
-  color: #000000e0;
+  color: #dfdfdfe0;
   font-size: 0.5rem;
   text-decoration: overline;
+  font-weight: 300;
 }
 
 .services-flex {
   display: flex;
-  margin: 2px;
+  padding: 10px;
   height: auto;
   width: 100%;
   gap: 20px;
   overflow: auto;
   justify-content: space-between;
-  padding: 25px;
 }
 .serv {
   flex: 1;
   background-color: rgba(7, 7, 7, 0.788);
   border-radius: 5px;
   text-align: center;
-  padding: 40px;
+  padding: 0px;
   transition: 0.2s ease-in;
   cursor: pointer;
 }
@@ -923,6 +945,9 @@ header {
   padding: 15px;
   font-family: "f-04";
   font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ffffff15;
+  margin: 10px;
 }
 
 .s-01 {
@@ -984,13 +1009,24 @@ header {
   background-color: #000;
   background-repeat: no-repeat;
 }
-
+.img-asistant {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  margin: 1rem;
+}
+.img-asistant img{
+  width: 300px;
+  height: auto;
+}
 .spp {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 0 auto;
   padding: 0 60px;
+    box-shadow: 0 0 2.5px #35353594;
 }
 
 .spp-02 {
@@ -1028,12 +1064,13 @@ header {
   backdrop-filter: blur(10px);
   transition: 0.3s ease-in-out;
 }
+
+.spp-images:hover {
+  box-shadow: 0 0 2.5px #c2c50494;
+}
 .spp-images img {
   width: 80px;
   height: auto;
-}
-.spp-images:hover {
-  box-shadow: 0 0 3px #c2c50494;
 }
 .spp-images:active {
   background-color: rgb(255, 251, 0, 0.7);
@@ -1042,53 +1079,6 @@ header {
 .spp-images:focus {
   border-color: rgb(255, 255, 255);
 }
-
-/* Responsive support */
-@media screen and (max-width: 800px) {
-  #support {
-    background-color: #fff;
-    margin: 20px;
-    margin-top: auto;
-    border-radius: 20px;
-    justify-content: center;
-    padding-bottom: 50px;
-    padding-top: 5px;
-  }
-
-  #support h1 {
-    font-size: 0.8rem;
-    color: #000;
-    text-align: center;
-    margin-top: 25px;
-  }
-  #support span {
-    font-size: 1.2rem;
-  }
-}
-
-/* Responsive services */
-@media screen and (max-width: 800px) {
-  .services-flex {
-    display: flex;
-    flex-direction: row;
-    margin: 50px;
-    height: auto;
-    gap: 25px;
-    overflow: auto;
-    justify-content: space-between;
-    padding: 2px;
-  }
-  .serv h2 {
-    font-size: 1.2rem;
-    padding: 20px;
-  }
-
-  .img-s {
-    max-width: 250px;
-    max-height: auto;
-  }
-}
-
 /* Image full width */
 .img-width {
   display: flex;

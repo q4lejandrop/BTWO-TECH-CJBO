@@ -90,4 +90,61 @@ function showInfo03() {
 }
 
 
+// Close information
+function closeInfo() {
+    despList01.style.display = 'none';
+    despList01.classList.remove('animation-title-r');
+    despList02.style.display = 'none';
+    despList02.classList.remove('animation-title-r');
+    despList03.style.display = 'none';
+    despList03.classList.remove('animation-title-r');
+}
 
+
+
+// Zoom images products
+let imgProduct = document.getElementById('img-product')
+let filterPdt = document.getElementById('filter-pdt');
+let filterPdt02 = document.getElementById('filter-pdt-02');
+function zoom() {
+    imgProduct.classList.add('img-product-zoom')
+    filterPdt.style.display = 'block';
+    imgProduct.classList.add('w-opacity');
+    filterPdt.classList.add('w-opacity');
+}
+function removeZoom() {
+    imgProduct.classList.remove('img-product-zoom')
+    filterPdt.style.display = 'none';
+    imgProduct.classList.add('wo-opacity');
+    filterPdt.classList.add('wo-opacity');
+}
+function zoom02() {
+    imgProduct.classList.add('img-product-zoom-02')
+    filterPdt02.style.display = 'block';
+    imgProduct.classList.add('w-opacity');
+    filterPdt02.classList.add('w-opacity');
+}
+function resize() {
+    imgProduct.classList.remove('img-product-zoom-02')
+    filterPdt02.style.display = 'none';
+    imgProduct.classList.add('wo-opacity');
+    filterPdt02.classList.add('wo-opacity');
+}
+
+// Show information categories 
+let bh01 = document.getElementById('bh-01')
+let bh02 = document.getElementById('bh-02')
+let bh03 = document.getElementById('bh-03')
+let bh04 = document.getElementById('bh-04')
+function showInfoServices01() {
+    bh01.style.display = 'block'
+}
+function showInfoServices02() {
+    bh02.style.display = 'block'
+}
+function showInfoServices03() {
+    bh03.style.display = 'block'
+}
+function showInfoServices04() {
+    bh04.style.display = 'block'
+}

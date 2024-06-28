@@ -28,71 +28,25 @@ window.addEventListener('scroll', function() {
 
 });
 
-/* Scroll
-Bar */
-window.addEventListener('scroll', () => {
-const scrollTop = document.documentElement.scrollTop;
-const scrollHeight = document.documentElement.scrollHeight;
-const clientHeight = document.documentElement.clientHeight;
 
-const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
-document.getElementById('statusBar').style.width = scrolled + '%';
-});
+// Add or remove title company
+    const titleCompany = document.getElementById('title-company');    
+    const scrollThreshold = 0;
 
-
-// Change color logo
-window.addEventListener('scroll', () => {
-const logo = document.getElementById('logo');
-const distanceY = window.pageYOffset || document.documentElement.scrollTop;
-const scrollChangePoint = 30;
-
-if (distanceY > scrollChangePoint){
-logo.src = "/logo/main-logo-white-transparent-V02.png";
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > scrollThreshold) {
+        titleCompany.classList.add('display-none');
+        titleCompany.classList.add('animation-title');
+    }
+    else {
+        titleCompany.classList.remove('display-none');
+        titleCompany.classList.add('animation-title-r');
+    }
 }
-else {
-    logo.src = "/logo/main-logo-white-transparent-V02.png";
-}
+);
 
-});
 
-// Show div
-window.addEventListener('scroll', () => {
-    const borra = document.getElementById('borra');
-    const scrollThreashold = 30;
-    
-    if (window.scrollY > scrollThreashold){
-
-        borra.classList.add('borrador');
-    }
-
-    else {borra.classList.remove('borrador');
-
-    }
-});
-
-// Change color name company
-window.addEventListener('scroll', function() {
-    var scrollTop = window.scrollY;
-
-    if (scrollTop >= 0) {
-        document.getElementById('titleBar').style.color = 'rgba(226, 226, 226, 0.5)';
-    }
-    else{
-        document.getElementById('titleBar').style.color = 'rgb(255, 73, 2)';
-    }
-});
-
-/* Play animation
-const exans =  document.querySelector('.ih img');
-const duration = parseFloat(getComputedStyle(exans).animationDuration) * 1000;
-
-setTimeout(() => {
-    exans.style.animation = 'levitation 2s forward';
-}, duration);
-*/
-
-// Post animation|
-
+// Stop carrusel
 let imgCarrusel = document.getElementById('imgs-carrusel')
 imgCarrusel.addEventListener('mouseover', (addStop))
 function addStop() {

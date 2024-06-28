@@ -18,14 +18,29 @@
     <header>
         <nav class="navegation">
         <ul>
-            <li><a href="#services">SERVICIOS</a></li>
-            <li><a href="#support">ASISTENCIA</a></li>
-            <a href="/index.html"><li id="logo"><img src="/logo/main-logo-white-transparent-V02.png" alt="logo-black/png" id="logo"/></li><h2 id="title-company">Btwo Tech</h2></a>
-            <li><a href="#products">PRODUCTOS</a></li>
-            <li><a href="#innovation">INNOVACION</a></li>
+            <li class="nav-item"><a href="#services">SERVICIOS</a></li>
+            <li class="nav-item"><a href="#support">ASISTENCIA</a></li>
+            <a href="/index.html"><li id="logo"><img src="/logo/main-logo-white-transparent-V02.png" alt="logo-black/png"/></li><h2 id="title-company">Btwo Tech</h2></a>
+            <li class="nav-item"><a href="#products">PRODUCTOS</a></li>
+            <li class="nav-item"><a href="#innovation">INNOVACION</a></li>
             <!-- <li> </li> -->
         </ul>
         </nav>
+
+        <div id="menu-oculto">
+            <ul class="menu-oculto">
+            <li class="nav-item02"><a href="#services">SERVICIOS</a></li>
+            <li class="nav-item02"><a href="#support">ASISTENCIA</a></li>
+            <li class="nav-item02"><a href="#products">PRODUCTOS</a></li>
+            <li class="nav-item02"><a href="#innovation">INNOVACION</a></li>
+        </ul>
+    </div>
+    <div class="button-open-nav" id="button-open-nav" onclick="showNav()">
+        <img src="/navegation/menu-bar_9046112.png" alt="Open button" class="open-nav-list">
+    </div>
+    <div class="button-close-nav" id="button-close-nav" onclick="removeNav()">
+        <img src="/navegation/cancel-button_83972.png" alt="Open button" class="close-nav-list">
+    </div>
 
     </header>
     <section id="home">

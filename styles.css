@@ -52,7 +52,7 @@ li a:hover {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
 width: 100%;
 margin: 0 auto;
@@ -90,14 +90,14 @@ margin: 0 auto;
   height: auto;
   left: 0;
   top: 20px;
-  margin: 20px;
+  margin-left: 20px;
   background-color: rgba(255, 255, 0, 0.226);
   border-radius: 5px;
   padding: 3px;
 }
 .open-nav-list {
   height: auto;
-  width: 40px;
+  width: 30px;
 }
 .button-close-nav {
   display: inline-flex;
@@ -105,15 +105,15 @@ margin: 0 auto;
   position: absolute;
   height: auto;
   left: 0px;
-  top: 80px;
-  margin: 20px;
+  top: 60px;
+  margin-left: 20px;
   background-color: rgba(255, 255, 0, 0.226);
   border-radius: 5px;
   padding: 3px;
 }
 .close-nav-list {
   height: auto;
-  width: 40px;
+  width: 30px;
 }
 #logo {
   text-align: center;
@@ -230,11 +230,18 @@ header {
   header {
     z-index: 3;
     position: fixed;
-    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
     width: 100vw;
-    height: 170px;
+    height: 100px;
+  }
+  #title-company {
+    font-size: 1rem;
+  }
+  #logo img {
+    z-index: 1;
+    height: auto;
+    width: 3rem;
   }
 }
 

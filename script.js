@@ -28,6 +28,18 @@ window.addEventListener('scroll', function() {
 
 });
 
+/* Scroll
+Bar */
+window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    
+    const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+    document.getElementById('statusBar').style.width = scrolled + '%';
+    });
+    
+
 
 // Add or remove title company
     const titleCompany = document.getElementById('title-company');    

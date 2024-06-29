@@ -370,15 +370,13 @@ header {
 }
 
 .boxes {
-  width: 100vw;
+  width: 100%;
   position: relative;
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
   gap: 50px;
   margin-top: auto;
   padding: 0 5px;
@@ -403,9 +401,9 @@ header {
 }
 .bh {
   position: relative;
-  height: 250px;
-  width: 250px;
-  padding-top: 30px;
+  height: 200px;
+  width: 200px;
+  padding-top: 10px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.966);
   border-radius: 4px;
@@ -428,6 +426,15 @@ header {
 }
 .bh:hover {
   filter: drop-shadow(0 0 1rem rgb(221, 218, 44, 0.3));
+}
+@media screen and (max-width: 1000px) {
+  .boxes {
+    gap: 10px;
+}
+.bh {
+  height: 180px;
+  width: 180px;
+}
 }
 .serv-01 {
   display: none;
@@ -616,6 +623,12 @@ header {
   margin-top: auto;
   width: 40%;
   margin: 0 auto;
+}
+@media screen and (max-width: 1000px){
+  /* Text home */
+.text-home {
+  width: 80%;
+}
 }
 .th h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -1097,7 +1110,6 @@ header {
   padding: 0 60px;
   box-shadow: 0 0 2.5px #35353594;
 }
-
 .spp-02 {
   width: auto;
   height: auto;
@@ -1148,6 +1160,16 @@ header {
 .spp-images:focus {
   border-color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 1000px) {
+  .spp {
+    padding: 0;
+  }
+  .spp-images {
+    padding: 5px;
+    margin: 0;
+  }
+}
+
 /* Image full width */
 .img-width {
   display: flex;

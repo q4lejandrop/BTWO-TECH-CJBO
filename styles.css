@@ -79,11 +79,12 @@ margin: 0 auto;
   padding-top: 8rem;
   overflow: hidden;
 }
-.menu-oculto li {
-  color: #000;
+.menu-oculto li h2 {
+  color: #fff;
   font-size: 1rem;
-  border-bottom: 1px solid #fff;
+  box-shadow: 0 0.1px 0 #fff;
   padding: 10px;
+  font-weight: 500;
 }
 .button-open-nav {
   display: inline-flex;

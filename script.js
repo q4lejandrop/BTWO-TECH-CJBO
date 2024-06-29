@@ -154,8 +154,14 @@ let buttonOpenNav = document.getElementById('button-open-nav')
 let menuOculto = document.getElementById('menu-oculto')
 function showNav(){
 menuOculto.style.display = 'block';
+buttonOpenNav.style.display = 'none';
 }
 function removeNav(){
     menuOculto.style.display = 'none';
-    }
+    buttonOpenNav.style.display = 'inline-flex';
+}
+
+    // function hiddenButtonOpen() {
+    //     buttonOpenNav.style.display = 'none';
+    // }
 

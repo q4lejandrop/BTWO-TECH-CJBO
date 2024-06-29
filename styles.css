@@ -57,25 +57,28 @@ li a:hover {
 width: 100%;
 margin: 0 auto;
   }
+  .navegation {
+    z-index: 5;
+    position: relative;
+    top: 0;
+  }
 }
 
 
 #menu-oculto {
-  position: relative;
+  position: absolute;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  background-color: rgba(255, 251, 0, 0.767);
+  background-color: rgb(255, 251, 0);
   display: none;
+  margin-top: -4rem;
 }
 .menu-oculto {
-  position: relative;
   display: block;
   background-color: #000000;
   width: 100vw;
   padding-top: 8rem;
+  overflow: hidden;
 }
 .menu-oculto li {
   color: #000;
@@ -86,9 +89,9 @@ margin: 0 auto;
 .button-open-nav {
   display: inline-flex;
   z-index: 40;
-  position: absolute;
+  position: fixed;
   height: auto;
-  left: 0;
+  left: 0px;
   top: 20px;
   margin-left: 20px;
   background-color: rgba(255, 255, 0, 0.226);
@@ -105,7 +108,7 @@ margin: 0 auto;
   position: absolute;
   height: auto;
   left: 0px;
-  top: 60px;
+  top: 20px;
   margin-left: 20px;
   background-color: rgba(255, 255, 0, 0.226);
   border-radius: 5px;
@@ -174,31 +177,6 @@ margin: 0 auto;
   src: url(/fonts/logo/NYXERIN.otf);
 }
 
-.title-bar {
-  position: fixed;
-  margin: 0;
-  z-index: 3;
-  max-width: 100%;
-  top: 0;
-  right: 0;
-  text-transform: uppercase;
-}
-.title-bar h1 {
-  width: 100%;
-  font-size: 2rem;
-  text-align: end;
-  color: rgb(255, 73, 2);
-  font-family: "f8";
-  text-align: end;
-  padding: 10px;
-  letter-spacing: 8px;
-}
-.title-b {
-  color: #fff;
-  font-size: 4rem;
-  font-family: "f8";
-  filter: drop-shadow(0 0 0.2rem rgb(255, 73, 2, 0.5));
-}
 
 h4 {
   font-size: 2rem;

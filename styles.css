@@ -70,7 +70,7 @@ margin: 0 auto;
   width: 100vw;
   background-color: rgb(255, 251, 0);
   display: none;
-  margin-top: -4rem;
+  margin-top: -5rem;
 }
 .menu-oculto {
   display: block;
@@ -105,7 +105,7 @@ margin: 0 auto;
 .button-close-nav {
   display: inline-flex;
   z-index: 40;
-  position: absolute;
+  position: fixed;
   height: auto;
   left: 0px;
   top: 20px;
@@ -212,6 +212,9 @@ header {
     backdrop-filter: blur(5px);
     width: 100vw;
     height: 100px;
+  }
+  ul {
+    padding-top: 1rem;
   }
   #title-company {
     font-size: 1rem;

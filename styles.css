@@ -27,7 +27,6 @@ ul {
   gap: 7rem;
   list-style: none;
   font-size: 0.8rem;
-  /* padding-left: 1rem; */
 }
 li a {
   color: #fff;
@@ -97,6 +96,7 @@ margin: 0 auto;
   background-color: rgba(255, 255, 0, 0.226);
   border-radius: 5px;
   padding: 3px;
+  visibility: hidden;
 }
 .open-nav-list {
   height: auto;
@@ -221,8 +221,10 @@ header {
     height: auto;
     width: 3rem;
   }
+  .button-open-nav {
+    visibility: visible;
+  }
 }
-
 @keyframes slidein {
   from {
     margin-left: 100%;

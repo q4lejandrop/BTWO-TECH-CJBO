@@ -3,28 +3,28 @@ window.addEventListener('scroll', function() {
 
     var div = document.querySelector('.box-01');
     var desplazamiento = window.scrollY;
-    div.style.transform = 'translateY(-' + desplazamiento / 15 + 'px)';
+    div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
 
 });
 window.addEventListener('scroll', function() {
 
     var div = document.querySelector('.box-02');
     var desplazamiento = window.scrollY;
-    div.style.transform = 'translateY(-' + desplazamiento / 15 + 'px)';
+    div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
 
 });
 window.addEventListener('scroll', function() {
 
     var div = document.querySelector('.box-03');
     var desplazamiento = window.scrollY;
-    div.style.transform = 'translateY(-' + desplazamiento / 15 + 'px)';
+    div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
 
 });
 window.addEventListener('scroll', function() {
 
     var div = document.querySelector('.box-04');
     var desplazamiento = window.scrollY;
-    div.style.transform = 'translateY(-' + desplazamiento / 15 + 'px)';
+    div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
 
 });
 
@@ -88,19 +88,6 @@ function showInfo03() {
     despList03.style.display = 'block';
     despList03.classList.add('animation-title-r');
 }
-
-
-// Close information
-function closeInfo() {
-    despList01.style.display = 'none';
-    despList01.classList.remove('animation-title-r');
-    despList02.style.display = 'none';
-    despList02.classList.remove('animation-title-r');
-    despList03.style.display = 'none';
-    despList03.classList.remove('animation-title-r');
-}
-
-
 
 // Zoom images products
 let imgProduct = document.getElementById('img-product')
@@ -175,8 +162,11 @@ function showSubmenuProducts() {
     arrowDown.style.display = 'none';
     arrowUp.style.display = 'block';
 }
+
 function removeSubmenuProducts() {
     itemsSubmenuProducts.style.display = 'none';
     arrowDown.style.display = 'block';
     arrowUp.style.display = 'none';
 }
+let arrows = document.getElementById('arrows')
+arrows.addEventListener('click', (removeSubmenuProducts))

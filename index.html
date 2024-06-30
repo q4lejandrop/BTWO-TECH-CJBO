@@ -31,19 +31,25 @@
             <ul class="menu-oculto">
                 <a href="#services"><li class="nav-item02" onclick="removeNav()"><h2>SERVICIOS</h2></li></a>
             <a href="#support"><li class="nav-item02" onclick="removeNav()"><h2>ASISTENCIA</h2></li></a>
+
             <ul class="sub-menu-oculto" onclick="showSubmenuProducts()"><h3>PODUCTOS</h3> 
+                <div class="container-arrows" id="container-arrows">
+                    <div class="arrows" id="arrows" onclick="removeSubmenuProducts()">
                 <div class="arrow" id="arrow-down">
                     <img src="/navegation/flecha-hacia-abajo-para-navegar.png" alt="Desplegar sublista de productos">
                 </div>
-                <div class="arrow" id="arrow-up" onmouseout="removeSubmenuProducts()">
+                <div class="arrow" id="arrow-up" >
                     <img src="/navegation/flecha-hacia-arriba-para-navegar.png" alt="Sublista de productos desplegada">
                 </div>
+            </div>
+
 
                 <div class="items-submenu-products" id="items-submenu-products">
                 <a href="#pM"><li class="nav-item03" onclick="removeNav()"><h2>Placas madre</h2></li></a>
                 <a href="#pC"><li class="nav-item03" onclick="removeNav()"><h2>Procesadores</h2></li></a>
                 <a href="#pR"><li class="nav-item03" onclick="removeNav()"><h2>Memorias RAM</h2></li></a>
             </div>
+        </div>
             </ul>
             <a href="#innovation"><li class="nav-item02" onclick="removeNav()"><h2>INNOVACION</h2></li></a>
         </ul>
@@ -66,15 +72,13 @@
             </div>
             </div>
             <div class="text-home">
-                <div class="th">
-                    <!-- <h1>Btwo Tech</h1> -->
                     <p><span><b>Somos una compañia tecnologica lider en componentes y soporte infórmatico.</b></span></p>
+                    <br/>
                         <p>Contamos con 7 años de experiencia en el mercado nacional e internacional y estamos
                         dispuestos a ofrecer
                         una visión global para el tratamiento
                         de sus necesidades.
                     </p>
-                </div>
             </div>
             <div class="container-eslogan">
                 <div class="img-slogan">
@@ -93,16 +97,16 @@
         <div class="images-home" id="imagesHome">
             <div class="ih-02" id="imgs-carrusel">
                 <a href="#services"><h4 class="title-services-carrusel">SERVICIOS</h4>
-                    <img class="imgH" src="/images/home/hexa/C-01.png" alt="Imagen servicios"/>
+                    <img class="img-h" src="/images/home/hexa/C-01.png" alt="Imagen servicios"/>
                 </a>
                 <a href="#support"><h4 class="title-services-carrusel">ASISTENCIA</h4>
-                    <img class="imgH" src="/images/home/hexa/C-02.png" alt="Imagen asistencia"/>
+                    <img class="img-h" src="/images/home/hexa/C-02.png" alt="Imagen asistencia"/>
                 </a>
                 <a href="#products"><h4 class="title-services-carrusel">PRODUCTOS</h4>
-                    <img class="imgH" src="/images/home/hexa/C-03.png" alt="Imagen productos"/>
+                    <img class="img-h" src="/images/home/hexa/C-03.png" alt="Imagen productos"/>
                 </a>
                 <a href="#innovation"><h4 class="title-services-carrusel">INNOVACION</h4>
-                    <img class="imgH" src="/images/home/hexa/C-04.png" alt="Imagen innovación"/>
+                    <img class="img-h" src="/images/home/hexa/C-04.png" alt="Imagen innovación"/>
                 </a>
         </div>
         </div>
@@ -480,7 +484,7 @@
                     </p>
                 </div>
             </div>
-            <div class="serv s-02" onmouseenter="showInfo02()" onclick="closeInfo()">
+            <div class="serv s-02" onmouseenter="showInfo02()">
                 <div class="content-services">
                 <img src="https://www.un.edu.mx/wp-content/uploads/2023/03/Universidad-del-Norte-Que-es-la-administracion-de-ingenieria-Vale-la-pena-obtener-un-titulo-en-administracion-de-ingenieria-subtitulo.png"
                     class="img-service01 img-s" alt="s/img" />
@@ -627,12 +631,11 @@
         </div>
 
         <div class="created">
-            <p>ESTA PAGINA WEB <br>FUE CREADA HACIENDO <br>USO DE</p>
             <div class="c-img">
-                <img src="/created-img/HTML.svg" class="created-icons" alt="html/svg" title="HTML" />
-                <img src="/created-img/CSS3-svg.svg" class="created-icons" alt="css/svg" title="CSS" />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-                    class="created-icons" alt="JS" title="JAVASCRIPT" />
+                <p>ESTA PAGINA WEB <br>FUE CREADA HACIENDO <br>USO DE</p>
+                <img src="/created-img/HTML.svg" class="created-icons" alt="Icono HTML" title="HTML" />
+                <img src="/created-img/CSS3-svg.svg" class="created-icons" alt="Icono CSS" title="CSS" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" class="created-icons" alt="Icono Javascript" title="JAVASCRIPT"/>
             </div>
         </div>
     </section>

@@ -16,6 +16,9 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.7rem;
 }
+.scroll-off {
+  overflow: hidden;
+}
 a {
   cursor: pointer;
   text-decoration: none;
@@ -92,10 +95,34 @@ margin: 0 auto;
 }
 .menu-oculto li h2 {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.7rem;
   box-shadow: 0 0.1px 0 #fff;
   padding: 10px;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: sans-serif, Times, serif;
+}
+.menu-oculto li:hover {
+  background-color: #ffffff1a;
+}
+.menu-oculto li:active {
+  opacity: 0.05;
+}
+.sub-menu-oculto {
+  color: #fff;
+  font-size: 0.7rem;
+  box-shadow: 0 0.1px 0 #fff;
+  padding: 10px;
+  font-weight: 300;
+  font-family: sans-serif, Times, serif;
+
+  width: 100vw;
+  overflow: hidden;
+}
+.sub-menu-oculto h3 {
+  color: #fff
+}
+.items-submenu-products {
+  display: none;
 }
 .button-open-nav {
   display: inline-flex;

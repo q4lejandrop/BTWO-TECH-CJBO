@@ -155,13 +155,17 @@ let menuOculto = document.getElementById('menu-oculto')
 function showNav(){
 menuOculto.style.display = 'block';
 buttonOpenNav.style.display = 'none';
+itemsSubmenuProducts.style.display = 'none';
+document.body.classList.add('scroll-off');
 }
 function removeNav(){
     menuOculto.style.display = 'none';
     buttonOpenNav.style.display = 'inline-flex';
+    document.body.classList.remove('scroll-off');
 }
 
-    // function hiddenButtonOpen() {
-    //     buttonOpenNav.style.display = 'none';
-    // }
-
+// Show submenu products
+let itemsSubmenuProducts = document.getElementById('items-submenu-products')
+function showSubmenuProducts() {
+    itemsSubmenuProducts.style.display = 'block';
+}

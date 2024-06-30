@@ -19,6 +19,8 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 ul {
   display: flex;
@@ -28,11 +30,19 @@ ul {
   list-style: none;
   font-size: 0.8rem;
 }
+li {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
 li a {
   color: #fff;
   padding: 5px;
   border-radius: 5px;
   transition: 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 li a:hover {
   box-shadow: 0 0 3px #c2c50494;
@@ -41,6 +51,7 @@ li a:hover {
   z-index: 5;
   position: relative;
   top: 2rem;
+  user-select: none;
 }
 @media  screen and (max-width: 1000px) {
   .nav-item {
@@ -124,6 +135,7 @@ margin: 0 auto;
   margin: 0 auto;
   max-width: 200px;
   height: auto;
+
 }
 #title-company {
   text-align: center;
@@ -223,7 +235,7 @@ header {
   #logo img {
     z-index: 1;
     height: auto;
-    width: 3rem;
+    width: 3.5rem;
   }
   .button-open-nav {
     visibility: visible;
@@ -291,6 +303,43 @@ header {
   justify-content: end;
   margin-top: 12rem;
   margin-right: 2rem;
+  user-select: none;
+}
+.container-eslogan {
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: transparent;
+  user-select: none;
+}
+.img-slogan img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.eslogan {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  margin: auto;
+}
+.eslogan h3 {
+  font-size: 4rem;
+  color: #ffffff07;
+  font-family: 'F-06';
+  animation: change-color-eslogan 2s  linear;
+  font-weight: 500;
+  animation-delay: 1s;
+}
+@keyframes change-color-eslogan {
+  to {
+    color: rgb(221, 218, 44, 0.5);
+  }
 }
 
 .rightS {
@@ -307,12 +356,12 @@ header {
 .rightS:hover {
   backdrop-filter: blur(200px);
 }
-.rightS p {
+.rightS h2 {
   color: #fff;
   font-size: 0.8rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   padding: 20px;
 }
 
@@ -467,6 +516,7 @@ header {
   overflow: hidden;
   margin: 20px;
   margin: auto;
+  user-select: none;
 }
 .images-home img {
   transition: transform 1s ease-out;
@@ -644,7 +694,7 @@ header {
 }
 .th p span {
   font-size: 1.2rem;
-  filter: drop-shadow(0 0 1px #080808);
+  filter: drop-shadow(0 0 1px rgb(94, 94, 94));
   font-weight: 500;
 }
 
@@ -837,6 +887,7 @@ header {
 .section-all ul {
   display: flex;
   flex-wrap: wrap;
+  user-select: none;
 }
 .se-a {
   display: flex;
@@ -850,6 +901,7 @@ header {
   border-radius: 4px;
   transition: 0.2s ease-in-out;
   font-weight: 100;
+  user-select: none;
 }
 
 .section-all li:hover {
@@ -1278,12 +1330,11 @@ header {
 }
 
 .status-bar {
-  position: fixed;
-  top: 5px;
+  position: absolute;
+  bottom: 0;
   width: 100vw;
-  height: 1px;
+  height: 0.1px;
   background-color: rgb(221, 218, 44, 0.5);
-  z-index: 2;
 }
 /* .borrador {
   position: relative;
@@ -1315,6 +1366,8 @@ footer {
   display: flex;
   justify-content: end;
   align-items: end;
+
+
 }
 .volver img {
   opacity: 0.5;
@@ -1322,10 +1375,12 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: yellow;
+  background-color: rgb(221, 218, 44);
+  padding: 0.3px;
 }
 .volver img:hover {
   opacity: 1;
+  filter: drop-shadow(0 0 1rem rgb(221, 218, 44, 0.5));
 }
 .TX {
   display: flex;

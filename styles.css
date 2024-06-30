@@ -652,7 +652,7 @@ header {
     transform: translateX(-45%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(100vw);
   }
 }
 .stop-carrusel {
@@ -1234,7 +1234,7 @@ header {
   box-shadow: 0 0 2.5px #35353594;
 }
 .spp-02 {
-  width: auto;
+  margin: auto;
   height: auto;
   display: flex;
   justify-content: center;
@@ -1244,6 +1244,7 @@ header {
   gap: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
+  width: 100%;
 }
 .spp-02 p {
   color: #fff;
@@ -1263,10 +1264,9 @@ header {
   margin: 25px;
   border-radius: 3px;
   flex: 1;
-  transition: 0.3s ease-out;
   background-color: rgba(20, 20, 20, 0.1);
   backdrop-filter: blur(10px);
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .spp-images:hover {
@@ -1475,7 +1475,11 @@ footer {
   padding: 50px;
   color: #fff;
   font-weight: 500;
-  font-size: 1.175rem;
+  font-size: 0.8rem;
+}
+.TX-text span {
+font-size: 1.175rem;
+color: #fff;
 }
 
 .content-footer {

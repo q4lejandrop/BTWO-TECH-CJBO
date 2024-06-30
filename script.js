@@ -157,6 +157,8 @@ menuOculto.style.display = 'block';
 buttonOpenNav.style.display = 'none';
 itemsSubmenuProducts.style.display = 'none';
 document.body.classList.add('scroll-off');
+arrowDown.style.display = 'block';
+arrowUp.style.display = 'none';
 }
 function removeNav(){
     menuOculto.style.display = 'none';
@@ -166,6 +168,15 @@ function removeNav(){
 
 // Show submenu products
 let itemsSubmenuProducts = document.getElementById('items-submenu-products')
+let arrowDown = document.getElementById('arrow-down')
+let arrowUp = document.getElementById('arrow-up')
 function showSubmenuProducts() {
     itemsSubmenuProducts.style.display = 'block';
+    arrowDown.style.display = 'none';
+    arrowUp.style.display = 'block';
+}
+function removeSubmenuProducts() {
+    itemsSubmenuProducts.style.display = 'none';
+    arrowDown.style.display = 'block';
+    arrowUp.style.display = 'none';
 }

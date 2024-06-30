@@ -114,11 +114,12 @@ margin: 0 auto;
   padding: 10px;
   font-weight: 300;
   font-family: sans-serif, Times, serif;
-
   width: 100vw;
   overflow: hidden;
+  display: inline-flex;
 }
 .sub-menu-oculto h3 {
+  text-align: start;
   color: #fff
 }
 .items-submenu-products {
@@ -140,6 +141,16 @@ margin: 0 auto;
 .open-nav-list {
   height: auto;
   width: 30px;
+}
+.arrow {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  display: none;
+}
+#arrow-up {
+display: inline-flex;
+
 }
 .button-close-nav {
   display: inline-flex;

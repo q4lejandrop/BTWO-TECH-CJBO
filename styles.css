@@ -82,7 +82,7 @@ margin: 0 auto;
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(255, 251, 0);
+  background-color: #121200;
   display: none;
   margin-top: -5rem;
 }
@@ -121,10 +121,11 @@ margin: 0 auto;
   overflow: hidden;
   display: inline-flex;
 }
-.sub-menu-oculto:hover {
+.sub-menu-oculto:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .sub-menu-oculto h3 {
+  font-size: 0.7rem;
   text-align: start;
   color: #fff
 }
@@ -420,7 +421,19 @@ header {
   font-weight: 500;
   padding: 20px;
 }
-
+@media screen and (max-width: 1000px) {
+  /* Sides */
+.sides {
+  margin-right: 1rem;
+}
+.rightS h2 {
+  font-size: 0.7rem;
+  padding: 10px;
+}
+.eslogan h3 {
+  font-size: 3rem;
+}
+}
 /*
 .leftS::before,
 .leftS::after {
@@ -532,18 +545,7 @@ header {
 .bh:hover {
   filter: drop-shadow(0 0 1rem rgb(221, 218, 44, 0.3));
 }
-@media screen and (max-width: 1000px) {
-  .boxes {
-    gap: 10px;
-}
-.bh {
-  height: 150px;
-  width: 150px;
-}
-.bh p {
-  font-size: 6rem;
-}
-}
+
 .serv-01 {
   display: none;
 }
@@ -555,6 +557,40 @@ header {
 }
 .serv-04 {
   display: none;
+}
+#bh-04 {
+  margin-top: 3px;
+}
+@media screen and (max-width: 1000px) {
+  .boxes {
+    gap: 10px;
+}
+.bh {
+  height: 150px;
+  width: 150px;
+}
+.bh p {
+  font-size: 6rem;
+}
+.intro-text {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.boxes h4 {
+  font-size: 0.6rem;
+}
+.serv-01 {
+  display: block;
+}
+.serv-02 {
+  display: block;
+}
+.serv-03 {
+  display: block;
+}
+.serv-04 {
+  display: block;
+}
 }
 
 .letter {
@@ -753,6 +789,9 @@ header {
 .text-home {
   width: 80%;
 }
+.title-services-carrusel {
+  font-size: 0.5rem;
+}
 }
 .th p {
   font-size: 0.7rem;
@@ -794,9 +833,7 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: rgb(1, 1, 1);
-  background-image: linear-gradient(30deg, #000000 80%, #c5c206 20%);
-  background-repeat: none;
+  background: linear-gradient(30deg, #000000 80%, #c5c206 20%);
 }
 #home:hover {
   #imgH01 {
@@ -1571,7 +1608,6 @@ color: #fff;
   align-items: end;
 }
 .c-img img {
-  margin-right: 10px;
   filter: grayscale(100%) brightness(20%);
 }
 .created-icons {

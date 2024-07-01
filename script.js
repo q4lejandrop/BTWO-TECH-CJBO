@@ -170,3 +170,19 @@ function removeSubmenuProducts() {
 }
 let arrows = document.getElementById('arrows')
 arrows.addEventListener('click', (removeSubmenuProducts))
+
+// Hidden Navegation menu widht: 1000px
+window.addEventListener('resize', hiddenNavWidth);
+function hiddenNavWidth() {
+    let width = window.innerWidth;
+    if (width >= 1001){
+        buttonOpenNav.style.display = 'none';
+        menuOculto.style.display = 'none';
+    }
+    else {
+        buttonOpenNav.style.display = 'inline-flex';
+        menuOculto.style.display = 'none';
+        document.body.classList.remove('scroll-off');
+    }
+}
+hiddenNavWidth();

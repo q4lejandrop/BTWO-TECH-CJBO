@@ -56,7 +56,7 @@ li a:hover {
   top: 2rem;
   user-select: none;
 }
-@media  screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .nav-item {
     display: none;
   }
@@ -67,8 +67,7 @@ li a:hover {
     margin: 0 auto;
     max-width: 150px;
     height: auto;
-width: 100%;
-margin: 0 auto;
+    width: 100%;
   }
   .navegation {
     z-index: 5;
@@ -76,7 +75,6 @@ margin: 0 auto;
     top: 0;
   }
 }
-
 
 #menu-oculto {
   position: absolute;
@@ -121,13 +119,21 @@ margin: 0 auto;
   overflow: hidden;
   display: inline-flex;
 }
-.sub-menu-oculto:active {
+.sub-menu-oculto:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+@media screen and (max-width: 1000px) {
+  .sub-menu-oculto:hover {
+    background-color: transparent;
+  }
+  .sub-menu-oculto:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 .sub-menu-oculto h3 {
   font-size: 0.7rem;
   text-align: start;
-  color: #fff
+  color: #fff;
 }
 .items-submenu-products {
   display: none;
@@ -168,8 +174,7 @@ margin: 0 auto;
   display: none;
 }
 #arrow-up {
-display: inline-flex;
-
+  display: inline-flex;
 }
 .button-close-nav {
   display: inline-flex;
@@ -192,7 +197,6 @@ display: inline-flex;
   margin: 0 auto;
   max-width: 200px;
   height: auto;
-
 }
 #title-company {
   text-align: center;
@@ -246,7 +250,6 @@ display: inline-flex;
   font-family: "f-07";
   src: url(/fonts/logo/NYXERIN.otf);
 }
-
 
 h4 {
   font-size: 2rem;
@@ -371,7 +374,7 @@ header {
   background-color: transparent;
   user-select: none;
 }
-.img-slogan img{
+.img-slogan img {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -388,8 +391,8 @@ header {
 .eslogan h3 {
   font-size: 4rem;
   color: #ffffff07;
-  font-family: 'F-06';
-  animation: change-color-eslogan 2s  linear;
+  font-family: "F-06";
+  animation: change-color-eslogan 2s linear;
   font-weight: 500;
   animation-delay: 1s;
 }
@@ -423,16 +426,16 @@ header {
 }
 @media screen and (max-width: 1000px) {
   /* Sides */
-.sides {
-  margin-right: 1rem;
-}
-.rightS h2 {
-  font-size: 0.7rem;
-  padding: 10px;
-}
-.eslogan h3 {
-  font-size: 3rem;
-}
+  .sides {
+    margin-right: 1rem;
+  }
+  .rightS h2 {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+  .eslogan h3 {
+    font-size: 3rem;
+  }
 }
 /*
 .leftS::before,
@@ -564,33 +567,33 @@ header {
 @media screen and (max-width: 1000px) {
   .boxes {
     gap: 10px;
-}
-.bh {
-  height: 150px;
-  width: 150px;
-}
-.bh p {
-  font-size: 6rem;
-}
-.intro-text {
-  font-size: 1.2rem;
-  padding: 10px;
-}
-.boxes h4 {
-  font-size: 0.6rem;
-}
-.serv-01 {
-  display: block;
-}
-.serv-02 {
-  display: block;
-}
-.serv-03 {
-  display: block;
-}
-.serv-04 {
-  display: block;
-}
+  }
+  .bh {
+    height: 150px;
+    width: 150px;
+  }
+  .bh p {
+    font-size: 6rem;
+  }
+  .intro-text {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .boxes h4 {
+    font-size: 0.6rem;
+  }
+  .serv-01 {
+    display: block;
+  }
+  .serv-02 {
+    display: block;
+  }
+  .serv-03 {
+    display: block;
+  }
+  .serv-04 {
+    display: block;
+  }
 }
 
 .letter {
@@ -780,26 +783,24 @@ header {
   filter: drop-shadow(0 0 1px rgb(94, 94, 94));
   font-weight: 500;
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   /* Images hexagons */
   .img-h {
     width: 100px;
   }
   /* Text home */
-.text-home {
-  width: 80%;
-}
-.title-services-carrusel {
-  font-size: 0.5rem;
-}
+  .text-home {
+    width: 80%;
+  }
+  .title-services-carrusel {
+    font-size: 0.5rem;
+  }
 }
 .th p {
   font-size: 0.7rem;
-
 }
 .th p span {
   font-size: 1rem;
-
 }
 
 .button-01 {
@@ -898,18 +899,18 @@ header {
   width: 500px;
   height: auto;
 }
-.img-product  {
+.img-product {
   position: relative;
   z-index: 2;
   width: 100%;
   height: 100%;
 }
-.img-product-zoom  {
+.img-product-zoom {
   width: 125%;
   height: 125%;
-    cursor: crosshair;
-    user-select: none;
-    -webkit-user-drag: none;
+  cursor: crosshair;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 .img-product-zoom-02 {
   width: 150%;
@@ -1123,7 +1124,7 @@ header {
   backdrop-filter: blur(10px);
   width: 100%;
 }
-.title-precio H6{
+.title-precio H6 {
   display: flex;
   justify-content: start;
   align-items: start;
@@ -1258,7 +1259,7 @@ header {
   align-items: center;
   margin: 1rem;
 }
-.img-asistant img{
+.img-asistant img {
   width: 300px;
   height: auto;
 }
@@ -1482,8 +1483,6 @@ footer {
   display: flex;
   justify-content: end;
   align-items: end;
-
-
 }
 .volver img {
   opacity: 0.5;
@@ -1515,8 +1514,8 @@ footer {
   font-size: 0.8rem;
 }
 .TX-text span {
-font-size: 1.175rem;
-color: #fff;
+  font-size: 1.175rem;
+  color: #fff;
 }
 
 .content-footer {

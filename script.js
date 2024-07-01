@@ -171,7 +171,7 @@ function removeSubmenuProducts() {
 let arrows = document.getElementById('arrows')
 arrows.addEventListener('click', (removeSubmenuProducts))
 
-// Hidden Navegation menu widht: 1000px
+// Hidden Navegation menu width >= 1001px
 window.addEventListener('resize', hiddenNavWidth);
 function hiddenNavWidth() {
     let width = window.innerWidth;

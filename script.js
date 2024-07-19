@@ -186,3 +186,11 @@ function hiddenNavWidth() {
     }
 }
 hiddenNavWidth();
+
+// Effect scroll smooth button back
+document.getElementById('back').addEventListener('click', () => {
+window.scrollTo({
+    top: 0, 
+    behavior: 'smooth'
+});
+});

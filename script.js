@@ -205,3 +205,18 @@ headerMain.style.top = '-170px';
 }
 stateScroll = $scrollTop <= 140 ? 140: $scrollTop;
 });
+
+// Zoom in images products
+document.addEventListener('DOMContentLoaded', function(){
+    const images = document.querySelectorAll('.zoom');
+
+    images.forEach(image => {
+        image.addEventListener('mouseover', function() {
+            image.style.transform = 'scale(1.2)';
+        });
+
+        image.addEventListener('mouseout', function() {
+            image.style.transform = 'scale(1)';
+        });
+    });
+});

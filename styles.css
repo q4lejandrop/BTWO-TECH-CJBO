@@ -272,7 +272,7 @@ p {
   font-size: 4rem;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
-  width: 100%;
+  width: 100vw;
   height: 170px;
   transition: top 0.3s;
 }
@@ -1003,6 +1003,7 @@ border: 1px solid gold
 
 }
 .section-all ul {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   user-select: none;
@@ -1014,7 +1015,7 @@ border: 1px solid gold
 }
 .section-all li {
   height: auto;
-  width: 400px;
+  width: 300px;
   background-color: rgb(8, 8, 8);
   backdrop-filter:  blur(20px);
   list-style-type: none;
@@ -1291,6 +1292,7 @@ border: 1px solid gold
   gap: 20px;
   padding: 0 60px;
   box-shadow: 0 0 2.5px #35353594;
+
 }
 .spp-02 {
   margin: auto;
@@ -1298,9 +1300,9 @@ border: 1px solid gold
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 50px;
   text-align: center;
   padding: 20px;
-  gap: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
   width: 100%;
@@ -1351,8 +1353,7 @@ border: 1px solid gold
     margin: 0;
   }
   .spp-02 {
-    padding: 10px;
-    gap: 5px;
+    padding: 20px;
   }
   .spp-02 p {
     font-size: 0.7rem;

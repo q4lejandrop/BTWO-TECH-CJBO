@@ -304,6 +304,9 @@ p {
   .button-open-nav {
     visibility: visible;
   }
+  #header-main {
+    height: 100px;
+  }
 }
 @keyframes slidein {
   from {
@@ -332,42 +335,6 @@ p {
   to {
     margin-top: 1px;
   }
-}
-
-/* Linea horizontal */
-.linear {
-  position: absolute;
-  top: 10vh;
-  width: 3vw;
-  height: 0.1vh;
-  background-color: rgb(255, 255, 255);
-  animation: linear-h 1s linear both;
-  animation-iteration-count: 1;
-  animation-delay: 2s;
-}
-@keyframes linear-h {
-  0% {
-    left: 0;
-    width: 0vw;
-    background-color: rgb(208, 255, 0);
-    opacity: 1;
-  }
-  100% {
-    width: 100%;
-    background-color: #fff;
-    efect: blur(10px);
-    opacity: 0.5;
-    left: 0;
-  }
-}
-/* Sides */
-.sides {
-  display: inline-flex;
-  position: relative;
-  justify-content: end;
-  margin-top: 12rem;
-  margin-right: 2rem;
-  user-select: none;
 }
 .container-eslogan {
   position: relative;
@@ -406,32 +373,49 @@ p {
   }
 }
 
-.rightS {
-  display: flex;
-  justify-content: end;
-  filter: drop-shadow(0 2rem rgba(0, 0, 0, 0.1));
-  border-radius: 100px;
-  margin: 1rem;
+/* Sides */
+.sides {
+height: auto;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-top: 20vh;
+padding: 1rem;
+}
+
+.sides a {
+  user-select: none;
+}
+.categories-home {
   position: relative;
-  align-items: end;
+  height: auto;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   background-color: #2222223b;
   backdrop-filter: blur(100px);
+  filter: drop-shadow(0 2rem rgba(0, 0, 0, 0.1));
+  border-radius: 100px;
+  padding: 1rem;
+  align-items: center;
 }
-.rightS:hover {
+.categories-home:hover {
   backdrop-filter: blur(200px);
 }
-.rightS h2 {
+.categories-home h2 {
   color: #fff;
   font-size: 0.8rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
-  padding: 20px;
 }
 @media screen and (max-width: 1000px) {
-  /* Sides */
   .sides {
-    margin-right: 1rem;
+    margin-top: 15vh;
   }
   .rightS h2 {
     font-size: 0.7rem;
@@ -514,7 +498,13 @@ p {
   text-align: center;
   border-right: 1px solid #ddda2c;
   height: auto;
-  padding: 2rem;
+  padding: 0.5rem;
+}
+@media screen and (max-width: 1000px){
+  .boxes h3 {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .boxes h4 {
@@ -832,6 +822,7 @@ p {
   transform: scaleX(1.05);
 }
 #home {
+  position: relative;
   height: 100vh;
   width: 100%;
   margin: auto;
@@ -1007,35 +998,32 @@ border: 1px solid gold
   display: flex;
   flex-wrap: wrap;
   user-select: none;
-  gap: 0;
-}
-.se-a {
-  display: flex;
-  gap: 200px;
+  gap: 20px 100px;
 }
 .section-all li {
   height: auto;
-  width: 300px;
-  background-color: rgb(8, 8, 8);
-  backdrop-filter:  blur(20px);
+  width: 300px;  
+
+  backdrop-filter: blur(100px);
   list-style-type: none;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 0.9rem;
+
+  font-size: 1rem;
   font-weight: 400;
-  color: #fff;
-  margin: 10px 50px;
+  color: #000;
   padding: 30px;
   border-radius: 4px;
   transition: 0.2s ease-in-out;
   user-select: none;
   -webkit-clip-path: polygon(0 0, 300% 100%, -40% 100%);
   clip-path: polygon(0 0, 100%, 100% 180%);
-  filter: drop-shadow(0 0 1rem #c2c50494);
+  background-color: #fbff00;
+  filter: drop-shadow(0 0 5rem rgb(221, 218, 44));
 }
 .section-all li:hover {
+  background-color: rgba(221, 218, 44, 0.322);
+  filter: drop-shadow(0 0 1rem #fff);
   opacity: 0.5;
-  filter: drop-shadow(0 0 0.1rem #c2c50494);
 }
 
 #services {
@@ -1612,25 +1600,32 @@ footer {
 }
 
 .created {
+  height: auto;
+  width: 100%;
   display: flex;
   position: relative;
-  flex-direction: column-reverse;
-  justify-content: end;
-  align-items: end;
-  margin: 45px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.76);
+  backdrop-filter: blur(40px);
+  text-align: end;
 }
-.c-img p {
-  font-size: 0.8rem;
-  padding-right: 20px;
+.created p {
+  position: relative;
+  font-size: 0.7rem;
+  text-align: end;
+  padding: 10px;
 }
 .c-img {
-  margin: 30px 0 10px 10px;
   display: flex;
-  justify-content: flex-end;
-  align-items: end;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 30px;
 }
 .c-img img {
   filter: grayscale(100%) brightness(20%);
+  user-select: none;
 }
 .created-icons {
   display: flex;

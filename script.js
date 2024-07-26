@@ -90,33 +90,32 @@ function showInfo03() {
 }
 
 // Zoom images products
-let imgProduct = document.getElementById('img-product')
-let filterPdt = document.getElementById('filter-pdt');
-let filterPdt02 = document.getElementById('filter-pdt-02');
-function zoom() {
-    imgProduct.classList.add('img-product-zoom')
-    filterPdt.style.display = 'block';
-    imgProduct.classList.add('w-opacity');
-    filterPdt.classList.add('w-opacity');
-}
-function removeZoom() {
-    imgProduct.classList.remove('img-product-zoom')
-    filterPdt.style.display = 'none';
-    imgProduct.classList.add('wo-opacity');
-    filterPdt.classList.add('wo-opacity');
-}
-function zoom02() {
-    imgProduct.classList.add('img-product-zoom-02')
-    filterPdt02.style.display = 'block';
-    imgProduct.classList.add('w-opacity');
-    filterPdt02.classList.add('w-opacity');
-}
-function resize() {
-    imgProduct.classList.remove('img-product-zoom-02')
-    filterPdt02.style.display = 'none';
-    imgProduct.classList.add('wo-opacity');
-    filterPdt02.classList.add('wo-opacity');
-}
+// let imgProduct = document.getElementById('img-product')
+// let filterProducts = document.getElementById('filter-products');
+// function zoom() {
+//     imgProduct.classList.add('img-product-zoom')
+//     filterPdt.style.display = 'block';
+//     imgProduct.classList.add('w-opacity');
+//     filterPdt.classList.add('w-opacity');
+// }
+// function removeZoom() {
+//     imgProduct.classList.remove('img-product-zoom')
+//     filterPdt.style.display = 'none';
+//     imgProduct.classList.add('wo-opacity');
+//     filterPdt.classList.add('wo-opacity');
+// }
+// function zoom02() {
+//     imgProduct.classList.add('img-product-zoom-02')
+//     filterPdt02.style.display = 'block';
+//     imgProduct.classList.add('w-opacity');
+//     filterPdt02.classList.add('w-opacity');
+// }
+// function resize() {
+//     imgProduct.classList.remove('img-product-zoom-02')
+//     filterPdt02.style.display = 'none';
+//     imgProduct.classList.add('wo-opacity');
+//     filterPdt02.classList.add('wo-opacity');
+// }
 
 // Show information categories 
 let bh01 = document.getElementById('bh-01')

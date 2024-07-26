@@ -1,35 +1,34 @@
-// Boxes
-window.addEventListener('scroll', function() {
+// Boxes to up catalogue
+// window.addEventListener('scroll', function() {
 
-    var div = document.querySelector('.box-01');
-    var desplazamiento = window.scrollY;
-    div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
+//     var div = document.querySelector('.box-01');
+//     var desplazamiento = window.scrollY;
+//     div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
 
-});
-window.addEventListener('scroll', function() {
+// });
+// window.addEventListener('scroll', function() {
 
-    var div = document.querySelector('.box-02');
-    var desplazamiento = window.scrollY;
-    div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
+//     var div = document.querySelector('.box-02');
+//     var desplazamiento = window.scrollY;
+//     div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
 
-});
-window.addEventListener('scroll', function() {
+// });
+// window.addEventListener('scroll', function() {
 
-    var div = document.querySelector('.box-03');
-    var desplazamiento = window.scrollY;
-    div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
+//     var div = document.querySelector('.box-03');
+//     var desplazamiento = window.scrollY;
+//     div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
 
-});
-window.addEventListener('scroll', function() {
+// });
+// window.addEventListener('scroll', function() {
 
-    var div = document.querySelector('.box-04');
-    var desplazamiento = window.scrollY;
-    div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
+//     var div = document.querySelector('.box-04');
+//     var desplazamiento = window.scrollY;
+//     div.style.transform = 'translateY(-' + desplazamiento / 35 + 'px)';
 
-});
+// });
 
-/* Scroll
-Bar */
+/* Line of state when scrolling down but horizontal */
 window.addEventListener('scroll', () => {
     const scrollTop = document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight;
@@ -192,4 +191,17 @@ window.scrollTo({
     top: 0, 
     behavior: 'smooth'
 });
+});
+
+// Remove navigation when scrolling down
+let stateScroll = 140;
+const headerMain = document.getElementById('header-main');
+window.addEventListener('scroll', () => {
+const $scrollTop = window.scrollY || document.documentElement.scrollTop;
+if ($scrollTop > stateScroll) {
+headerMain.style.top = '-170px';
+} else {
+    headerMain.style.top = '0';
+}
+stateScroll = $scrollTop <= 140 ? 140: $scrollTop;
 });

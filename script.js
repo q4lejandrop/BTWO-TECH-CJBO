@@ -212,11 +212,28 @@ document.addEventListener('DOMContentLoaded', function(){
 
     images.forEach(image => {
         image.addEventListener('mouseover', function() {
-            image.style.transform = 'scale(1.2)';
+            image.style.transform = 'scale(1.4)';
         });
 
         image.addEventListener('mouseout', function() {
             image.style.transform = 'scale(1)';
+            filterCenter.style.display = 'none';
         });
     });
 });
+
+// Center image products
+let containerImgPdt = document.getElementsByClassName('container-img-pdt');
+let filterCenter = document.getElementById('filter-images-all');
+let zoom = document.getElementById('zoom');
+// .addEventListener('click', () => {
+//     containerImgPdt.classList.add('container-img-pdt-center');
+//     filterCenter.style.display = 'block';
+//     document.body.classList.add('scroll-off');
+//     image.style.position = 'absolute';
+// });
+function filterCenterToProducts() {
+     filterCenter.style.display = 'block';
+     zoom.style.position = 'absolute';
+     containerImgPdt.style.backgroundColor = 'purple';
+}

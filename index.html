@@ -32,14 +32,14 @@
                 <a href="#services"><li class="nav-item02" onclick="removeNav()"><h2>SERVICIOS</h2></li></a>
             <a href="#support"><li class="nav-item02" onclick="removeNav()"><h2>ASISTENCIA</h2></li></a>
 
-            <ul class="sub-menu-oculto" onclick="showSubmenuProducts()"><h3>PODUCTOS</h3> 
+            <ul class="sub-menu-oculto" id="arrows"><h3>PODUCTOS</h3> 
                 <div class="container-arrows" id="container-arrows">
-                    <div class="arrows" id="arrows" onclick="removeSubmenuProducts()">
-                <div class="arrow" id="arrow-down">
+                    <div class="arrows">
+                <div class="arrow" id="arrow-down-products">
                     <img src="/navegation/flecha-hacia-abajo-para-navegar.png" alt="Desplegar sublista de productos">
                 </div>
-                <div class="arrow" id="arrow-up" >
-                    <img src="/navegation/flecha-hacia-arriba-para-navegar.png" alt="Sublista de productos desplegada">
+                <div class="arrow" id="arrow-up-products">
+                    <img src="/navegation/flecha-hacia-arriba-para-navegar.png" alt="Contraer sublista de productos">
                 </div>
             </div>
 
@@ -52,6 +52,7 @@
         </div>
             </ul>
             <a href="#innovation"><li class="nav-item02" onclick="removeNav()"><h2>INNOVACION</h2></li></a>
+            <a href="#nosotros"><li class="nav-item02" onclick="removeNav()"><h2>NOSOTROS</h2></li></a>
         </ul>
         <div class="button-close-nav" id="button-close-nav" onclick="removeNav()">
             <img src="/navegation/cancel-button_83972.png" alt="Open button" class="close-nav-list">
@@ -185,8 +186,12 @@
                 <div class="description-products">
                     <div class="filter-products"></div>
                     <p class="name-C">MSI</p>
-                    <p class="name-R">B450M PRO-VDH MAX</p>
-                    <div class="ch">
+                    <p class="name-R">B450M PRO-VDH MAX<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" id="btn-show-descrip-product">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" id="btn-hidden-descrip-product"></span></p>
+                    <div id="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                         <div class="charts">
                                 <p>▿ Socket AM4 para procesador AMD Ryzen (1a a 3a generación) y Athlon GE.</p>
@@ -214,8 +219,12 @@
                         </div>
                 <div class="description-products">
                     <p class="name-C">ASUS</p>
-                    <p class="name-R">ROG Maximus Z790 Extreme</p>
-                    <div class="ch">
+                    <p class="name-R">ROG Maximus Z790 Extreme<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" class="btn-show-descrip-product">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" class="btn-hidden-descrip-product"></span></p>
+                    <div id="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                         <div class="charts">
                             <p>▿ Socket LGA1700.</p>
@@ -245,8 +254,12 @@
                     </div>
                 <div class="description-products">
                     <p class="name-C">ASROCK</p>
-                    <p class="name-R">A520M-HDV</p>
-                    <div class="ch">
+                    <p class="name-R">A520M-HDV<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" class="btn-show-descrip-product">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" class="btn-hidden-descrip-product"></span></p>
+                    <div id="ch">
                     <h3 class="characteristics">CARACTERISTICAS</h3>
                     <div class="charts">
                             <p>▿ Socket AMD AM4 RyzenTM 3000, 3000.</p>
@@ -282,8 +295,12 @@
                 
                 <div class="description-products">
                     <p class="name-C">AMD</p>
-                    <p class="name-R">RYZEN 7 7800X3D</p>
-                    <div class="ch">
+                    <p class="name-R">RYZEN 7 7800X3D<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" class="btn-show-descrip-product">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" class="btn-hidden-descrip-product"></span></p>
+                    <div id="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                         <div class="charts">
                                 <p>▿ Zócalo de CPU Socket AM5.</p>
@@ -313,8 +330,12 @@
                 </div>
                 <div class="description-products">
                     <p class="name-C">INTEL</p>
-                    <p class="name-R">CORE i9-14900K</p>
-                    <div class="ch">
+                    <p class="name-R">CORE i9-14900K<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" class="btn-show-descrip-product">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" class="btn-hidden-descrip-product"></span></p>
+                    <div id="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                     <div class="charts">
                                 <p>▿ Zócalo de CPU Socket LGA 1700.</p>
@@ -344,8 +365,12 @@
                 </div>
                 <div class="description-products">
                     <p class="name-C">AMD</p>
-                    <p class="name-R">RYZEN 3 4100</p>
-                    <div class="ch">
+                    <p class="name-R">RYZEN 3 4100<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" class="btn-show-descrip-product">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" class="btn-hidden-descrip-product"></span></p>
+                    <div id="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                     <div class="charts">
                                 <p>▿ Zócalo de CPU Socket AM4.</p>
@@ -379,8 +404,12 @@
                 </div>
                 <div class="description-products">
                     <p class="name-C">ADATA XPG</p>
-                    <p class="name-R">SPECTRIX D41</p>
-                    <div class="ch">
+                    <p class="name-R">SPECTRIX D41<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" class="btnShowDescripProduct">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" class="btnHiddenDescripProduct"></span></p>
+                    <div id="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                     <div class="charts">
                                 <p>▿ Tipo de memoria DDR4.</p>
@@ -410,8 +439,13 @@
                 </div>
                 <div class="description-products">
                     <p class="name-C">CORSAIR</p>
-                    <p class="name-R">DOMINATOR TITANIUM</p>
-                    <div class="ch">
+                    <p class="name-R">DOMINATOR TITANIUM<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" class="btn-show-descrip-product">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" class="btn-hidden-descrip-product">
+                    </span></p>
+                    <div id="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                         <div class="charts">
                                 <p>▿ Tipo de memoria: DDR5.</p>
@@ -441,8 +475,12 @@
                 </div>
                 <div class="description-products">
                     <p class="name-C">KINGSTON</p>
-                    <p class="name-R">FURY RENEGADE</p>
-                    <div class="ch">
+                    <p class="name-R">FURY RENEGADE<span id="btn-descrip-product">
+                        <img src="/navegation/flecha-hacia-abajo-para-navegar.png"
+                        alt="Desplegar descripción" class="btn-show-descrip-product">
+                        <img src="/navegation/flecha-hacia-arriba-para-navegar.png" 
+                        alt="Cerrar descripción de producto" class="btn-hidden-descrip-product"></span></p>
+                    <div id="ch">
                         <h3 class="characteristics">CARACTERISTICAS</h3>
                         <div class="charts">
                                 <p>▿ Tipo de memoria: DDR4.</p>
@@ -468,6 +506,7 @@
     </div>
     </section>
 
+<!-- Services -->
     <section id="services">
         <h2 class="intro-text">SERVICIOS</h2>
         <div class="services-flex">
@@ -626,7 +665,7 @@
     </div>
 </section>
 <a href="/index.html"><div id="back"><img src="/navegation/flecha-hacia-arriba-sobre-un-fondo-de-circulo-negro.png" alt="Volver"></div></a>
-    <section id="s-04-sobreNosotros">
+    <section id="nosotros">
         <h2 class="intro-text">NUESTRO EQUIPO</h2>
         <!-- <div class="title-section">
 <h4>INTEGRANTES</h4>
@@ -657,18 +696,16 @@
     </div>
     </div> -->
         </div>
-
-        <div class="created">
-            <p>ESTA PAGINA WEB FUE CREADA HACIENDO USO DE</p>
-            <div class="c-img">
-                <img src="/created-img/HTML.svg" class="created-icons" alt="Icono HTML" title="HTML" />
-                <img src="/created-img/CSS3-svg.svg" class="created-icons" alt="Icono CSS" title="CSS" />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" class="created-icons" alt="Icono Javascript" title="JAVASCRIPT"/>
-            </div>
-        </div>
     </section>
+    <div class="created">
+        <p>ESTA PAGINA WEB FUE CREADA HACIENDO USO DE</p>
+        <div class="c-img">
+            <img src="/created-img/HTML.svg" class="created-icons" alt="Icono HTML" title="HTML" />
+            <img src="/created-img/CSS3-svg.svg" class="created-icons" alt="Icono CSS" title="CSS" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" class="created-icons" alt="Icono Javascript" title="JAVASCRIPT"/>
+        </div>
+    </div>
     <footer>
-
         <div class="TX">
             <div class="TX-text">
                 <P>Creations By <a href="https://www.tecnimux.com"><span><strong>TECNIMUX</strong></span></a></P>

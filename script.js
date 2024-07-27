@@ -153,21 +153,31 @@ function removeNav(){
 
 // Show submenu products
 let itemsSubmenuProducts = document.getElementById('items-submenu-products')
-let arrowDown = document.getElementById('arrow-down')
-let arrowUp = document.getElementById('arrow-up')
+let arrowDown = document.getElementById('arrow-down-products')
+let arrowUp = document.getElementById('arrow-up-products')
+
+stateArrowProductsMenuHidden = true;
+let arrows = document.getElementById('arrows').addEventListener('click', () => {
+if(stateArrowProductsMenuHidden) {
+    showSubmenuProducts()
+} else {
+    removeSubmenuProducts()
+}
+stateArrowProductsMenuHidden = !stateArrowProductsMenuHidden;
+});
+
 function showSubmenuProducts() {
     itemsSubmenuProducts.style.display = 'block';
     arrowDown.style.display = 'none';
     arrowUp.style.display = 'block';
 }
-
 function removeSubmenuProducts() {
     itemsSubmenuProducts.style.display = 'none';
     arrowDown.style.display = 'block';
     arrowUp.style.display = 'none';
 }
-let arrows = document.getElementById('arrows')
-arrows.addEventListener('click', (removeSubmenuProducts))
+
+
 
 // Hidden Navegation menu width >= 1001px
 window.addEventListener('resize', hiddenNavWidth);
@@ -223,17 +233,42 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 // Center image products
-let containerImgPdt = document.getElementsByClassName('container-img-pdt');
-let filterCenter = document.getElementById('filter-images-all');
-let zoom = document.getElementById('zoom');
-// .addEventListener('click', () => {
-//     containerImgPdt.classList.add('container-img-pdt-center');
-//     filterCenter.style.display = 'block';
-//     document.body.classList.add('scroll-off');
-//     image.style.position = 'absolute';
-// });
-function filterCenterToProducts() {
-     filterCenter.style.display = 'block';
-     zoom.style.position = 'absolute';
-     containerImgPdt.style.backgroundColor = 'purple';
+// let containerImgPdt = document.getElementsByClassName('container-img-pdt');
+// let filterCenter = document.getElementById('filter-images-all');
+// let zoom = document.getElementById('zoom');
+// // .addEventListener('click', () => {
+// //     containerImgPdt.classList.add('container-img-pdt-center');
+// //     filterCenter.style.display = 'block';
+// //     document.body.classList.add('scroll-off');
+// //     image.style.position = 'absolute';
+// // });
+// function filterCenterToProducts() {
+//      filterCenter.style.display = 'block';
+//      zoom.style.position = 'absolute';
+//      containerImgPdt.style.backgroundColor = 'purple';
+// }
+
+// Deploy info products
+let stateArrowInfo = true;
+document.getElementById('btn-descrip-product').addEventListener('click', () => {
+
+if(stateArrowInfo) {
+    showInfoProducts();
+} else {
+    hiddenInfoProducts();
+}
+stateArrowInfo = !stateArrowInfo;
+});
+let btnShowDescripProduct = document.getElementById('btn-show-descrip-product');
+let btnHiddenDescripProduct = document.getElementById('btn-hidden-descrip-product');
+let infoProducts = document.getElementById('ch');
+function showInfoProducts() {
+    infoProducts.style.display = 'block';
+    btnShowDescripProduct.style.display = 'none';
+    btnHiddenDescripProduct.style.display = 'block';
+}
+function hiddenInfoProducts() {
+    infoProducts.style.display = 'none';
+    btnShowDescripProduct.style.display = 'block';
+    btnHiddenDescripProduct.style.display = 'none';
 }

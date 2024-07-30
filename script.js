@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 // Deploy info products
 let stateArrowInfo = true;
-document.getElementById('btn-descrip-product').addEventListener('click', () => {
+document.querySelector('.btn-descrip-product').addEventListener('click', () => {
 
 if(stateArrowInfo) {
     showInfoProducts();
@@ -259,8 +259,8 @@ if(stateArrowInfo) {
 }
 stateArrowInfo = !stateArrowInfo;
 });
-let btnShowDescripProduct = document.getElementById('btn-show-descrip-product');
-let btnHiddenDescripProduct = document.getElementById('btn-hidden-descrip-product');
+let btnShowDescripProduct = document.querySelector('.btn-show-descrip-product');
+let btnHiddenDescripProduct = document.querySelector('.btn-hidden-descrip-product');
 let infoProducts = document.getElementById('ch');
 function showInfoProducts() {
     infoProducts.style.display = 'block';

@@ -144,11 +144,15 @@ itemsSubmenuProducts.style.display = 'none';
 document.body.classList.add('scroll-off');
 arrowDown.style.display = 'block';
 arrowUp.style.display = 'none';
+// menuOculto.classList.remove('tok-animation-off');
+menuOculto.classList.add('tok-animation');
 }
 function removeNav(){
     menuOculto.style.display = 'none';
     buttonOpenNav.style.display = 'inline-flex';
     document.body.classList.remove('scroll-off');
+    menuOculto.classList.remove('tok-animation');
+    // menuOculto.classList.add('tok-animation-off');
 }
 
 // Show submenu products

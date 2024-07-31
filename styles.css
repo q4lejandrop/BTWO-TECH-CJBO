@@ -107,6 +107,30 @@ li a:hover {
 .menu-oculto li:active {
   opacity: 0.05;
 }
+.tok-animation {
+  animation: tok 0.6s ease-in-out;
+}
+@keyframes tok {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+/* .tok-animation-off {
+  animation: tok-off 0.6s ease-in-out;
+}
+@keyframes tok-off {
+  from {
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+} */
 .sub-menu-oculto {
   display: flex;
   justify-content: space-between;
@@ -148,11 +172,15 @@ li a:hover {
   left: 0px;
   top: 20px;
   margin-left: 20px;
-  background-color: rgba(255, 255, 0, 0.226);
+  background-color: rgba(255, 255, 0, 0.5);
   border-radius: 5px;
   padding: 3px;
   visibility: hidden;
 }
+.button-open-nav:hover {
+  opacity: 0.5;
+}
+
 .open-nav-list {
   height: auto;
   width: 30px;
@@ -186,9 +214,12 @@ li a:hover {
   left: 0px;
   top: 20px;
   margin-left: 20px;
-  background-color: rgba(255, 255, 0, 0.226);
+  background-color: rgba(255, 255, 0, 0.5);
   border-radius: 5px;
   padding: 3px;
+}
+.button-close-nav:hover {
+  opacity: 0.5;
 }
 .close-nav-list {
   height: auto;
@@ -1038,7 +1069,7 @@ padding: 1rem;
     border: 1px solid gold
   }
   .ch {
-    width: 400px;
+    width: 350px;
   }
 }
 
@@ -1232,7 +1263,7 @@ display: block;
   align-items: start;
   background: rgba(255, 255, 255, 0.059);
   backdrop-filter: blur(20px);
-  width: 100%;
+  width: 90%;
   border-radius: 15px;
 }
 .title-precio h6 {

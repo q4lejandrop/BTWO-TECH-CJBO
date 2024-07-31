@@ -1692,6 +1692,7 @@ display: block;
 } */
 
 footer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -1754,6 +1755,10 @@ footer {
   justify-content: center;
   flex: 1;
 }
+/* .cf {
+  height: auto;
+  width: 100%;
+} */
 .cf p {
   text-align: center;
   font-size: 1rem;
@@ -1831,9 +1836,11 @@ footer {
 }
 .created p {
   position: relative;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   text-align: end;
   padding: 10px;
+  filter: drop-shadow(0 0 0.3px #fff);
+  letter-spacing: 0.5px;
 }
 .c-img {
   display: flex;
@@ -1848,7 +1855,7 @@ footer {
 }
 .created-icons {
   display: flex;
-  width: 45px;
+  width: 35px;
   height: auto;
   filter: hue-rotate(90deg);
 }

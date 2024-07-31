@@ -58,6 +58,13 @@ li a:hover {
   top: 2rem;
   user-select: none;
 }
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none; /* Safari y Chrome */
+  -moz-user-drag: none; /* Firefox */
+  -ms-user-drag: none; /* Internet Explorer y Edge */
+}
 @media screen and (max-width: 1000px) {
   .nav-item {
     display: none;
@@ -98,14 +105,23 @@ li a:hover {
   font-size: 0.7rem;
   box-shadow: 0 0.1px 0 #fff;
   padding: 10px;
-  font-weight: 300;
-  font-family: sans-serif, Times, serif;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .menu-oculto li:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.menu-oculto li h2:hover {
+  color: #c2c504ef;
+}
+.menu-oculto h3:hover {
+  color: #c2c504ef;
+}
 .menu-oculto li:active {
-  opacity: 0.05;
+  opacity: 0.5;
+}
+.sub-menu-oculto li:active {
+  opacity: 0.5;
 }
 .tok-animation {
   animation: tok 0.6s ease-in-out;
@@ -139,22 +155,14 @@ li a:hover {
   font-size: 0.7rem;
   box-shadow: 0 0.1px 0 #fff;
   padding: 10px;
-  font-weight: 300;
-  font-family: sans-serif, Times, serif;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 100vw;
   overflow: hidden;
   display: inline-flex;
 }
 .sub-menu-oculto:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-@media screen and (max-width: 1000px) {
-  .sub-menu-oculto:hover {
-    background-color: transparent;
-  }
-  .sub-menu-oculto:active {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .sub-menu-oculto h3 {
   font-size: 0.7rem;
@@ -170,7 +178,7 @@ li a:hover {
   position: fixed;
   height: auto;
   left: 0px;
-  top: 20px;
+  top: 35px;
   margin-left: 20px;
   background-color: rgba(255, 255, 0, 0.5);
   border-radius: 5px;
@@ -183,7 +191,7 @@ li a:hover {
 
 .open-nav-list {
   height: auto;
-  width: 30px;
+  width: 25px;
 }
 .container-arrows {
   position: relative;
@@ -202,6 +210,11 @@ li a:hover {
 .arrow {
   right: 0;
   display: none;
+  padding: 5px;
+}
+.arrow:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+
 }
 #arrow-up {
   display: inline-flex;
@@ -212,7 +225,7 @@ li a:hover {
   position: fixed;
   height: auto;
   left: 0px;
-  top: 20px;
+  top: 35px;
   margin-left: 20px;
   background-color: rgba(255, 255, 0, 0.5);
   border-radius: 5px;
@@ -223,7 +236,7 @@ li a:hover {
 }
 .close-nav-list {
   height: auto;
-  width: 30px;
+  width: 25px;
 }
 #logo {
   text-align: center;
@@ -282,6 +295,10 @@ li a:hover {
 @font-face {
   font-family: "f-07";
   src: url(/fonts/logo/NYXERIN.otf);
+}
+@font-face {
+  font-family: 'netWorth';
+  src: url(/fonts/eslogan/NetWorth.ttf);
 }
 
 h4 {
@@ -392,6 +409,7 @@ p {
 }
 .eslogan h3 {
   font-size: 5rem;
+  font-family: 'netWorth';
   color: #ffffff07;
   animation: change-color-eslogan 2s linear;
   font-weight: 700;
@@ -414,10 +432,18 @@ align-items: center;
 position: relative;
 margin-top: 20vh;
 padding: 1rem;
+background-color: rgba(255, 255, 255, 0.068);
+backdrop-filter: blur(50px); 
+margin-bottom: 3rem;
 }
-
 .sides a {
   user-select: none;
+}
+.container-categories-home {
+  background-color: greenyellow;
+  border-radius: 100px;
+  padding: 1px;
+  animation: rode 14s ease-out infinite both;
 }
 .categories-home {
   position: relative;
@@ -427,16 +453,52 @@ padding: 1rem;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-color: #2222223b;
-  backdrop-filter: blur(50px);
+  background-color: #0c0c0c;
   border-radius: 100px;
-  padding: 1rem;
+  padding: 0.9rem;
   align-items: center;
-  border: 3px solid #c5c206;
 }
-.categories-home:hover {
+@keyframes rode {
+  0% {
+    background-color: #000;
+  }
+  10% {
+    background-color: greenyellow;
+  }
+  20% {
+    background-color: rebeccapurple;
+  }
+  30% {
+    background-color: forestgreen;
+  }
+  40% {
+    background-color: indigo;
+  }
+  50% {
+    background-color: palevioletred;
+  }
+  60% {
+    background-color: honeydew;
+  }
+  70% {
+    background-color: #c5c206;
+  }
+  80% {
+    background-color: teal;
+  }
+  90% {
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
+  }
+}
+.categories-home:hover  {
   backdrop-filter: blur(100px);
-  filter: drop-shadow(0 2rem rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 0.2rem rgb(0, 0, 0));
+}
+.container-categories-home:hover {
+  animation-play-state: paused;
 }
 .categories-home h2 {
   color: #fff;
@@ -587,6 +649,10 @@ padding: 1rem;
 .serv-04 {
   display: none;
 }
+#bh-02 {
+  padding-top: 1.5rem;
+  margin: auto;
+}
 #bh-04 {
   margin-top: 3px;
 }
@@ -619,6 +685,10 @@ padding: 1rem;
   }
   .serv-04 {
     display: block;
+  }
+  .bh span {
+  font-size: 0.6rem;
+  letter-spacing: 0.3px;
   }
 }
 
@@ -940,7 +1010,7 @@ padding: 1rem;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
-  gap: 10rem;
+  gap: 100px 0;
 }
 .product {
   width: 100%;
@@ -951,6 +1021,7 @@ padding: 1rem;
   flex-wrap: wrap;
   margin-top: 20px;
   gap: 50px;
+  padding-bottom: 60px;
 }
 .ch {
   position: relative;
@@ -968,7 +1039,7 @@ padding: 1rem;
   position: relative;
   height: auto;
   width: auto;
-  padding: 40px;
+  padding: 30px;
   border-radius: 5px;
   background-color: rgba(68, 68, 68, 0.2);
   backdrop-filter: blur(5px);
@@ -979,7 +1050,7 @@ padding: 1rem;
   position: relative;
   height: auto;
   width: auto;
-  padding: 40px;
+  padding: 30px;
   border-radius: 5px;
   background-color: rgba(68, 68, 68, 0.2);
   backdrop-filter: blur(5px);
@@ -1066,7 +1137,6 @@ padding: 1rem;
   .top-product img {
     height: auto;
     width: 260px;
-    border: 1px solid gold
   }
   .ch {
     width: 350px;
@@ -1089,28 +1159,26 @@ padding: 1rem;
 }
 .section-all li {
   height: auto;
-  width: 300px;  
-
+  width: 250px;  
   backdrop-filter: blur(100px);
   list-style-type: none;
   text-align: center;
-
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   padding: 30px;
   border-radius: 4px;
   transition: 0.2s ease-in-out;
   user-select: none;
   -webkit-clip-path: polygon(0 0, 300% 100%, -40% 100%);
   clip-path: polygon(0 0, 100%, 100% 180%);
-  background-color: #fbff00;
-  filter: drop-shadow(0 0 5rem rgb(221, 218, 44));
+  background-color: #3a3a3a;
+
 }
 .section-all li:hover {
-  background-color: rgba(221, 218, 44, 0.322);
+  background-color: #3a3a3a3b;
   filter: drop-shadow(0 0 1rem #fff);
-  opacity: 0.5;
+
 }
 
 #services {
@@ -1155,12 +1223,16 @@ padding: 1rem;
 }
 
 /* Responsive text */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .title-section {
     margin: 100px 80px 100px 100px;
   }
   .title-section h4 {
     font-size: 2rem;
+  }
+  .section-all li {
+    width: 150px;  
+    font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1249,10 +1321,9 @@ display: block;
   margin: 20px;
   gap: 20px;
   background-color: #c2c504ea;
-  padding: 25px;
-  margin: 5px;
+  padding: 10px;
   transition: 0.3s ease;
-  flex: 1;
+
 }
 .charts p {
   color: #000;
@@ -1406,11 +1477,12 @@ display: block;
   height: auto;
   align-items: center;
   margin: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .img-asistant img {
-  width: 300px;
+  width: 270px;
   height: auto;
+  padding: 15px;
 }
 .spp {
   position: relative;
@@ -1418,7 +1490,6 @@ display: block;
   margin-top: auto;
   gap: 20px;
   padding: 0 60px;
-  box-shadow: 0 0 5px #d4b60a;
 }
 .spp-02 {
   display: flex;
@@ -1438,10 +1509,11 @@ display: block;
 .spp-02 p {
   color: #fff;
   padding-top: 30px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     filter: drop-shadow(0 0 1px #000);
+    user-select: none;
 }
 
 .spp-02 span {
@@ -1466,7 +1538,7 @@ display: block;
   transition: 0.2s ease-in-out;
 }
 .spp-images img {
-  width: 80px;
+  width: 50px;
   height: auto;
 }
 

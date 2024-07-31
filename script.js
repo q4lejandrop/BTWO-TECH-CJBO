@@ -88,34 +88,6 @@ function showInfo03() {
     despList03.classList.add('animation-title-r');
 }
 
-// Zoom images products
-// let imgProduct = document.getElementById('img-product')
-// let filterProducts = document.getElementById('filter-products');
-// function zoom() {
-//     imgProduct.classList.add('img-product-zoom')
-//     filterPdt.style.display = 'block';
-//     imgProduct.classList.add('w-opacity');
-//     filterPdt.classList.add('w-opacity');
-// }
-// function removeZoom() {
-//     imgProduct.classList.remove('img-product-zoom')
-//     filterPdt.style.display = 'none';
-//     imgProduct.classList.add('wo-opacity');
-//     filterPdt.classList.add('wo-opacity');
-// }
-// function zoom02() {
-//     imgProduct.classList.add('img-product-zoom-02')
-//     filterPdt02.style.display = 'block';
-//     imgProduct.classList.add('w-opacity');
-//     filterPdt02.classList.add('w-opacity');
-// }
-// function resize() {
-//     imgProduct.classList.remove('img-product-zoom-02')
-//     filterPdt02.style.display = 'none';
-//     imgProduct.classList.add('wo-opacity');
-//     filterPdt02.classList.add('wo-opacity');
-// }
-
 // Show information categories 
 let bh01 = document.getElementById('bh-01')
 let bh02 = document.getElementById('bh-02')
@@ -226,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     images.forEach(image => {
         image.addEventListener('mouseover', function() {
-            image.style.transform = 'scale(1.1)';
+            image.style.transform = 'scale(1.5)';
         });
 
         image.addEventListener('mouseout', function() {

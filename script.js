@@ -222,12 +222,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
     images.forEach(image => {
         image.addEventListener('mouseover', function() {
-            image.style.transform = 'scale(1.4)';
+            image.style.transform = 'scale(1.1)';
         });
 
         image.addEventListener('mouseout', function() {
             image.style.transform = 'scale(1)';
-            filterCenter.style.display = 'none';
         });
     });
 });
@@ -248,27 +247,120 @@ document.addEventListener('DOMContentLoaded', function(){
 //      containerImgPdt.style.backgroundColor = 'purple';
 // }
 
-// Deploy info products
-let stateArrowInfo = true;
-document.querySelector('.btn-descrip-product').addEventListener('click', () => {
+// Display info products
+document.addEventListener('DOMContentLoaded', () => {
+const btnDescrip01 = document.getElementById('btn-descrip-01');
+const btnDescrip02 = document.getElementById('btn-descrip-02');
+const btnDescrip03 = document.getElementById('btn-descrip-03');
+const btnDescrip04 = document.getElementById('btn-descrip-04');
+const btnDescrip05 = document.getElementById('btn-descrip-05');
+const btnDescrip06 = document.getElementById('btn-descrip-06');
+const btnDescrip07 = document.getElementById('btn-descrip-07');
+const btnDescrip08 = document.getElementById('btn-descrip-08');
+const btnDescrip09 = document.getElementById('btn-descrip-09');
 
-if(stateArrowInfo) {
-    showInfoProducts();
-} else {
-    hiddenInfoProducts();
-}
-stateArrowInfo = !stateArrowInfo;
+btnDescrip01.addEventListener('click',  () => toggleDescription('producto1'));
+btnDescrip02.addEventListener('click',  () => toggleDescription('producto2'));
+btnDescrip03.addEventListener('click',  () => toggleDescription('producto3'));
+btnDescrip04.addEventListener('click',  () => toggleDescription('producto4'));
+btnDescrip05.addEventListener('click',  () => toggleDescription('producto5'));
+btnDescrip06.addEventListener('click',  () => toggleDescription('producto6'));
+btnDescrip07.addEventListener('click',  () => toggleDescription('producto7'));
+btnDescrip08.addEventListener('click',  () => toggleDescription('producto8'));
+btnDescrip09.addEventListener('click',  () => toggleDescription('producto9'));
 });
-let btnShowDescripProduct = document.querySelector('.btn-show-descrip-product');
-let btnHiddenDescripProduct = document.querySelector('.btn-hidden-descrip-product');
-let infoProducts = document.getElementById('ch');
-function showInfoProducts() {
-    infoProducts.style.display = 'block';
-    btnShowDescripProduct.style.display = 'none';
-    btnHiddenDescripProduct.style.display = 'block';
+
+function toggleDescription(productoId) {
+    const descripcion = document.getElementById(productoId);
+    if(descripcion.style.display === 'none' || descripcion.style.display === '') {
+        descripcion.style.display = 'flex';
+        // hiddenInfoProducts();
+    } else {
+        descripcion.style.display = 'none';
+        // hiddenInfoProducts();
+    }
+    // let btnShowDescripProduct = document.querySelectorAll('.btn-show-descrip-product');
+    // let btnHiddenDescripProduct = document.querySelectorAll('.btn-hidden-descrip-product');
+    // // let infoProducts = document.querySelector('.ch');
+    //  function showInfoProducts() {
+    //     //  infoProducts.style.display = 'block';
+    //      btnShowDescripProduct.style.display = 'none';
+    //      btnHiddenDescripProduct.style.display = 'block';
+    //  }
+    //  function hiddenInfoProducts() {
+    //     //  infoProducts.style.display = 'none';
+    //      btnShowDescripProduct.style.display = 'block';
+    //      btnHiddenDescripProduct.style.display = 'none';
+    //  }
 }
-function hiddenInfoProducts() {
-    infoProducts.style.display = 'none';
-    btnShowDescripProduct.style.display = 'block';
-    btnHiddenDescripProduct.style.display = 'none';
-}
+
+
+
+// let stateArrowInfo = true;
+// document.getElementsByClassName('.btn-descrip-product').addEventListener('click', () => {
+// if(stateArrowInfo) {
+//     showInfoProducts();
+// } else {
+//     hiddenInfoProducts();
+// }
+// stateArrowInfo = !stateArrowInfo;
+// });
+// let btnShowDescripProduct = document.querySelectorAll('.btn-show-descrip-product');
+// let btnHiddenDescripProduct = document.querySelectorAll('.btn-hidden-descrip-product');
+// // let infoProducts = document.querySelector('.ch');
+//  function showInfoProducts() {
+//     //  infoProducts.style.display = 'block';
+//      btnShowDescripProduct.style.display = 'none';
+//      btnHiddenDescripProduct.style.display = 'block';
+//  }
+//  function hiddenInfoProducts() {
+//     //  infoProducts.style.display = 'none';
+//      btnShowDescripProduct.style.display = 'block';
+//      btnHiddenDescripProduct.style.display = 'none';
+//  }
+
+// const dataProducts = {
+//     dataMobo01: [
+//         '▿ Socket AM4 para procesador AMD Ryzen (1a a 3a generación) y Athlon GE.',
+//         '▿ Memoria DDR4 de 4 ranuras 3866 MHz (OC) de doble canal (capacidad total: 64 GB).',
+//         '▿ 4 x SATA 6Gbit/s, 1x M.2 PCIe NVMe 4x / SATA 6 Gbit/s.',
+//         '▿ 1 PCI-Express 3.0 16x slot.'
+//     ],
+//     dataMobo02: [ 
+//         '▿ Socket LGA1700.',
+//         '▿ Z790 Chipset.',
+//         '▿ 4 x DIMM, Max. 192GB, DDR5 7800.',
+//         '▿ 2 x PCIe 5.0 x16 slots.',
+//         '▿ Wi-Fi 6E.',
+//         '▿ 1 x ThunderboltTM.'
+//     ], 
+//     dataMobo03: [
+//         '▿ Socket AMD AM4 RyzenTM 3000, 3000.',
+//         '▿ Soporta memoria DDR4 4733+ (OC).',
+//         '▿ 4 x DIMM, Max. 192GB, DDR5 7800.',
+//         '▿ 1 x PCIe 3.0 x16, 1 x PCIe 3.0 x1.',
+//         '▿ Audio 7.1.',
+//         '▿ 4 x SATA3, 1 x Ultra M.2(Gen3 x4 & SATA3) • 6 x USB 2.0(2 x Rear, 4 x Front).'
+//     ]
+// };
+
+
+
+
+// dataCpu01: [ 
+//     '▿ Zócalo de CPU Socket AM5.',
+//     '▿ Modelo de gráficos: AMD RadeonTM Graphics, 2 Core, 2200 MHz.',
+//     '▿ # de núcleos de CPU: 8.',
+//     '▿ # de hilos: 16.',
+//     '▿ Reloj de aumento máx.: Hasta 5.0GHz. Reloj base: 4.2GHz.',
+//     '▿ TDP predeterminado: 120W.'
+// ]
+// btnDescrip01.addEventListener('click',  showInfoProducts());
+// btnDescrip02.addEventListener('click',  showInfoProducts());
+// btnDescrip03.addEventListener('click',  showInfoProducts());
+// btnDescrip04.addEventListener('click',  showInfoProducts());
+// btnDescrip05.addEventListener('click',  showInfoProducts());
+// btnDescrip06.addEventListener('click',  showInfoProducts());
+// btnDescrip07.addEventListener('click',  showInfoProducts());
+// btnDescrip08.addEventListener('click',  showInfoProducts());
+// btnDescrip09.addEventListener('click',  showInfoProducts()); 
